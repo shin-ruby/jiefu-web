@@ -1,0 +1,234 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome";
+
+/*!
+ * IE10 viewport hack for Surface/desktop Windows 8 bug
+ * Copyright 2014-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+/*
+ * See the Getting Started docs for more information:
+ * http://getbootstrap.com/getting-started/#support-ie10-width
+ */
+@-webkit-viewport { width: device-width; }
+@-moz-viewport    { width: device-width; }
+@-ms-viewport     { width: device-width; }
+@-o-viewport      { width: device-width; }
+@viewport         { width: device-width; }
+
+/* layout style */
+
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.navbar-top {
+  background-color: #EEEEEE;
+  height: 30px;
+  .container {
+    position: relative;
+    p {
+    	margin-top: 6px;
+    }
+    img {
+      float: right;
+      margin-left: 6px;
+    }
+  }
+}
+
+.navbar-inverse {
+  background-color: #0D6596;
+  border-color: #EEEEEE;
+}
+
+.navbar-inverse .navbar-toggle {
+  border-color: #2E6DA4;
+}
+
+.navbar-nav {
+  margin-top: 5px;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #FFFFFF;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+  color: #FFFFFF;
+}
+
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+  color: #0D6596;
+  background-color: #FFFFFF;
+
+}
+
+.logo {
+	margin-top: 10px;
+	margin-bottom: 12px;
+}
+
+.navbar-left {
+	margin-left: 60px;
+}
+
+.navbar-right {
+  .inner-addon { 
+    position: relative; 
+  }
+
+  .inner-addon .glyphicon {
+    position: absolute;
+    padding: 10px;
+    pointer-events: none;
+  }
+  /* align icon */
+  .left-addon .glyphicon  { left:  0px;}
+  .right-addon .glyphicon { right: 0px;}
+  /* add padding  */
+  .left-addon input  { padding-left:  30px; }
+  .right-addon input { padding-right: 30px; }
+}
+
+.footer {
+  font-size: 14px;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer a {
+  font-size: 12px;
+  color: #AAAAAA;
+}
+
+.footer-list {
+  height: 220px;
+  background-color: #222222;
+  color: #AAAAAA;
+}
+
+.footer-list-one {
+  margin-top: 36px;
+  height: 170px;
+  strong{
+    color: #EEEEEE;
+  }
+}
+
+.footer-list-one .list-unstyled li {
+  padding-bottom: 8px;
+}
+
+
+.footer  .footer-container {
+  padding-top: 12px;
+  font-size: 12px;
+  height: 40px;
+  background-color: #000000;
+  color: #EEEEEE;
+}
+
+
+/* home page */
+
+.jumbotron {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 0;
+}
+
+.banner {
+	background:#E6E6E6 url(/assets/banner.png) no-repeat;
+	-moz-background-size:cover;
+  -webkit-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+	height: 460px;
+}
+
+.banner .container .content {
+	margin-top: 90px;
+	width: 600px;
+  color: #FFFFFF;
+  h1 {
+  	margin-top: 160px;
+  }
+}
+
+.choose-product {
+  background:#E6E6E6 url(/assets/choose-bg.jpg) no-repeat;
+  -moz-background-size:cover;
+  -webkit-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  height: 66px;
+  .content {
+    h3 {
+      color: #FFFFFF;
+    }
+    .choose {
+      float: right;
+      margin-top: 16px;
+    }
+    button {
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+  }
+}
+
+.home-bg {
+  background:#E6E6E6 url(/assets/bg.jpg) repeat;
+  height: 1338px;
+  .col-md-6 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+.brand-jbl {
+  margin-top: 40px;
+}
+
+.brand-jbl-text, .brand-infinity-text {
+  background-color: #EEEEEE;
+  height: 292px;
+  width: 585px;
+  padding-top: 40px;
+  font-size: 16px;
+  p {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+
+.home-case {
+  margin-top: 40px;
+  height: 568px;
+  background-color: #EEEEEE;
+  padding-top: 20px;
+	padding-left: 0px;
+  padding-right: 0px;
+  .news-list {
+    background-color: #FFFFFF;
+    padding-top: 12px;
+    height: 46px;
+    border-style: solid; border-width: 0.5px;
+    text-align: center;
+    a {
+      color: #333333;
+      text-decoration: none;
+    }
+  }
+
+}
+
+.choose-foot {
+  margin-top: 40px;
+}
+
