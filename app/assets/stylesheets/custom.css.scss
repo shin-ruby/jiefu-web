@@ -144,7 +144,7 @@ body {
 }
 
 .banner {
-	background:#E6E6E6 url(/assets/banner.png) no-repeat;
+	background:#E6E6E6 image-url('banner.png') no-repeat;
 	-moz-background-size:cover;
   -webkit-background-size:cover;
   -o-background-size:cover;
@@ -162,7 +162,7 @@ body {
 }
 
 .choose-product {
-  background:#E6E6E6 url(/assets/choose-bg.jpg) no-repeat;
+  background:#E6E6E6 image-url('choose-bg.jpg') no-repeat;
   -moz-background-size:cover;
   -webkit-background-size:cover;
   -o-background-size:cover;
@@ -184,7 +184,7 @@ body {
 }
 
 .home-bg {
-  background:#E6E6E6 url(/assets/bg.jpg) repeat;
+  background:#E6E6E6 image-url('bg.jpg') repeat;
   height: 1338px;
   .col-md-6 {
     padding-left: 0px;
