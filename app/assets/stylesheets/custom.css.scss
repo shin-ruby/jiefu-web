@@ -241,7 +241,7 @@ body {
 /* support page */
 
 .contact-jumbotron {
-  background:#E6E6E6 url(/assets/contact-banner.png) no-repeat;
+  background:#E6E6E6 image-url('contact-banner.png') no-repeat;
   -moz-background-size:cover;
   -webkit-background-size:cover;
   -o-background-size:cover;
