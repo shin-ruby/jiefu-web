@@ -26,22 +26,24 @@ body {
 }
 
 .navbar-top {
-  background-color: #EEEEEE;
+  background-color: #222222;
   height: 30px;
   .container {
     position: relative;
     p {
     	margin-top: 6px;
+      color: #EDEDED;
     }
     img {
       float: right;
+      margin-top: 4px;
       margin-left: 6px;
     }
   }
 }
 
 .navbar-inverse {
-  background-color: #0D6596;
+  background-color: #045591;
   border-color: #555552;
 }
 
@@ -58,13 +60,13 @@ body {
 }
 
 .navbar-inverse .navbar-nav > li > a:hover {
-  color: #FFFFFF;
+  color: #EDEDED;
 }
 
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
   color: #0D6596;
-  background-color: #FFFFFF;
+  background-color: #EDEDED;
 
 }
 
@@ -269,3 +271,34 @@ body {
   }
 }
 
+/* product-list page */
+
+.product-banner {
+  // background: image-url('choose-bg.jpg') no-repeat;
+  // -moz-background-size:cover;
+  // -webkit-background-size:cover;
+  // -o-background-size:cover;
+  // background-size:cover;
+  background-color: #30ABFC;
+  color: #EEEEEE;
+  height: 220px;
+  h2 {
+    margin-top: 80px;
+  }
+}
+
+.product-list {
+  .row {
+    padding-top: 100px;
+  }
+  .product-img {
+    margin-bottom: 18px;
+  }
+  h4 {
+    color: #0E6AA9;
+  }
+  nav {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
