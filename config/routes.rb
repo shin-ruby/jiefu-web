@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   get 'support' => 'static_pages#support'
   get 'product' => 'static_pages#product'
   get 'product_detail' => 'static_pages#product_detail'
+  get 'about' => 'static_pages#about'
 end

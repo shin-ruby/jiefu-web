@@ -7,4 +7,7 @@ class StaticPagesController < ApplicationController
 
   def product
   end
+
+  def about
+  end
 end
