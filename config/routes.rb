@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   get 'news_content' => 'static_pages#news_content'
   
   get 'about' => 'static_pages#about'
+  get 'about_introduction' => 'static_pages#about_introduction'
 end

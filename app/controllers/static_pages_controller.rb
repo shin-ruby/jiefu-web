@@ -19,4 +19,7 @@ class StaticPagesController < ApplicationController
 
   def about
   end
+
+  def about_introduction
+  end
 end
