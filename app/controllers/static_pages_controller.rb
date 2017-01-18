@@ -8,6 +8,15 @@ class StaticPagesController < ApplicationController
   def product
   end
 
+  def news
+  end
+
+  def news_list
+  end
+
+  def news_content
+  end
+
   def about
   end
 end
