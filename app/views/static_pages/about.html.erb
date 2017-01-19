@@ -25,15 +25,23 @@
 		<div class="row about-contact">
 	  	<div class="col-md-4">
 	  		<blockquote class="blockquote-reverse operation-blockquote">
-				  <h4 class="about-head">运营信息</h4>
+				  <h4 class="about-head">公司历程</h4>
 				</blockquote>
 	  	</div>
 		  <div class="col-md-8">
 		  	<p>
 		  		公司主要生产杰夫扬声器单元和系统，并为国际品牌公司提供OEM/ODM服务。2000年公司自行研发的JIEFU通讯扬声器YD系列产品，更被评为2001年度“江苏省高新技术产品”，“国家重点新产品”。
 		  	</p>
-		  	<button type="button" class="btn btn-primary">了解详细信息</button>
+		  	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">了解详细信息</button>
 		  </div>
+		  <!-- Modal -->
+				<div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				  <div class="modal-dialog modal-lg" role="document">
+				    <div class="modal-content">
+				    	<%= render 'layouts/milestones' %>
+				    </div>
+				  </div>
+				</div>
 		</div>
 
 		<div class="row about-contact">
@@ -49,19 +57,7 @@
 					“海纳百川英才聚，声弘四海中华扬”，祖国的强盛，民族的复兴，需要我们的持续努力，不懈追求，实业兴国，实业强国，我们杰夫人有志于让世界回荡中国的声音，杰夫的声音。如果您同样怀着这么一颗报国心，一份爱国情，那么朋友，您就是我们迫切需要的，请加入我们吧！<br>
 					在此，我谨代表杰夫人，热诚欢迎海内外电声界的同行莅临指导，热诚欢迎有志于电声行业的朋友不吝赐教。杰夫期待您的加盟，共创美好明天！
 		  	</p>
-		  </div>
-		</div>
-
-		<div class="row about-contact">
-	  	<div class="col-md-4">
-	  		<blockquote class="blockquote-reverse certification-blockquote">
-				  <h4 class="about-head">资质认证</h4>
-				</blockquote>
-	  	</div>
-		  <div class="col-md-8">
-		  	<p>
-		  		<a href="#">查看杰夫资质认证</a>
-		  	</p>
+		  	<p class="text-right"><%= image_tag "jiefu-signature" %></p>
 		  </div>
 		</div>
 
