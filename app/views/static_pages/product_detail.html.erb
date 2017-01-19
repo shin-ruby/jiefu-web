@@ -1,0 +1,59 @@
+<div class="container news_list">
+	<ol class="breadcrumb news_breadcrumb">
+	  <li><a href="#">返回产品</a></li>
+	  <li class="active">电视扬声器</li>
+	</ol>
+
+	<div class="container product_detail">
+		<div class="row">
+		  <div class="col-md-6 product_detail_img">
+		  	<%= image_tag('product', width: '460', class: "product-img") %>
+		  	<ul class="list-inline product_detail_img_list">
+				  <li><%= image_tag('product_detail_img_list', width: '80', class: "img-thumbnail") %></li>
+				  <li><%= image_tag('product_detail_img_list', width: '80', class: "img-thumbnail") %></li>
+				</ul>
+		  </div>
+		  <div class="col-md-6 product_detail_text">
+		  	<h2>YDP1580-2G</h2>
+
+				<div class="product_detail_content">
+				  <!-- Nav tabs -->
+				  <ul class="nav nav-pills" role="tablist">
+				    <li role="presentation" class="active"><a href="#info" aria-controls="info" role="tab" data-toggle="tab">简介</a></li>
+				    <li role="presentation"><a href="#feature" aria-controls="feature" role="tab" data-toggle="tab">特点</a></li>
+				    <li role="presentation"><a href="#parameter" aria-controls="parameter" role="tab" data-toggle="tab">参数</a></li>
+				    <li role="presentation"><a href="#construction" aria-controls="construction" role="tab" data-toggle="tab">外形结构图</a></li>
+				    <li role="presentation"><a href="#graph" aria-controls="graph" role="tab" data-toggle="tab">曲线图</a></li>
+				  </ul>
+
+				  <!-- Tab panes -->
+				  <div class="tab-content">
+				    <div role="tabpanel" class="tab-pane active" id="info">
+				    	<p>使您的私人家庭影院具有真正影院的音效。</p>
+				    </div>
+				    <div role="tabpanel" class="tab-pane" id="feature">
+				    	<p>您已在无数个电影院体验了 JBL® 音效。 现在，您可以在家里通过 JBL 的 Project Array™ 系列扬声器来体验，这款扬声器专门用来产生像电影院扬声器一样的音效。 处理最繁忙声道是 880 Array，一个功率最大 200 瓦的 3 路中置声道扬声器。 它配备两个 8 英寸 (200mm) 聚合物处理的纸浆振盆低音扬声器、一个 3 英寸 (75mm) 镀 Aquaplas 的高频驱动器和一个 1 英寸 (25mm) 纯钛超高频驱动器。 其大小为 12-1/4 x 28-3/4 x 11 英寸 (311 x 730 x 279 mm)，外观像一个专业级扬声器，具有精致的高抛光黑色木质音箱。</p>
+				    </div>
+				    <div role="tabpanel" class="tab-pane" id="parameter">
+				    	<ul class="list-unstyled">
+							  <li>外观尺寸（长*宽*高）mm : 80.0*14.5*13.0</li>
+							  <li>阻抗（Ω）: 4/6/8/16</li>
+							  <li>FO（Hz）: 280</li>
+							  <li>额定功率（W）: 10</li>
+							  <li>灵敏度（dB）: 80</li>
+							  <li>频响范围 : Fo~20KHz</li>
+							</ul>
+				    </div>
+				    <div role="tabpanel" class="tab-pane" id="construction">...</div>
+				    <div role="tabpanel" class="tab-pane" id="graph">
+				    	<%= image_tag('graph-a') %>
+				    	<%= image_tag('graph-b') %>
+				    </div>
+				  </div>
+				</div>
+				
+				<button type="button" class="btn btn-primary">联系我们</button>
+		  </div>
+		</div>
+	</div>
+</div>

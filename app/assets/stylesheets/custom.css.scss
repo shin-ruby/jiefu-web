@@ -312,6 +312,45 @@ body {
   }
 }
 
+/* product_detail */
+
+.product_detail_img {
+  margin-top: 20px;
+}
+
+.product_detail_img_list {
+  margin-top: 100px;
+  .img-thumbnail {
+    border-radius: 0px;
+  }
+}
+
+.product_detail_text {
+  h2 {
+    color: #5F5F5F;
+    font-weight: 200;
+    margin-bottom: 40px;
+  }
+}
+
+.product_detail {
+  .tab-content {
+    margin-top: 40px;
+  }
+}
+
+.product_detail_content {
+  margin-right: 40px;
+  .nav {
+    background-color: #f5f5f5;
+    padding: 10px;
+  }
+  .tab-content {
+    margin-bottom: 40px;
+  }
+  min-height: 300px;
+}
+
 /* about page */
 
 .about-jumbotron {
