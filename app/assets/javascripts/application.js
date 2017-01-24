@@ -15,3 +15,11 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+document.addEventListener("turbolinks:load", function() {
+	$('#myAffix').affix({
+	  offset: {
+	    top: 100,
+	  }
+	});
+});

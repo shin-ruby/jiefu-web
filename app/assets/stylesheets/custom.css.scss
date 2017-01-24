@@ -19,31 +19,6 @@
 @viewport         { width: device-width; }
 
 
-.affix {
-  .navbar-top {
-    display: none;
-  }
-}
-
-.affix-top {
-  .navbar-top {
-    background-color: #092240;
-    height: 30px;
-    .container {
-      position: relative;
-      p {
-        margin-top: 6px;
-        color: #EDEDED;
-      }
-      img {
-        float: right;
-        margin-top: 4px;
-        margin-left: 6px;
-      }
-    }
-  }
-}
-
 /* layout style */
 
 body {
@@ -54,6 +29,29 @@ body {
 .container {
   padding-right: 40px;
   padding-left: 40px;
+}
+
+.navbar-top {
+  background-color: #092240;
+  height: 30px;
+  .container {
+    position: relative;
+    p {
+      margin-top: 6px;
+      color: #EDEDED;
+    }
+    img {
+      float: right;
+      margin-top: 4px;
+      margin-left: 6px;
+    }
+  }
+}
+
+.affix {
+  .navbar-top {
+    display: none;
+  }
 }
 
 .navbar-inverse {
