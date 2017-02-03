@@ -11,4 +11,5 @@ Rails.application.routes.draw do
   
   get 'about' => 'static_pages#about'
   get 'about_introduction' => 'static_pages#about_introduction'
+  get 'about_honors' => 'static_pages#about_honors'
 end
