@@ -28,4 +28,10 @@ class StaticPagesController < ApplicationController
 
   def about_honors
   end
+
+  def careers 
+  end
+
+  def careers_detail
+  end
 end

@@ -21,9 +21,18 @@
 
 /* layout style */
 
+body, html {
+  font-family: "Core Sans N 45 Regular", "Core Sans N 55 Medium", "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", 微软雅黑, "Microsoft Yahei", "WenQuanYi Micro Hei", Arial, Verdana, sans-serif;
+}
+
 body {
   padding-top: 50px;
   padding-bottom: 20px;
+}
+
+body, h1, h2, h3, h4, h5, h6, p {
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
 }
 
 .container {
@@ -562,5 +571,43 @@ body {
   h4 {
     margin-top: 20px;
     font-weight: 200;
+  }
+}
+
+/* careers */
+
+.careers-table {
+  margin-top: 100px;
+  .carrers-link {
+    color: #333333;
+    text-decoration: none;
+  }
+}
+
+/* careers_detail */
+
+.carrers-link {
+  color: #333333;
+  text-decoration: none;
+}
+
+.back-careers {
+  h5 {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+}
+
+.careers-detail {
+  h2, p, .btn-primary, ul {
+    margin-bottom: 60px;
+  }
+
+  li {
+    list-style-type: disc;
+    font-size: 14px;
+    color: #666;
+    letter-spacing: 0;
+    line-height: 24px;
   }
 }

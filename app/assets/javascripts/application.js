@@ -22,9 +22,8 @@ document.addEventListener("turbolinks:load", function() {
 	    top: 100,
 	  }
 	});
-
-
 });
+
 
 // $(document).on('turbolinks:load', function(){
 // 	$(".nav a").on("click", function(){
