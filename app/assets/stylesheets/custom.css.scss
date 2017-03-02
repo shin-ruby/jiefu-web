@@ -82,7 +82,7 @@ body, h1, h2, h3, h4, h5, h6, p {
 
 .navbar-inverse .navbar-nav > li > a:hover {
   color: #0D6596;
-  background-color: #EDEDED;
+  background-color: #FFFFFF;
 }
 
 
@@ -219,12 +219,16 @@ body, h1, h2, h3, h4, h5, h6, p {
 }
 
 .home-bg {
-  background: image-url('bg.jpg') repeat;
-  height: 1338px;
+  // background: image-url('bg.jpg') repeat;
+  height: 1530px;
   .col-md-6 {
     padding-left: 0px;
     padding-right: 0px;
   }
+}
+
+.barand {
+  margin-left: 20px;
 }
 
 .brand-jbl {
@@ -250,13 +254,14 @@ body, h1, h2, h3, h4, h5, h6, p {
 .home-case {
   margin-top: 40px;
   height: 568px;
+  width: 1090px;
   background-color: #EEEEEE;
   padding-top: 20px;
 	padding-left: 0px;
   padding-right: 0px;
   .container {
   	padding-left: 100px;
-  	padding-right: 100px;
+  	padding-right: 150px;
   }
   .news-list {
     background-color: #FFFFFF;
@@ -274,8 +279,65 @@ body, h1, h2, h3, h4, h5, h6, p {
   }
 }
 
-.choose-foot {
+.columns {
   margin-top: 40px;
+}
+
+.home-box {
+  height: 330px;
+  width: 268px;
+  background-color: #006FA9;
+  img {
+    margin-bottom: 10px;
+  }
+  h5, h3, p {
+    padding-left: 18px;
+    padding-right: 18px;
+    color: #FFFFFF;
+  }
+}
+
+
+.home-product { 
+  margin-top: 40px;
+  margin-left: 15px;
+  padding-top: 54px;
+  padding-bottom: 54px;
+  width: 548px;
+  background-color: #FFFFFF;
+  border-style: solid; border-width: 4px; border-color: #F2F2F2;
+  .row {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  .btn {
+    margin-top: 12px;
+    width: 200px;
+  }
+}
+
+.home-content {
+  margin-top: 40px;
+  background-color: #006FA9;
+  height: 400px;
+  .carousel {
+    width: 500px;
+    margin-top: 54px;
+    margin-left: 15px;
+  }
+  h1 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 18px;
+    color: #FFFFFF;
+  }
+  ul {
+    font-size: 18px;
+    color: #FFFFFF;
+    li {
+      line-height: 40px;
+    }
+  }
 }
 
 /* support page */
@@ -576,8 +638,14 @@ body, h1, h2, h3, h4, h5, h6, p {
 
 /* careers */
 
+.careers {
+  .careers-small-title {
+    margin-top: 20px;
+  }
+}
+
 .careers-table {
-  margin-top: 100px;
+  margin-top: 20px;
   .carrers-link {
     color: #333333;
     text-decoration: none;
