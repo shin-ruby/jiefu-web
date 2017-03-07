@@ -415,6 +415,14 @@ body, h1, h2, h3, h4, h5, h6, p {
 
 .product_detail_img {
   margin-top: 20px;
+  .nav-pills > li > a {
+    border-radius: 1px;
+  }
+  .nav > li > a {
+    position: relative;
+    display: block;
+    padding: 1px 1px;
+  }
 }
 
 .product_detail_img_list {

@@ -7,11 +7,18 @@
 	<div class="container product_detail">
 		<div class="row">
 		  <div class="col-md-6 product_detail_img">
-		  	<%= image_tag('product.png', width: '460', class: "product-img") %>
-		  	<ul class="list-inline product_detail_img_list">
-				  <li><%= image_tag('product_detail_img_list.png', width: '80', class: "img-thumbnail") %></li>
-				  <li><%= image_tag('product_detail_img_list.png', width: '80', class: "img-thumbnail") %></li>
-				</ul>
+			  <div class="tab-content">
+			    <div role="tabpanel" class="tab-pane active" id="photo-a">
+			    	<%= image_tag('product.png', width: '460', class: "product-img") %>
+			    </div>
+			    <div role="tabpanel" class="tab-pane" id="photo-b">
+			    	<%= image_tag('product.png', width: '460', class: "product-img") %>
+			    </div>
+			  </div>
+			  <ul class="nav nav-pills product_detail_img_list" role="tablist">
+			    <li role="presentation" class="active"><a href="#photo-a" aria-controls="photo-a" role="tab" data-toggle="tab"><%= image_tag('product_detail_img_list.png', width: '80', class: "img-thumbnail") %></a></li>
+			    <li role="presentation"><a href="#photo-b" aria-controls="photo-b" role="tab" data-toggle="tab"><%= image_tag('product_detail_img_list.png', width: '80', class: "img-thumbnail") %></a></li>
+			  </ul>
 		  </div>
 		  <div class="col-md-6 product_detail_text">
 		  	<h2>YDP1580-2G</h2>
