@@ -1,78 +1,25 @@
 <div class="introduction-jumbotron">
   <div class="container">
     <div class="content">
-      <h2>资质认证</h2>
+      <h2>杰夫荣誉</h2>
       <p>作为中国最大的平板电视用扬声器研制企业之一，杰夫电声深受客户信任。 <br>同时，杰夫电声还受到了专业认证机构、行业协会和媒体的广泛赞誉。</p>    
     </div>
   </div>
 </div>
 
 <div class="container introduction honors">
-    <ol class="breadcrumb introduction_breadcrumb">
-      <li><a href="#"><%= fa_icon "home" %></a></li>
-      <li><a href="#">关于我们</a></li>
-      <li class="active">资质认证</li>
-    </ol>
-	<div class="row">
-	  <div class="col-md-12">
-	  	<h1 class="text-center">认证证书</h1>
-	  </div>
-	</div>
-  <div class="row">
-    <div class="col-md-4">
-      <%= image_tag('certificate-1.png', width: '280') %>
-      <h4>质量管理体系认证证书</h4>
-    </div>
-    <div class="col-md-4">
-      <%= image_tag('certificate-2.png', width: '280') %>
-      <h4>质量管理体系认证证书</h4>
-    </div>
-    <div class="col-md-4">
-      <%= image_tag('certificate-12.jpg', width: '280') %>
-      <h4>质量管理体系认证证书</h4>
-    </div>
+
+  <ul class="nav nav-tabs">
+    <li role="presentation" class="active"><a href="#quality" aria-controls="quality" role="tab" data-toggle="tab">资质认证</a></li>
+    <li role="presentation"><a href="#invent" aria-controls="invent" role="tab" data-toggle="tab">发明专利</a></li>
+    <li role="presentation"><a href="#practical" aria-controls="practical" role="tab" data-toggle="tab">实用新型专利</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="quality"><%= render 'static_pages/honors_quality' %></div>
+    <div role="tabpanel" class="tab-pane" id="invent"><%= render 'static_pages/honors_invent' %></div>
+    <div role="tabpanel" class="tab-pane" id="practical"><%= render 'static_pages/honors_practical' %></div>
   </div>
-  <div class="row">
-    <div class="col-md-4">
-      <%= image_tag('certificate-3.jpg', width: '280') %>
-      <h4>质量管理体系认证证书</h4>
-    </div>
-    <div class="col-md-4">
-      <%= image_tag('certificate-4.jpg', width: '280') %>
-      <h4>质量管理体系认证证书</h4>
-    </div>
-    <div class="col-md-4">
-      <%= image_tag('certificate-5.jpg', width: '280') %>
-      <h4>质量管理体系认证证书</h4>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-4">
-      <%= image_tag('certificate-6.jpg', width: '280') %>
-      <h4>质量管理体系认证证书</h4>
-    </div>
-    <div class="col-md-4">
-      <%= image_tag('certificate-7.jpg', width: '280') %>
-      <h4>质量管理体系认证证书</h4>
-    </div>
-    <div class="col-md-4">
-      <%= image_tag('certificate-8.jpg', width: '280') %>
-      <h4>质量管理体系认证证书</h4>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-4">
-      <%= image_tag('certificate-9.jpg', width: '280') %>
-      <h4>质量管理体系认证证书</h4>
-    </div>
-    <div class="col-md-4">
-      <%= image_tag('certificate-10.jpg', width: '280') %>
-      <h4>质量管理体系认证证书</h4>
-    </div>
-    <div class="col-md-4">
-      <%= image_tag('certificate-11.jpg', width: '280') %>
-      <h4>质量管理体系认证证书</h4>
-    </div>
-  </div>
+	
 </div>
 
