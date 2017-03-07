@@ -14,9 +14,6 @@ class StaticPagesController < ApplicationController
   def news
   end
 
-  def news_list
-  end
-
   def news_content
   end
 
