@@ -1,0 +1,62 @@
+<div class="container news_list">
+	<ol class="breadcrumb news_breadcrumb">
+	  <li><a href="#">返回产品</a></li>
+	  <li class="active">电视扬声器</li>
+	</ol>
+
+	<div class="container product_detail">
+		<div class="row">
+		  <div class="col-md-6 product_detail_img">
+			  <div class="tab-content">
+			    <div role="tabpanel" class="tab-pane active" id="photo-a">
+			    	<%= image_tag('product.png', width: '460', class: "product-img") %>
+			    </div>
+			    <div role="tabpanel" class="tab-pane" id="photo-b">
+			    	<%= image_tag('product.png', width: '460', class: "product-img") %>
+			    </div>
+			  </div>
+			  <ul class="nav nav-pills product_detail_img_list" role="tablist">
+			    <li role="presentation" class="active"><a href="#photo-a" aria-controls="photo-a" role="tab" data-toggle="tab"><%= image_tag('product_detail_img_list.png', width: '80', class: "img-thumbnail") %></a></li>
+			    <li role="presentation"><a href="#photo-b" aria-controls="photo-b" role="tab" data-toggle="tab"><%= image_tag('product_detail_img_list.png', width: '80', class: "img-thumbnail") %></a></li>
+			  </ul>
+		  </div>
+		  <div class="col-md-6 product_detail_text">
+		  	<h2><%= @product.name %></h2>
+
+				<div class="product_detail_content">
+				  <!-- Nav tabs -->
+				  <ul class="nav nav-pills" role="tablist">
+				  	<li role="presentation" class="active"><a href="#parameter" aria-controls="parameter" role="tab" data-toggle="tab">参数</a></li>
+				    <li role="presentation"><a href="#feature" aria-controls="feature" role="tab" data-toggle="tab">特点</a></li>
+				    <li role="presentation"><a href="#construction" aria-controls="construction" role="tab" data-toggle="tab">外形结构图</a></li>
+				    <li role="presentation"><a href="#graph" aria-controls="graph" role="tab" data-toggle="tab">曲线图</a></li>
+				  </ul>
+
+				  <!-- Tab panes -->
+				  <div class="tab-content">
+				  	<div role="tabpanel" class="tab-pane active" id="parameter">
+				    	<ul class="list-unstyled">
+							  <li>外观尺寸（长*宽*高）mm : <%= @product.size_length %>*<%= @product.size_width %>*<%= @product.size_height %></li>
+							  <li>阻抗（Ω）: <%= @product.impedance %></li>
+							  <li>FO（Hz）: <%= @product.fo %></li>
+							  <li>额定功率（W）: <%= @product.rated_power %></li>
+							  <li>灵敏度（dB）: <%= @product.sensitivity %></li>
+							  <li>频响范围 : <%= @product.frequency %></li>
+							</ul>
+				    </div>
+				    <div role="tabpanel" class="tab-pane" id="feature">
+				    	<p><%= @product.feature %></p>
+				    </div>
+				    <div role="tabpanel" class="tab-pane" id="construction">...</div>
+				    <div role="tabpanel" class="tab-pane" id="graph">
+				    	<%= image_tag('graph-a.png') %>
+				    	<%= image_tag('graph-b.png') %>
+				    </div>
+				  </div>
+				</div>
+				
+				<button type="button" class="btn btn-primary">联系我们</button>
+		  </div>
+		</div>
+	</div>
+</div>

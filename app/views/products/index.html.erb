@@ -1,0 +1,32 @@
+<% provide(:title, "扬声器") %>
+
+<div class="product-banner">
+	<div class="container">
+    <div class="content">
+      <h2>电视扬声器</h2>
+      <p>高效节能的JIEFU电视扬声器可减少功耗，减轻重量并提供同样出色的动态表现与声学性能</p>
+    </div>
+  </div>
+</div>
+
+<div class="container product-list">
+	<% @products.each_slice(2) do |products| %>
+		<div class="row">
+			<% products.each do |product| %>
+				<div class="col-md-6">
+			  	<%= image_tag('product.png', width: '480', class: "product-img") %>
+			  	<h4><%= product.name %></h4>
+					<ul class="list-unstyled">
+					  <li>外观尺寸（长*宽*高）mm : <%= product.size_length %>*<%= product.size_width %>*<%= product.size_height %></li>
+					  <li>阻抗（Ω）: <%= product.impedance %></li>
+					  <li>FO（Hz）: <%= product.fo %></li>
+					  <li>额定功率（W）: <%= product.rated_power %></li>
+					  <li>灵敏度（dB）: <%= product.sensitivity %></li>
+					  <li>频响范围 : <%= product.frequency %></li>
+					</ul>
+					<p><%= link_to '了解详细', product_path(product) %></p>
+			  </div>
+			<% end %>
+		</div>
+	<% end %>
+</div>
