@@ -30,11 +30,10 @@ module Admin
       respond_to do |format|
         if @info.save
           flash[:success] = "创建成功!"
+
           format.html { redirect_to admin_infos_url }
-          
         else
           format.html { render :new }
-          
         end
       end
     end
@@ -58,6 +57,23 @@ module Admin
       flash[:success] = "删除成功!"
       respond_to do |format|
         format.html { redirect_to admin_infos_url }
+      end
+    end
+
+    def upload
+      @picture = Picture.new
+      @picture.image = params[:upload_file]
+      @picture.info_id = params[:info]
+      success = true
+      msg = '上传成功'
+      file_path = ''
+      if @picture.save!
+
+          success=true
+        render json: { :success=> success, :msg=>msg, :file_path=> @picture.image.url }
+      else
+          success=false
+        render json: { :success=> false }
       end
     end
 

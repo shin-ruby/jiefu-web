@@ -25,7 +25,11 @@ Rails.application.routes.draw do
   namespace :admin do
     root 'home#index', as: 'root'
     resources :products
-    resources :infos
+    resources :infos do
+      collection do
+        post :upload
+      end
+    end
   end
 
 end
