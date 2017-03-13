@@ -9,11 +9,11 @@
 <div class="container news_content">
 	<div class="row news">
 	  <div class="col-md-12">
-	  	<h2><%= @info.title %></h2>
+	  	<h2>[<%= info_category(@info.category) %>] <%= @info.title %></h2>
 	  	<p class="news-time"><small><%= @info.created_at.strftime('%Y-%m-%d') %></small></p>
 			
 			<div class="content">
-				<%= @info.content %>
+				<%= simple_format(@info.content) %>
 			</div>
 	  	</p>
 	  </div>
