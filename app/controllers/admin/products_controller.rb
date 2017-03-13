@@ -58,7 +58,6 @@ module Admin
       flash[:success] = "删除成功!"
       respond_to do |format|
         format.html { redirect_to admin_products_url }
-        format.json { head :no_content }
       end
     end
 

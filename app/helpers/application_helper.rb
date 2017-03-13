@@ -17,4 +17,14 @@ module ApplicationHelper
   	end
   end
 
+  def info_category(category)
+  	if category == 1
+  		'公司新闻'
+  	elsif category == 2
+  		'杰夫公告'
+  	else
+  		'行业资讯'
+  	end
+  end
+
 end

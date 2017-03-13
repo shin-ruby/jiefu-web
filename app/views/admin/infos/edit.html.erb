@@ -1,0 +1,25 @@
+<h3>修改新闻</h3>
+<br>
+
+<div class="row">
+	<div class="col-md-12">
+		<%= form_for @info, url: admin_info_path(@info) do |f| %>
+
+			<%= f.label :category, "新闻分类" %>
+			<%= f.select(:category, options_for_select([['公司新闻', 1], ['杰夫公告', 2], ['行业资讯', 3]]), class: "form-control") %>
+			<br>
+
+			<%= f.label :title, "标题" %>
+			<%= f.text_field :title, class: 'form-control' %>
+
+			<%= f.label :content, "内容" %>
+			<%= f.text_area :content, class: 'form-control', rows: "20" %>
+			<br>
+			<%= f.submit "修改新闻", class: "btn btn-primary" %>
+		<% end %>
+	</div>
+</div>
+
+<%= link_to '返回', admin_infos_path %>
+
+<%#= render 'form', admin_info: @admin_info %>

@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :infos, only:[:index, :show]
+
   root 'static_pages#home'
 
   resources :products, only: [:index, :show]
@@ -9,8 +11,8 @@ Rails.application.routes.draw do
   get 'laboratory' => 'static_pages#laboratory'
   get 'support' => 'static_pages#support'
 
-  get 'news' => 'static_pages#news'
-  get 'news_content' => 'static_pages#news_content'
+  # get 'news' => 'static_pages#news'
+  # get 'news_content' => 'static_pages#news_content'
   
   get 'about' => 'static_pages#about'
   get 'about_introduction' => 'static_pages#about_introduction'
@@ -23,6 +25,7 @@ Rails.application.routes.draw do
   namespace :admin do
     root 'home#index', as: 'root'
     resources :products
+    resources :infos
   end
 
 end

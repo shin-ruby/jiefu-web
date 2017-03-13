@@ -1,0 +1,29 @@
+<% flash.each do |message_type, message| %>
+  <div class="alert alert-<%= message_type %>"><%= message %></div>
+<% end %>
+
+<h3>新闻中心列表</h3>
+
+<br>
+<%= link_to '创建新闻', new_admin_info_path, class: "btn btn-primary" %>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th class="table-list-a"><h4>新闻分类</h4></th>
+      <th><h4>主题</h4></th>
+      <th colspan="2"><h4>编辑</h4></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @infos.each do |info| %>
+      <tr>
+        <td><%= info_category(info.category) %></td>
+        <td><%= link_to info.title, admin_info_path(info) %></td>
+        <td><%= link_to '修改', edit_admin_info_path(info) %></td>
+        <td><%= link_to '删除', admin_info_path(info), method: :delete, data: { confirm: '确定删除?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

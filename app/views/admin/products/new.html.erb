@@ -2,7 +2,7 @@
 <br>
 
 <%= form_for @product, url: admin_products_path do |f| %>
-  <%= render 'admin/shared/error_messages' %>
+  <%= render 'admin/shared/error_messages', object: @product %>
 
   <table class="table table-bordered">
     <tbody>
