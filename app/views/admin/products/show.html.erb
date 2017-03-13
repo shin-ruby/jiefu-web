@@ -1,0 +1,69 @@
+<p><%= link_to '返回', admin_products_path %> |
+ <%= link_to '修改', edit_admin_product_path(@product) %>
+</p>
+
+<table class="table table-bordered">
+  <tbody>
+    <tr>
+      <td colspan="2">扬声器型号</td>
+      <td  class="table-left"><%= @product.name %></td>
+    </tr>
+    <tr>
+    	<td colspan="2">扬声器分类</td>
+    	<td><%= @product.category %></td>
+    </tr>
+    <tr>
+    	<td rowspan="6">参数</td>
+    	<td>外观尺寸（长*宽*高）:</td>
+    	<td>mm : <%= @product.size_length %>*<%= @product.size_width %>*<%= @product.size_height %></td>
+    </tr>
+		    <tr>
+		    	<td>阻抗（Ω）:</td>
+		    	<td><%= @product.impedance %></td>
+		    </tr>
+		    <tr>
+		    	<td>FO（Hz）:</td>
+		    	<td><%= @product.fo %></td>
+		    </tr>
+		    <tr>
+		    	<td>额定功率（W）:</td>
+		    	<td><%= @product.fo %></td>
+		    </tr>
+		    <tr>
+		    	<td>灵敏度（dB）:</td>
+		    	<td><%= @product.rated_power %></td>
+		    </tr>
+		    <tr>
+		    	<td>频响范围:</td>
+		    	<td><%= @product.frequency %></td>
+		    </tr>
+		<tr>
+    	<td colspan="2">特点</td>
+    	<td><%= @product.feature %></td>
+    </tr>
+    <tr>
+    	<td colspan="2">外形结构图-1</td>
+    	<td>padding</td>
+    </tr>
+    <tr>
+    	<td colspan="2">外形结构图-2</td>
+    	<td>padding</td>
+    </tr>
+    <tr>
+    	<td colspan="2">曲线图-1</td>
+    	<td>padding</td>
+    </tr>
+    <tr>
+    	<td colspan="2">曲线图-2</td>
+    	<td>padding</td>
+    </tr>
+    <tr>
+    	<td colspan="2">扬声器图-1</td>
+    	<td>padding</td>
+    </tr>
+    <tr>
+    	<td colspan="2">扬声器图-2</td>
+    	<td>padding</td>
+    </tr>
+  </tbody>
+</table>

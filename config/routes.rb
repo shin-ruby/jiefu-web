@@ -18,4 +18,11 @@ Rails.application.routes.draw do
 
   get 'careers' => 'static_pages#careers'
   get 'careers_detail' => 'static_pages#careers_detail'
+
+
+  namespace :admin do
+    root 'home#index', as: 'root'
+    resources :products
+  end
+
 end

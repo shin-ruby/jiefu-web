@@ -1,0 +1,78 @@
+<h3>创建扬声器</h3>
+<br>
+
+<%= form_for @product, url: admin_products_path do |f| %>
+  <%= render 'admin/shared/error_messages' %>
+
+  <table class="table table-bordered">
+    <tbody>
+      <tr>
+        <td colspan="2"><%= f.label :name, "扬声器型号" %></td>
+        <td class="table-left"><%= f.text_field :name, class: 'form-control' %></td>
+      </tr>
+      <tr>
+        <td colspan="2"><%= f.label :category, "扬声器分类" %></td>
+        <td><%= f.select(:category, options_for_select([['电视扬声器', 1], ['其他扬声器', 2]]), class: "form-control") %></td>
+      </tr>
+      <tr>
+        <td rowspan="6">参数</td>
+        <td>外观尺寸（长*宽*高）:</td>
+        <td>*<%= f.label :size_length, "长" %> <%= f.text_field :size_length, class: 'form-control parameter_size' %>*<%= f.label :size_width, "宽" %><%= f.text_field :size_width, class: 'form-control parameter_size' %>*<%= f.label :size_height, "高" %><%= f.text_field :size_height, class: 'form-control parameter_size' %></td>
+      </tr>
+          <tr>
+            <td><%= f.label :impedance, "阻抗（Ω）" %></td>
+            <td><%= f.text_field :impedance, class: 'form-control' %></td>
+          </tr>
+          <tr>
+            <td><%= f.label :fo, "FO（Hz）" %></td>
+            <td><%= f.text_field :fo, class: 'form-control' %></td>
+          </tr>
+          <tr>
+            <td><%= f.label :rated_power, "额定功率（W）" %></td>
+            <td><%= f.text_field :rated_power, class: 'form-control' %></td>
+          </tr>
+          <tr>
+            <td><%= f.label :sensitivity, "灵敏度（dB）" %></td>
+            <td><%= f.text_field :sensitivity, class: 'form-control' %></td>
+          </tr>
+          <tr>
+            <td><%= f.label :frequency, "频响范围" %></td>
+            <td><%= f.text_field :frequency, class: 'form-control' %></td>
+          </tr>
+      <tr>
+        <td colspan="2"><%= f.label :feature, "特点" %></td>
+        <td><%= f.text_area :feature, placeholder: "...", class: 'form-control' %></td>
+      </tr>
+      <tr>
+        <td colspan="2">外形结构图-1</td>
+        <td>padding</td>
+      </tr>
+      <tr>
+        <td colspan="2">外形结构图-2</td>
+        <td>padding</td>
+      </tr>
+      <tr>
+        <td colspan="2">曲线图-1</td>
+        <td>padding</td>
+      </tr>
+      <tr>
+        <td colspan="2">曲线图-2</td>
+        <td>padding</td>
+      </tr>
+      <tr>
+        <td colspan="2">扬声器图-1</td>
+        <td>padding</td>
+      </tr>
+      <tr>
+        <td colspan="2">扬声器图-2</td>
+        <td>padding</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <%= f.submit "创建产品", class: "btn btn-primary" %>
+
+<% end %>
+
+<br>
+<%= link_to '返回', admin_products_path %>

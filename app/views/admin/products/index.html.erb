@@ -1,0 +1,31 @@
+<% flash.each do |message_type, message| %>
+  <div class="alert alert-<%= message_type %>"><%= message %></div>
+<% end %>
+
+<h3>产品列表</h3>
+<br>
+<%= link_to '新建扬声器', new_admin_product_path, class: "btn btn-primary" %>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th class="table-list-a"><h4>扬声器分类</h4></th>
+      <th><h4>扬声器型号</h4></th>
+      <th><h4>扬声器图片</h4></th>
+      <th colspan="2"><h4>编辑</h4></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @products.each do |product| %>
+      <tr>
+        <td><%= full_category(product.category) %></td>
+        <td><%= link_to product.name, admin_product_path(product) %></td>
+        <td><%= image_tag('product_detail_img_list.png', width: '80') %></td>
+        <td><%= link_to '修改', edit_admin_product_path(product) %></td>
+        <td><%= link_to '删除', admin_product_path(product), method: :delete, data: { confirm: '确定删除?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+

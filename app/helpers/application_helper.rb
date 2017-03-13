@@ -9,4 +9,12 @@ module ApplicationHelper
 		end
 	end
 
+	def full_category(category)
+  	if category == 1
+  		'电视扬声器'
+  	else
+  		'其他扬声器'
+  	end
+  end
+
 end
