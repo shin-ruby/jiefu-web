@@ -63,12 +63,11 @@ module Admin
     def upload
       @picture = Picture.new
       @picture.image = params[:upload_file]
-      @picture.info_id = params[:info]
+
       success = true
       msg = '上传成功'
       file_path = ''
       if @picture.save!
-
           success=true
         render json: { :success=> success, :msg=>msg, :file_path=> @picture.image.url }
       else

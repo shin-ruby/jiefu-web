@@ -16,7 +16,7 @@
 	  		<% @infos.each do |info| %>
 			  <li>
 			  	<h3><%= link_to "[#{info_category(info.category)}] #{info.title}", info_path(info) %></h3>
-			  	<p><%= info.content %></p>
+			  	<p><%= truncate(simple_format(info.content), escape: false, length: 100) %></p>
 					<p class="news-time"><%= info.created_at.strftime('%Y-%m-%d') %></p>
 			  </li>
 			  <% end %>
