@@ -1,0 +1,43 @@
+<div class="about-jumbotron">
+  <div class="container">
+    <div class="content">
+      
+    </div>
+  </div>
+</div>
+
+<div class="container careers">
+
+	<div class="row contact">
+  	<div class="col-md-3">
+			<section class="title-banner">
+        <div class="banner-content">
+          <h2 class="banner-title">你的明天，<br>杰夫的未来。</h2>
+        </div>
+    	</section>
+			<p class="careers-small-title"><small>员工是我们最宝贵的资产，我们以富有竞争力的管理方式和绩效考核对员工进行奖励，并给予员工明确的晋升计划。</small></p>
+			
+  	</div>
+
+		<div class="col-md-7 col-md-offset-2">
+			<table class="table table-hover careers-table">
+				<thead> 
+					<tr> 
+						<th>职位</th> 
+						<th>区域</th> 
+						<th>人数</th> 
+					</tr> 
+				</thead>
+	  		<tbody> 
+	  			<% @careers.each do |career| %>
+	  				<tr> 
+		  				<td><%= link_to career.position, career_path(career), class: "carrers-link" %></td> 
+		  				<td><%= career.place %></td> 
+		  				<td><%= career.people %>名</td> 
+		  			</tr>
+	  			<% end %>
+	  		</tbody> 
+	  	</table>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,32 @@
+<% flash.each do |message_type, message| %>
+  <div class="alert alert-<%= message_type %>"><%= message %></div>
+<% end %>
+
+<h3>招聘列表</h3>
+
+<br>
+
+<%= link_to '创建职位', new_admin_career_path, class: "btn btn-primary", data: { turbolinks: false } %>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th class="table-list-a"><h4>职位</h4></th>
+      <th><h4>区域</h4></th>
+      <th><h4>人数</h4></th>
+      <th colspan="2"><h4>编辑</h4></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @careers.each do |career| %>
+      <tr>
+        <td><%= link_to career.position, admin_career_path(career) %></td>
+        <td><%= career.place %></td>
+        <td><%= career.people %></td>
+        <td><%= link_to '修改', edit_admin_career_path(career) %></td>
+        <td><%= link_to '删除', admin_career_path(career), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+

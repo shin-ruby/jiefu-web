@@ -1,0 +1,23 @@
+<div class="container">
+	<div class="row contact">
+		  <div class="row about-contact">
+		  	<div class="col-md-4 back-careers">
+					<h5><%= link_to "返回职位列表", careers_path, class: "carrers-link" %></h5>
+		  	</div>
+		  	<div class="col-md-8 careers-detail">
+					<h2><%= @career.position %></h2>
+					<p>工作地点:  <%= @career.place %></p>
+					<p><small>招聘人数:  <%= @career.people %>名</small></p>
+					<button type="button" class="btn btn-primary">立即申请</button>
+					<h3>任职要求</h3>
+					<ul>
+					  <%= simple_format(@career.content) %>
+					</ul>
+					<h3>简历投递邮箱</h3>
+					<ul>
+					  <li>hr@jiefu.cn</li>
+					</ul>
+				</div>
+			</div>
+	</div>
+</div>

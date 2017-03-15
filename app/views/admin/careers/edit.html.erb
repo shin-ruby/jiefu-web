@@ -1,0 +1,27 @@
+<h3>修改招聘</h3>
+
+<hr>
+
+<div class="row">
+	<div class="col-md-6">
+		<%= form_for @career, url: admin_career_path(@career) do |f| %>
+			<%= render 'admin/shared/error_messages', object: @career %>
+
+			<%= f.label :position, "招聘职位" %>
+			<%= f.text_field :position, class: 'form-control' %>
+			<br>
+			<%= f.label :place, "招聘区域" %>
+			<%= f.text_field :place, class: 'form-control' %>
+			<br>
+			<%= f.label :people, "招聘人数" %>
+			<%= f.text_field :people, class: 'form-control' %>
+			<br>
+			<%= f.label :content, "任职要求" %>
+			<%= f.text_area :content, class: 'form-control', rows: "10", placeholder: "<li>每行格式</li>" %>
+			<br>
+			<%= f.submit "修改职位", class: "btn btn-primary" %>
+		<% end %>
+	</div>
+</div>
+
+<%= link_to '返回', admin_careers_path %>

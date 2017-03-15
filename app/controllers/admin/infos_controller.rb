@@ -43,7 +43,7 @@ module Admin
     def update
       respond_to do |format|
         if @info.update(params[:info].permit!)
-          format.html { redirect_to @info, notice: 'Info was successfully updated.' }
+          format.html { redirect_to admin_infos_url }
         else
           format.html { render :edit }
         end

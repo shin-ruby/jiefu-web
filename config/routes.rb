@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
 
-  resources :infos, only:[:index, :show]
-
   root 'static_pages#home'
 
   resources :products, only: [:index, :show]
+  resources :infos, only:[:index, :show]
+  resources :careers, only: [:index, :show]
   
   get 'product' => 'static_pages#product'
   get 'product_detail' => 'static_pages#product_detail'
@@ -18,7 +18,7 @@ Rails.application.routes.draw do
   get 'about_introduction' => 'static_pages#about_introduction'
   get 'about_honors' => 'static_pages#about_honors'
 
-  get 'careers' => 'static_pages#careers'
+  # get 'careers' => 'static_pages#careers'
   get 'careers_detail' => 'static_pages#careers_detail'
 
 
@@ -30,6 +30,7 @@ Rails.application.routes.draw do
         post :upload
       end
     end
+    resources :careers
   end
 
 end
