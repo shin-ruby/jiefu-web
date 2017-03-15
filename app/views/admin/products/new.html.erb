@@ -1,7 +1,7 @@
 <h3>创建扬声器</h3>
 <br>
 
-<%= form_for @product, url: admin_products_path do |f| %>
+<%= form_for(@product, url: admin_products_path, html: { multipart: true }) do |f| %>
   <%= render 'admin/shared/error_messages', object: @product %>
 
   <table class="table table-bordered">
@@ -44,28 +44,28 @@
         <td><%= f.text_area :feature, placeholder: "...", class: 'form-control' %></td>
       </tr>
       <tr>
-        <td colspan="2">外形结构图-1</td>
-        <td>padding</td>
-      </tr>
-      <tr>
-        <td colspan="2">外形结构图-2</td>
-        <td>padding</td>
-      </tr>
-      <tr>
-        <td colspan="2">曲线图-1</td>
-        <td>padding</td>
-      </tr>
-      <tr>
-        <td colspan="2">曲线图-2</td>
-        <td>padding</td>
-      </tr>
-      <tr>
         <td colspan="2">扬声器图-1</td>
-        <td>padding</td>
+        <td><%= f.file_field :photo1 %></td>
       </tr>
       <tr>
         <td colspan="2">扬声器图-2</td>
-        <td>padding</td>
+        <td><%= f.file_field :photo2 %></td>
+      </tr>
+      <tr>
+        <td colspan="2">外形结构图-1</td>
+        <td><%= f.file_field :configuration1 %></td>
+      </tr>
+      <tr>
+        <td colspan="2">外形结构图-2</td>
+        <td><%= f.file_field :configuration2 %></td>
+      </tr>
+      <tr>
+        <td colspan="2">曲线图-1</td>
+        <td><%= f.file_field :curve1 %></td>
+      </tr>
+      <tr>
+        <td colspan="2">曲线图-2</td>
+        <td><%= f.file_field :curve2 %></td>
       </tr>
     </tbody>
   </table>

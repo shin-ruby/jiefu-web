@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170313115717) do
+ActiveRecord::Schema.define(version: 20170314073518) do
 
   create_table "infos", force: :cascade do |t|
     t.integer  "category"
@@ -32,17 +32,23 @@ ActiveRecord::Schema.define(version: 20170313115717) do
   create_table "products", force: :cascade do |t|
     t.integer  "category"
     t.string   "name"
-    t.decimal  "size_length", precision: 4, scale: 1
-    t.decimal  "size_width",  precision: 4, scale: 1
-    t.decimal  "size_height", precision: 4, scale: 1
+    t.decimal  "size_length",    precision: 4, scale: 1
+    t.decimal  "size_width",     precision: 4, scale: 1
+    t.decimal  "size_height",    precision: 4, scale: 1
     t.string   "impedance"
     t.integer  "fo"
     t.integer  "rated_power"
     t.integer  "sensitivity"
     t.string   "frequency"
     t.text     "feature"
-    t.datetime "created_at",                          null: false
-    t.datetime "updated_at",                          null: false
+    t.datetime "created_at",                             null: false
+    t.datetime "updated_at",                             null: false
+    t.string   "photo1"
+    t.string   "photo2"
+    t.string   "configuration1"
+    t.string   "configuration2"
+    t.string   "curve1"
+    t.string   "curve2"
     t.index ["name"], name: "index_products_on_name", unique: true
   end
 

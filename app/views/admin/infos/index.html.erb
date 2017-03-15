@@ -21,7 +21,7 @@
       <tr>
         <td><%= info_category(info.category) %></td>
         <td><%= link_to info.title, admin_info_path(info) %></td>
-        <td><%= link_to '修改', edit_admin_info_path(info) %></td>
+        <td><%= link_to '修改', edit_admin_info_path(info), data: { turbolinks: false } %></td>
         <td><%= link_to '删除', admin_info_path(info), method: :delete, data: { confirm: '确定删除?' } %></td>
       </tr>
     <% end %>

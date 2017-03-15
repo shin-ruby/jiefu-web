@@ -9,15 +9,15 @@
 		  <div class="col-md-6 product_detail_img">
 			  <div class="tab-content">
 			    <div role="tabpanel" class="tab-pane active" id="photo-a">
-			    	<%= image_tag('product.png', width: '460', class: "product-img") %>
+			    	<%= image_tag(@product.photo1.url, width: '460', class: "product-img") if @product.photo1? %>
 			    </div>
 			    <div role="tabpanel" class="tab-pane" id="photo-b">
-			    	<%= image_tag('product.png', width: '460', class: "product-img") %>
+			    	<%= image_tag(@product.photo2.url, width: '460', class: "product-img") if @product.photo2? %>
 			    </div>
 			  </div>
 			  <ul class="nav nav-pills product_detail_img_list" role="tablist">
-			    <li role="presentation" class="active"><a href="#photo-a" aria-controls="photo-a" role="tab" data-toggle="tab"><%= image_tag('product_detail_img_list.png', width: '80', class: "img-thumbnail") %></a></li>
-			    <li role="presentation"><a href="#photo-b" aria-controls="photo-b" role="tab" data-toggle="tab"><%= image_tag('product_detail_img_list.png', width: '80', class: "img-thumbnail") %></a></li>
+			    <li role="presentation" class="active"><a href="#photo-a" aria-controls="photo-a" role="tab" data-toggle="tab"><%= image_tag(@product.photo1.url, width: '80', class: "img-thumbnail") if @product.photo1? %></a></li>
+			    <li role="presentation"><a href="#photo-b" aria-controls="photo-b" role="tab" data-toggle="tab"><%= image_tag(@product.photo2.url, width: '80', class: "img-thumbnail") if @product.photo1? %></a></li>
 			  </ul>
 		  </div>
 		  <div class="col-md-6 product_detail_text">
@@ -47,10 +47,13 @@
 				    <div role="tabpanel" class="tab-pane" id="feature">
 				    	<p><%= @product.feature %></p>
 				    </div>
-				    <div role="tabpanel" class="tab-pane" id="construction">...</div>
+				    <div role="tabpanel" class="tab-pane" id="construction">
+				    	<%= image_tag(@product.configuration1.url, width: '360', class: "product-img") if @product.configuration1? %>
+				    	<%= image_tag(@product.configuration1.url, width: '360', class: "product-img") if @product.configuration1? %>
+				    </div>
 				    <div role="tabpanel" class="tab-pane" id="graph">
-				    	<%= image_tag('graph-a.png') %>
-				    	<%= image_tag('graph-b.png') %>
+				    	<%= image_tag(@product.curve1.url, width: '360', class: "product-img") if @product.curve1? %>
+				    	<%= image_tag(@product.curve2.url, width: '360', class: "product-img") if @product.curve2? %>
 				    </div>
 				  </div>
 				</div>

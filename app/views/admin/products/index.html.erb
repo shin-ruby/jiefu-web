@@ -21,7 +21,7 @@
       <tr>
         <td><%= full_category(product.category) %></td>
         <td><%= link_to product.name, admin_product_path(product) %></td>
-        <td><%= image_tag('product_detail_img_list.png', width: '80') %></td>
+        <td><%= image_tag(product.photo1.url, width: '80', class: "product-img") if product.photo1? %></td>
         <td><%= link_to '修改', edit_admin_product_path(product) %></td>
         <td><%= link_to '删除', admin_product_path(product), method: :delete, data: { confirm: '确定删除?' } %></td>
       </tr>
