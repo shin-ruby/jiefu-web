@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  copywrite1: MyString
+  copywrite2: MyString
+  newproduct1: MyString
+  newproduct2: MyString
+  newproduct3: MyString
+  newproduct4: MyString
+  newproduct5: MyString
+  newprodect6: MyString
+  mainproduct1: MyString
+  mainproduct2: MyString
+  mainproduct3: MyString
+  mainproduct4: MyString
+  advantage: MyText
+
+two:
+  copywrite1: MyString
+  copywrite2: MyString
+  newproduct1: MyString
+  newproduct2: MyString
+  newproduct3: MyString
+  newproduct4: MyString
+  newproduct5: MyString
+  newprodect6: MyString
+  mainproduct1: MyString
+  mainproduct2: MyString
+  mainproduct3: MyString
+  mainproduct4: MyString
+  advantage: MyText

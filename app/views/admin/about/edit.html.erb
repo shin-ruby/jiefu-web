@@ -1,0 +1,51 @@
+<h3>关于我们修改</h3>
+
+<hr>
+
+<%= form_for @about, url: admin_about_path(@about) do |f| %>
+  <%= render 'admin/shared/error_messages', object: @about %>
+	<div class="row">
+	  <div class="col-md-12">
+	    <div class="panel panel-default">
+	      <div class="panel-heading">杰夫简介摘要</div>
+	      <div class="panel-body">
+	        <%= f.text_area :summary, rows: "2", class: 'form-control' %>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="row">
+	  <div class="col-md-12">
+	    <div class="panel panel-default">
+	      <div class="panel-heading">杰夫简介正文</div>
+	      <div class="panel-body">
+	        <%= f.text_area :introduce, rows: "24", class: 'form-control', placeholder: "<p>段落</p> 换行<br>" %>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="row">
+	  <div class="col-md-12">
+	    <div class="panel panel-default">
+	      <div class="panel-heading">公司历程</div>
+	      <div class="panel-body">
+	        <%= f.text_area :course, class: 'form-control' %>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="row">
+	  <div class="col-md-12">
+	    <div class="panel panel-default">
+	      <div class="panel-heading">总裁寄语</div>
+	      <div class="panel-body">
+	        <%= f.text_area :ceo, rows: "10", class: 'form-control' %>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<%= f.submit "修改内容", class: "btn btn-primary" %>
+<% end %>

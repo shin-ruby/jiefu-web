@@ -223,7 +223,7 @@ body, h1, h2, h3, h4, h5, h6, p {
 
 .home-bg {
   // background: image-url('bg.jpg') repeat;
-  height: 1530px;
+  height: 1560px;
   .col-md-6 {
     padding-left: 0px;
     padding-right: 0px;
@@ -397,10 +397,12 @@ body, h1, h2, h3, h4, h5, h6, p {
 
 .product-list {
   .row {
-    padding-top: 100px;
+    padding-top: 40px;
   }
   .product-img {
     margin-bottom: 18px;
+    width: 340px;
+    height: 340px;
   }
   h4 {
     color: #0E6AA9;
@@ -426,7 +428,7 @@ body, h1, h2, h3, h4, h5, h6, p {
 }
 
 .product_detail_img_list {
-  margin-top: 100px;
+  margin-top: 20px;
   .img-thumbnail {
     border-radius: 0px;
   }

@@ -25,18 +25,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">无锡杰夫电声网站管理后台</a>
+          <div class="logo-admin">
+          <%= image_tag("jiefu-logo.png", height: '26', alt: "Logo image", class: "admin-logo") %> <span class="admin-title">无锡杰夫电声网站管理后台</span>
+          </div>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="#">Settings</a></li>
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Help</a></li>
+            <li><a href="www.jiefu.cn">返回官网</a></li>
           </ul>
-          <form class="navbar-form navbar-right">
-            <input type="text" class="form-control" placeholder="Search...">
-          </form>
         </div>
       </div>
     </nav>
@@ -45,16 +41,15 @@
       <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
-            <li><%= link_to "概况", admin_root_path %></li>
-            <li><a href="#">客户消息</a></li>
+            <li><%= link_to "首页信息", admin_root_path %></li>
+            <li><%= link_to "产品", admin_products_path %></li>
+            <li><%= link_to "技术支持", "#" %></li>
+            <li><%= link_to "新闻中心", admin_infos_path %></li>
+            <li><%= link_to "关于我们", admin_about_path(1) %></li>
+            <li><%= link_to "招聘信息", admin_careers_path %></li>
           </ul>
           <ul class="nav nav-sidebar">
-            <li><%= link_to "产品", admin_products_path %></li>
-            <li><a href="">实验中心</a></li>
-            <li><a href="">技术支持</a></li>
-            <li><%= link_to "新闻中心", admin_infos_path %></li>
-            <li><a href="">关于我们</a></li>
-            <li><%= link_to "招聘信息", admin_careers_path %></li>
+            <li><a href="#">客户留言</a></li>
           </ul>
           <ul class="nav nav-sidebar">
             <li><a href="">网站技术支持</a></li>

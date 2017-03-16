@@ -113,6 +113,19 @@ body, html {
   border-radius: 50%;
 }
 
+/* home */
+
+.logo-admin {
+  margin-top: 12px;
+  .admin-logo {
+    margin-right: 10px;
+  }
+  .admin-title {
+    color: #FFFFFF;
+    font-size: 16px;
+  }
+}
+
 /* form */
 
 #error_explanation {

@@ -1,5 +1,6 @@
 class StaticPagesController < ApplicationController
   def home
+    @home = Home.first
   end
 
   def support
@@ -18,9 +19,11 @@ class StaticPagesController < ApplicationController
   end
 
   def about
+    @about = About.first
   end
 
   def about_introduction
+    @about = About.first
   end
 
   def about_honors

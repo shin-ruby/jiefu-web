@@ -1,0 +1,50 @@
+<% flash.each do |message_type, message| %>
+  <div class="alert alert-<%= message_type %>"><%= message %></div>
+<% end %>
+
+<h3>关于我们    <small><%= link_to "修改", edit_admin_about_path %></small></h3>
+<hr>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-default">
+      <div class="panel-heading">杰夫简介摘要</div>
+      <div class="panel-body">
+        <%= @about.summary %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-default">
+      <div class="panel-heading">杰夫简介正文</div>
+      <div class="panel-body">
+        <%= simple_format(@about.introduce) %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-default">
+      <div class="panel-heading">公司历程</div>
+      <div class="panel-body">
+        <%= @about.course %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-default">
+      <div class="panel-heading">总裁寄语</div>
+      <div class="panel-body">
+        <%= simple_format(@about.ceo) %>
+      </div>
+    </div>
+  </div>
+</div>

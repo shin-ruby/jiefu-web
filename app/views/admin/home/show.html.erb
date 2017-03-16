@@ -1,0 +1,92 @@
+<% flash.each do |message_type, message| %>
+  <div class="alert alert-<%= message_type %>"><%= message %></div>
+<% end %>
+
+<h3>首页信息    <small><%= link_to "修改", edit_admin_home_path(@home) %></small></h3>
+<hr>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-default">
+      <div class="panel-heading">广告语</div>
+      <div class="panel-body">
+        <p><%= @home.copywrite1 %></p>
+        <p><%= @home.copywrite2 %></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="panel panel-default">
+      <div class="panel-heading">最新产品推荐</div>
+      <div class="panel-body">
+        <p>YDP1580-2T</p>
+        <p>YDP1580-2T</p>
+        <p>YDP1580-2T</p>
+        <p>YDP1580-2T</p>
+        <p>YDP1580-2T</p>
+        <p>YDP1580-2T</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-3">
+    <div class="panel panel-default">
+      <div class="panel-heading">主打产品</div>
+      <div class="panel-body">
+        <%= image_tag("product.png", width: '140') %>
+        <h4>YDP1580-2G</h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-3">
+    <div class="panel panel-default">
+      <div class="panel-heading">主打产品</div>
+      <div class="panel-body">
+        <%= image_tag("product.png", width: '140') %>
+        <h4>YDP1580-2G</h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-3">
+    <div class="panel panel-default">
+      <div class="panel-heading">主打产品</div>
+      <div class="panel-body">
+        <%= image_tag("product.png", width: '140') %>
+        <h4>YDP1580-2G</h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-3">
+    <div class="panel panel-default">
+      <div class="panel-heading">主打产品</div>
+      <div class="panel-body">
+        <%= image_tag("product.png", width: '140') %>
+        <h4>YDP1580-2G</h4>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="panel panel-default">
+      <div class="panel-heading">公司优势</div>
+      <div class="panel-body">
+        <p>杰夫电声创立于1998年</p>
+        <p>中国最大的平板电视用扬声器研制企业之一</p>
+        <p>产品面向28个国家和地区，服务全球1/6户家庭</p>
+        <p>被SAMSUNG、LG、SHARP、TCL、海信等知名品牌广泛采用</p>
+        <p>通过多项国内、国际权威认证</p>
+        <p>公司设立江苏省电声与数字音响工程技术研究中心</p>
+      </div>
+    </div>
+  </div>
+</div>
