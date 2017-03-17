@@ -19,8 +19,12 @@
               <span class="caret"></span>
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-              <li><a href="#">YDP20110-2T</a></li>
-              <li><a href="#">YDP20110-3T</a></li>
+              <li><%= link_to @home.newproduct1, product_path(prodcut_find(@home.newproduct1)) if @home.newproduct1?%></li>
+              <li><%= link_to @home.newproduct2, product_path(prodcut_find(@home.newproduct2)) if @home.newproduct2?%></li>
+              <li><%= link_to @home.newproduct3, product_path(prodcut_find(@home.newproduct3)) if @home.newproduct3?%></li>
+              <li><%= link_to @home.newproduct4, product_path(prodcut_find(@home.newproduct4)) if @home.newproduct4?%></li>
+              <li><%= link_to @home.newproduct5, product_path(prodcut_find(@home.newproduct5)) if @home.newproduct5?%></li>
+              <li><%= link_to @home.newproduct6, product_path(prodcut_find(@home.newproduct6)) if @home.newproduct6?%></li>
             </ul>
           </div>
         </div>
@@ -35,12 +39,12 @@
       <div class="col-md-6">
         <div class="row home-product">
           <div class="col-xs-8 col-sm-6">
-            <%= image_tag("product3.png", width: '200') %>
+            <%= image_tag(prodcut_find(@home.mainproduct1).photo1.url, width: '200', class: "product-img") if @home.mainproduct1? %>
           </div>
           <div class="col-xs-4 col-sm-6">
-            <h4>YDP1580-2G</h4>
-            <p>这款扬声器专门用来产生像电影院扬声器一样的音效。 处理最繁忙声道是 880 Array，一个功率最大 200 瓦的 3 路中置声道扬声器。</p>
-            <%= link_to '查看详细', product_detail_path, class: "btn btn-primary", role: "button" %>
+            <h4><%= @home.mainproduct1 if @home.mainproduct1? %></h4>
+            <p><%= truncate(prodcut_find(@home.mainproduct1).feature, escape: false, length: 70) if @home.mainproduct1? %></p>
+            <%= link_to '查看详细', product_path(prodcut_find(@home.mainproduct1)), class: "btn btn-primary", role: "button" if @home.mainproduct1? %>
           </div>
         </div>
       </div>
@@ -48,13 +52,12 @@
       <div class="col-md-6">
         <div class="row home-product">
           <div class="col-xs-8 col-sm-6">
-            <%= image_tag("product3.png", width: '200') %>
-           
+            <%= image_tag(prodcut_find(@home.mainproduct2).photo1.url, width: '200', class: "product-img") if @home.mainproduct2? %>
           </div>
           <div class="col-xs-4 col-sm-6">
-            <h4>YDP1580-2G</h4>
-            <p>这款扬声器专门用来产生像电影院扬声器一样的音效。 处理最繁忙声道是 880 Array，一个功率最大 200 瓦的 3 路中置声道扬声器。</p>
-            <%= link_to '查看详细', product_detail_path, class: "btn btn-primary", role: "button" %>
+            <h4><%= @home.mainproduct2 if @home.mainproduct2? %></h4>
+            <p><%= truncate(prodcut_find(@home.mainproduct2).feature, escape: false, length: 70) if @home.mainproduct2? %></p>
+            <%= link_to '查看详细', product_path(prodcut_find(@home.mainproduct2)), class: "btn btn-primary", role: "button" if @home.mainproduct2? %>
           </div>
         </div>
       </div>
@@ -64,12 +67,12 @@
       <div class="col-md-6">
         <div class="row home-product">
           <div class="col-xs-8 col-sm-6">
-            <%= image_tag("product3.png", width: '200') %>
+            <%= image_tag(prodcut_find(@home.mainproduct3).photo1.url, width: '200', class: "product-img") if @home.mainproduct3? %>
           </div>
           <div class="col-xs-4 col-sm-6">
-            <h4>YDP1580-2G</h4>
-            <p>这款扬声器专门用来产生像电影院扬声器一样的音效。 处理最繁忙声道是 880 Array，一个功率最大 200 瓦的 3 路中置声道扬声器。</p>
-            <%= link_to '查看详细', product_detail_path, class: "btn btn-primary", role: "button" %>
+            <h4><%= @home.mainproduct3 if @home.mainproduct3? %></h4>
+            <p><%= truncate(prodcut_find(@home.mainproduct3).feature, escape: false, length: 70) if @home.mainproduct3? %></p>
+            <%= link_to '查看详细', product_path(prodcut_find(@home.mainproduct3)), class: "btn btn-primary", role: "button" if @home.mainproduct3? %>
           </div>
         </div>
       </div>
@@ -77,13 +80,12 @@
       <div class="col-md-6">
         <div class="row home-product">
           <div class="col-xs-8 col-sm-6">
-            <%= image_tag("product3.png", width: '200') %>
-           
+            <%= image_tag(prodcut_find(@home.mainproduct4).photo1.url, width: '200', class: "product-img") if @home.mainproduct4? %>
           </div>
           <div class="col-xs-4 col-sm-6">
-            <h4>YDP1580-2G</h4>
-            <p>这款扬声器专门用来产生像电影院扬声器一样的音效。 处理最繁忙声道是 880 Array，一个功率最大 200 瓦的 3 路中置声道扬声器。</p>
-            <%= link_to '查看详细', product_detail_path, class: "btn btn-primary", role: "button" %>
+            <h4><%= @home.mainproduct4 if @home.mainproduct4? %></h4>
+            <p><%= truncate(prodcut_find(@home.mainproduct4).feature, escape: false, length: 70) if @home.mainproduct4? %></p>
+            <%= link_to '查看详细', product_path(prodcut_find(@home.mainproduct4)), class: "btn btn-primary", role: "button" if @home.mainproduct4? %>
           </div>
         </div>
       </div>
@@ -123,14 +125,7 @@
       </div>
       <div class="col-md-6">
         <h1>可靠 专业 高效</h1>
-        <ul>
-          <li>杰夫电声创立于1998年</li>
-          <li>中国最大的平板电视用扬声器研制企业之一</li>
-          <li>产品面向28个国家和地区，服务全球1/6户家庭</li>
-          <li>被SAMSUNG、LG、SHARP、TCL、海信等知名品牌广泛采用</li>
-          <li>通过多项国内、国际权威认证</li>
-          <li>公司设立江苏省电声与数字音响工程技术研究中心</li>
-        </ul>
+        <%= simple_format(@home.advantage) %>
       </div>
     </div>
   </div>

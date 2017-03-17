@@ -27,4 +27,10 @@ module ApplicationHelper
   	end
   end
 
+  def prodcut_find(name)
+    Product.find_by(name: name)
+  end
+
+
+
 end
