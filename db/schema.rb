@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170317014904) do
+ActiveRecord::Schema.define(version: 20170320045644) do
 
   create_table "abouts", force: :cascade do |t|
     t.text     "summary"
@@ -85,7 +85,9 @@ ActiveRecord::Schema.define(version: 20170317014904) do
     t.string   "configuration2"
     t.string   "curve1"
     t.string   "curve2"
+    t.integer  "product_type"
     t.index ["name"], name: "index_products_on_name", unique: true
+    t.index ["product_type"], name: "index_products_on_product_type"
   end
 
 end

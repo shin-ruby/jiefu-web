@@ -9,8 +9,12 @@
       <td  class="table-left"><%= @product.name %></td>
     </tr>
     <tr>
+        <td colspan="2">扬声器类型</td>
+        <td><%= full_product_type(@product.product_type) %></td>
+    </tr>
+    <tr>
     	<td colspan="2">扬声器分类</td>
-    	<td><%= @product.category %></td>
+    	<td><%= full_category(@product.category) %></td>
     </tr>
     <tr>
     	<td rowspan="6">参数</td>

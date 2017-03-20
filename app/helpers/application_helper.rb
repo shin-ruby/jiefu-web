@@ -17,6 +17,14 @@ module ApplicationHelper
   	end
   end
 
+  def full_product_type(product_type)
+    if product_type == 1
+      '单体扬声器'
+    else
+      '箱体扬声器'
+    end
+  end
+
   def info_category(category)
   	if category == 1
   		'公司新闻'

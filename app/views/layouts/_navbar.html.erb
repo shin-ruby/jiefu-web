@@ -34,7 +34,10 @@
 		    <form class="navbar-form navbar-left">
 	        <div class="inner-addon left-addon">
 					    <i class="glyphicon glyphicon-search"></i>
-					    <input type="text" class="form-control" placeholder="产品搜索" />
+					    <input type="text" class="form-control" placeholder="输入产品型号" />
+					    <%#= form_tag products_path, method: 'get' do %>
+					    	<%#= text_field_tag :search, params[:search], class: 'form-control', placeholder: '输入产品型号' %>
+					    <%# end %>
 					</div>
 	      </form>
 		  </ul>

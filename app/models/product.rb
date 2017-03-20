@@ -10,4 +10,15 @@ class Product < ApplicationRecord
 	mount_uploader :curve1, PhotoUploader
 	mount_uploader :curve2, PhotoUploader
 
+
+
+	# def self.search(search)
+	#   if search
+	#     where("name = ?", "#{search}")
+	#   else
+	#     all
+	#   end
+	# end
+
+
 end
