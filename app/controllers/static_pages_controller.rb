@@ -1,6 +1,6 @@
 class StaticPagesController < ApplicationController
   def home
-    @home = Home.first
+    @home ||= Home.first
   end
 
   def support

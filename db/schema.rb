@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170320095518) do
+ActiveRecord::Schema.define(version: 20170321071903) do
 
   create_table "abouts", force: :cascade do |t|
     t.text     "summary"
@@ -88,6 +88,26 @@ ActiveRecord::Schema.define(version: 20170320095518) do
     t.integer  "product_type"
     t.index ["name"], name: "index_products_on_name", unique: true
     t.index ["product_type"], name: "index_products_on_product_type"
+  end
+
+  create_table "searches", force: :cascade do |t|
+    t.string   "name"
+    t.integer  "category"
+    t.integer  "product_type"
+    t.integer  "min_fo"
+    t.integer  "max_fo"
+    t.datetime "created_at",                              null: false
+    t.datetime "updated_at",                              null: false
+    t.decimal  "min_rated_power", precision: 3, scale: 1
+    t.decimal  "max_rated_power", precision: 3, scale: 1
+    t.decimal  "min_sensitivity", precision: 3, scale: 1
+    t.decimal  "max_sensitivity", precision: 3, scale: 1
+    t.decimal  "min_size_length", precision: 4, scale: 1
+    t.decimal  "max_size_length", precision: 4, scale: 1
+    t.decimal  "min_size_width",  precision: 4, scale: 1
+    t.decimal  "max_size_width",  precision: 4, scale: 1
+    t.decimal  "min_size_height", precision: 4, scale: 1
+    t.decimal  "max_size_height", precision: 4, scale: 1
   end
 
 end

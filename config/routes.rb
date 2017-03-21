@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   resources :products, only: [:index, :show]
   resources :infos, only:[:index, :show]
   resources :careers, only: [:index, :show]
+
+  resources :searches
   
   get 'product' => 'static_pages#product'
   get 'product_detail' => 'static_pages#product_detail'
