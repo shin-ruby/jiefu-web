@@ -34,4 +34,8 @@ class StaticPagesController < ApplicationController
 
   def careers_detail
   end
+
+  def search
+    
+  end
 end

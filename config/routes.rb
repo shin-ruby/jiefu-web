@@ -11,6 +11,8 @@ Rails.application.routes.draw do
   get 'laboratory' => 'static_pages#laboratory'
   get 'support' => 'static_pages#support'
 
+  get 'search' => 'static_pages#search'
+
   # get 'news' => 'static_pages#news'
   # get 'news_content' => 'static_pages#news_content'
   

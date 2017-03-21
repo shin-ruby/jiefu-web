@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170320045644) do
+ActiveRecord::Schema.define(version: 20170320095518) do
 
   create_table "abouts", force: :cascade do |t|
     t.text     "summary"
@@ -73,8 +73,8 @@ ActiveRecord::Schema.define(version: 20170320045644) do
     t.decimal  "size_height",    precision: 4, scale: 1
     t.string   "impedance"
     t.integer  "fo"
-    t.integer  "rated_power"
-    t.integer  "sensitivity"
+    t.decimal  "rated_power",    precision: 3, scale: 1
+    t.decimal  "sensitivity",    precision: 3, scale: 1
     t.string   "frequency"
     t.text     "feature"
     t.datetime "created_at",                             null: false

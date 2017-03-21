@@ -172,6 +172,10 @@ body, h1, h2, h3, h4, h5, h6, p {
 
 }
 
+.choose-foot {
+  margin-top: 60px;
+}
+
 
 /* home page */
 
@@ -457,6 +461,13 @@ body, h1, h2, h3, h4, h5, h6, p {
     margin-bottom: 40px;
   }
   min-height: 300px;
+}
+
+/* search page */
+
+.search-list {
+  background-color: #F2F2F2;
+  padding: 20px;
 }
 
 /* about page */
