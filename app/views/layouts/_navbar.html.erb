@@ -34,7 +34,7 @@
         <%= form_tag '/search', method: :get, class: 'navbar-form navbar-left' do %>
 	        <div class="inner-addon left-addon">
 					    <i class="glyphicon glyphicon-search"></i>
-					    	<%= text_field_tag 'search[name]', params[:search][:name], class: 'form-control', placeholder: '输入产品型号' %>
+					    	<%= text_field_tag 'search[name]', params[:search]&.fetch(:name) , class: 'form-control', placeholder: '输入产品型号' %>
 					</div>
         <% end %>
 
