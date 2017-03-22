@@ -36,6 +36,7 @@
 					</label>
 			  </div>
 
+			  <% if @search.product_type == 2 -%>
 				<hr>
 				<p><strong>外观尺寸（长*宽*高）</strong></p>
 		  	<div class="form-group">
@@ -79,7 +80,7 @@
 			    <label for="exampleInputEmail1">频响范围</label>
 			    <input type="text" class="form-control" placeholder="<=">
 			  </div>
-
+			  <% end %>
 				<%= f.submit "搜索", class: "btn btn-default" %>
 			<% end %>
 	  </div>
