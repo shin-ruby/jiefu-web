@@ -1,3 +1,4 @@
+
 Rails.application.routes.draw do
 
   root 'static_pages#home'
@@ -6,18 +7,18 @@ Rails.application.routes.draw do
   resources :infos, only:[:index, :show]
   resources :careers, only: [:index, :show]
 
-  resources :searches
-  
+  resource :search, only: [:show]
+
   get 'product' => 'static_pages#product'
   get 'product_detail' => 'static_pages#product_detail'
   get 'laboratory' => 'static_pages#laboratory'
   get 'support' => 'static_pages#support'
 
-  get 'search' => 'static_pages#search'
+  get 'static_search' => 'static_pages#search'
 
   # get 'news' => 'static_pages#news'
   # get 'news_content' => 'static_pages#news_content'
-  
+
   get 'about' => 'static_pages#about'
   get 'about_introduction' => 'static_pages#about_introduction'
   get 'about_honors' => 'static_pages#about_honors'
@@ -28,19 +29,19 @@ Rails.application.routes.draw do
 
   namespace :admin do
     root 'home#show', as: 'root'
-    resources :home, only: [:show, :edit, :update] 
+    resources :home, only: [:show, :edit, :update]
     resources :products
     resources :infos do
       collection do
         post :upload
       end
     end
-    resources :about, only: [:show, :edit, :update] 
+    resources :about, only: [:show, :edit, :update]
     resources :careers
-    resources :users, except: [:show, :edit, :update] 
+    resources :users, except: [:show, :edit, :update]
 
     get '/login', to: 'sessions#new'
-    post '/login', to:'sessions#create' 
+    post '/login', to:'sessions#create'
     delete '/logout', to: 'sessions#destroy'
   end
 
