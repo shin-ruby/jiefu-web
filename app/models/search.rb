@@ -6,6 +6,7 @@ class Search < ApplicationRecord
   private
 
   def find_products
+    return Product.none if attributes.except('id', 'created_at', 'updated_at').all? { |_k, v| v.blank? }
     products = Product.order(:name)
     products = products.where("name like ?", "%#{name}%") if name.present?
     products = products.where(product_type: product_type) if product_type.present?
