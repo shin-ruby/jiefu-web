@@ -1,5 +1,7 @@
 module Admin
   class InfosController < Admin::ApplicationController
+    before_action :logged_in_user
+    
     before_action :set_info, only: [:show, :edit, :update, :destroy]
 
     # GET /admin/infos

@@ -1,5 +1,7 @@
 module Admin
 	class AboutController < Admin::ApplicationController
+    before_action :logged_in_user
+    
 	  def show
 	  	@about = About.first
 	  end

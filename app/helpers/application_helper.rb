@@ -39,6 +39,4 @@ module ApplicationHelper
     Product.find_by(name: name)
   end
 
-
-
 end

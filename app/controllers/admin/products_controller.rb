@@ -1,5 +1,7 @@
 module Admin
   class ProductsController < Admin::ApplicationController
+    before_action :logged_in_user
+    
     before_action :set_product, only: [:show, :edit, :update, :destroy]
 
     # GET /admin/products

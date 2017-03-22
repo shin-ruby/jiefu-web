@@ -37,6 +37,11 @@ Rails.application.routes.draw do
     end
     resources :about, only: [:show, :edit, :update] 
     resources :careers
+    resources :users, except: [:show, :edit, :update] 
+
+    get '/login', to: 'sessions#new'
+    post '/login', to:'sessions#create' 
+    delete '/logout', to: 'sessions#destroy'
   end
 
 end

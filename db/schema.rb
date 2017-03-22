@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170321071903) do
+ActiveRecord::Schema.define(version: 20170322061817) do
 
   create_table "abouts", force: :cascade do |t|
     t.text     "summary"
@@ -108,6 +108,15 @@ ActiveRecord::Schema.define(version: 20170321071903) do
     t.decimal  "max_size_width",  precision: 4, scale: 1
     t.decimal  "min_size_height", precision: 4, scale: 1
     t.decimal  "max_size_height", precision: 4, scale: 1
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string   "name"
+    t.string   "email"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+    t.string   "password_digest"
+    t.index ["email"], name: "index_users_on_email", unique: true
   end
 
 end

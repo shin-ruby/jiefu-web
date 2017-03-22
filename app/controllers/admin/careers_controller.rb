@@ -1,5 +1,7 @@
 module Admin
   class CareersController < Admin::ApplicationController
+    before_action :logged_in_user
+    
     before_action :set_career, only: [:show, :edit, :update, :destroy]
 
     # GET /admin/careers
