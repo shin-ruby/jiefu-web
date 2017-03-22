@@ -31,15 +31,13 @@
 		    <li><%= link_to "关于我们", about_path %></li>
 		  </ul>
 		  <ul class="nav navbar-nav navbar-right">
-		    <form class="navbar-form navbar-left">
+        <%= form_tag '/search', method: :get, class: 'navbar-form navbar-left' do %>
 	        <div class="inner-addon left-addon">
 					    <i class="glyphicon glyphicon-search"></i>
-					    <input type="text" class="form-control" placeholder="输入产品型号" />
-					    <%#= form_tag products_path, method: 'get' do %>
-					    	<%#= text_field_tag :search, params[:search], class: 'form-control', placeholder: '输入产品型号' %>
-					    <%# end %>
+					    	<%= text_field_tag 'search[name]', params[:search][:name], class: 'form-control', placeholder: '输入产品型号' %>
 					</div>
-	      </form>
+        <% end %>
+
 		  </ul>
 		</div><!--/.nav-collapse -->
   </div>
