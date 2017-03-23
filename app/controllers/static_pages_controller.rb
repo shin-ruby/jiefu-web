@@ -4,6 +4,7 @@ class StaticPagesController < ApplicationController
   end
 
   def support
+    @message = Message.new
   end
 
   def product

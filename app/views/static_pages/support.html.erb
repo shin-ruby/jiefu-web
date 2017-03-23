@@ -10,58 +10,12 @@
 	<div class="row contact">
 	  <div class="col-md-8 contact-left">
 	  	<p>请填写下面的表格或电子邮件与我们的客户服务团队取得联系 <a href="mailto:#">info@jiefu.net</a></p>
-	  	<form>
-		  	<div class="row">
-				  <div class="col-md-6">
-				  	<div class="form-group">
-					    <label>您的姓名</label>
-					    <input type="text" class="form-control" >
-					  </div>
-				  </div>
-				  <div class="col-md-6">
-				  	<div class="form-group">
-					    <label>手机号码</label>
-					    <input type="text" class="form-control" >
-					  </div>
-				  </div>
-				</div>
-				<div class="row">
-				  <div class="col-md-6">
-				  	<div class="form-group">
-					    <label>邮箱</label>
-					    <input type="email" class="form-control" >
-					  </div>
-				  </div>
-				  <div class="col-md-6">
-				  	<div class="form-group">
-					    <label>职位</label>
-					    <input type="text" class="form-control" >
-					  </div>
-				  </div>
-				</div>
-				<div class="row">
-				  <div class="col-md-6">
-				  	<div class="form-group">
-					    <label>公司</label>
-					    <input type="text" class="form-control" >
-					  </div>
-				  </div>
-				  <div class="col-md-6">
-				
-				  </div>
-				</div>
-				<div class="row">
-				  <div class="col-md-12">
-				  	<div class="form-group">
-					    <label>内容</label>
-							<textarea class="form-control" rows="8"></textarea>
-					  </div>
-				  </div>
-				</div>
-				<button type="submit" class="btn btn-primary">提交信息</button>
-				<p>我们将在2个工作日之内给您答案，为确保您能收到我们的回复，请务必正确及有效的填写上述内容。</p>
-			</form>
-	  </div>
+	  		<% flash.each do |message_type, message| %>
+				  <div class="alert alert-<%= message_type %>"><%= message %></div>
+				<% end %>
+				<%= render 'static_pages/message_form' %>
+			<p>我们将在2个工作日之内给您答案，为确保您能收到我们的回复，请务必正确及有效的填写上述内容。</p>
+		</div>
 	  <div class="col-md-4">
 	  	<h4>联系我们</h4>
 	  	<address>

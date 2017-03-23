@@ -1,0 +1,12 @@
+<p><%= link_to '返回', admin_messages_path  %>
+</p>
+
+<div class="row">
+  <div class="col-md-6">
+  	<p><strong>客户姓名:</strong>  <%= @message.name %></p>
+		<p><strong>客户电话:</strong>  <%= @message.mobile %></p>
+		<p><strong>客户邮箱:</strong>  <%= @message.email %></p>
+		<p><strong>客户公司:</strong>  <%= @message.company %></p>
+		<p><strong>客户留言:</strong>  <%= @message.content %></p>
+  </div>
+</div>

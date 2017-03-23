@@ -1,4 +1,3 @@
-
 Rails.application.routes.draw do
 
   root 'static_pages#home'
@@ -7,7 +6,8 @@ Rails.application.routes.draw do
   resources :infos, only:[:index, :show]
   resources :careers, only: [:index, :show]
 
-  resource :search, only: [:show]
+  resource :search, only: :show
+  resources :messages, only: [:new, :create]
 
   get 'product' => 'static_pages#product'
   get 'product_detail' => 'static_pages#product_detail'
@@ -39,6 +39,7 @@ Rails.application.routes.draw do
     resources :about, only: [:show, :edit, :update]
     resources :careers
     resources :users, except: [:show, :edit, :update]
+    resources :messages, except: [:new, :create]
 
     get '/login', to: 'sessions#new'
     post '/login', to:'sessions#create'
