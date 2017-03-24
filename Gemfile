@@ -15,12 +15,8 @@ gem 'coffee-rails', '~> 4.2'
 # gem 'therubyracer', platforms: :ruby
 gem 'bootstrap-sass'
 gem 'font-awesome-rails'
-
-gem 'carrierwave', '~> 1.0'
 gem 'mini_magick', '~> 4.6', '>= 4.6.1'
-
 gem 'simditor'
-
 gem 'bcrypt', '~> 3.1', '>= 3.1.11'
 
 # Use jquery as the JavaScript library
@@ -50,6 +46,12 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+
+  gem 'capistrano', '~> 3.7', '>= 3.7.2'
+  gem 'capistrano-bundler', '~> 1.2'
+  gem 'capistrano-rails', '~> 1.2', '>= 1.2.2'
+  gem 'capistrano-rbenv', '~> 2.1'
+  gem 'capistrano-passenger'
 end
 
 group :production do
