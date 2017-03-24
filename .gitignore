@@ -20,3 +20,6 @@
 # Ignore Byebug command history file.
 .byebug_history
 *.sublime-workspace
+
+config/database.yml
+config/secrets.yml
