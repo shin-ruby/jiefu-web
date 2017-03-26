@@ -18,6 +18,7 @@ gem 'font-awesome-rails'
 gem 'mini_magick', '~> 4.6', '>= 4.6.1'
 gem 'simditor'
 gem 'bcrypt', '~> 3.1', '>= 3.1.11'
+gem 'carrierwave'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
