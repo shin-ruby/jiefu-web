@@ -21,7 +21,7 @@ set :deploy_to, "/home/deploy/jiefu-web"
 # Default value for :pty is false
 # set :pty, true
 
-set :linked_files, %w{config/database.yml config/secrets.yml}
+set :linked_files, %w{config/database.yml config/secrets.yml db/production.sqlite3}
 set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
 
 # Default value for :linked_files is []
