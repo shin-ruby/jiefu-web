@@ -10,6 +10,13 @@
 </div>
 
 <div class="container product-list">
+
+	<div class="btn-group advanced-search">
+		<%= link_to search_path, class: "btn btn-default" do %>
+	    <i class="glyphicon glyphicon-search"></i> 高级搜索
+		<% end %>
+	</div>
+
 	<% @products.each_slice(2) do |products| %>
 		<div class="row">
 			<% products.each do |product| %>
