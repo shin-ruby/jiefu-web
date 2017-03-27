@@ -12,7 +12,7 @@
       </tr>
       <tr>
         <td colspan="2"><%= f.label :product_type, "扬声器类型" %></td>
-        <td><%= f.select(:product_type, options_for_select([['单体扬声器', 1], ['箱体扬声器', 2]]), class: "form-control") %></td>
+        <td><%= f.select(:product_type, options_for_select([['单体扬声器', 1], ['箱体扬声器', 2]],f.object.product_type), class: "form-control") %></td>
       </tr>
       <tr>
         <td colspan="2"><%= f.label :category, "扬声器分类" %></td>
