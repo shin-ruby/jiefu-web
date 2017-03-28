@@ -1,0 +1,191 @@
+<div class="laboratory-jumbotron">
+  <div class="container">
+    <div class="content">
+      <h2>杰夫实验室</h2>
+      <p>杰夫电声测试实验室是国内最早定位于扬声器单元及系统领域的专业电声测试实验室之一。测试实验室力求测试的科学性与严谨性，率先引入国际最先进和最专业的测试方法和测试设备。工程师们本着公平，客观，准确的工作态度，判定着杰夫每一个产品的合格与否，因此，实验室的测试结果，以其权威性和说服力，代表了该类产品的总体技术水平，并为客户的产品选型提供最为准确有效的参考。</p>
+    </div>
+  </div>
+</div>
+
+<div class="container laboratory">
+	<div class="row">
+	  <div class="col-md-12">
+	  	<h1 class="text-center">研发实验室及主要测试资源</h1>
+	  </div>
+	</div>
+
+	<div class="row">
+	  <div class="col-md-3">
+	  	<%= image_tag('d1.png', width: '260') %>
+	  	<h4>视听室</h4>
+	  	<p>Inner size 85 cube meter</p>
+	  	<p>background noise ≤ 35dB</p>
+	  </div>
+	  <div class="col-md-3">
+	  	<%= image_tag('d2.png', width: '260') %>
+	  	<h4>音质评价室</h4>
+	  	<p>Inner size 90 cube meter</p>
+	  	<p>background noise ≤ 35dB</p>
+	  </div>
+	  <div class="col-md-3">
+	  	<%= image_tag('d3.png', width: '260') %>
+	  	<h4>无音室</h4>
+	  	<p>Inner size 520stere</p>
+	  	<p>noise≤ 17dB</p>
+	  </div>
+	  <div class="col-md-3">
+	  	<%= image_tag('d7.png', width: '260') %>
+			<h4>B＆K PLUSE测试设备</h4>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="col-md-3">
+	  	<%= image_tag('d4.png', width: '260') %>
+	  	<h4>KLIPPEL</h4>
+	  </div>
+	  <div class="col-md-3">
+	  	<%= image_tag('d6.png', width: '260') %>
+	  	<h4>NTI AUDIO</h4>
+	  </div>
+	</div>
+
+	<div class="row">
+	  <div class="col-md-12">
+			<p class="laboratory-text">电声产品的评测对测试环境、测试方法、和测试设备有着非常严格的要求。杰夫电声测试实验室与中国南京大学声学研究所通力合作，已获得国际著名电声产品测试设备厂商的鼎力支持，如丹麦B&K公司，美国LINEARX公司和DRA LABS实验室，日本ESPEC公司和韩国SIGMA公司等，他们的测试设备广泛应用于国际著名的电声测试机构和扬声器厂商。<br>
+杰夫电声测试实验室在国内众多电声试验室中，率先使用测试设备包括520立方米的消音室，B&K2012音频分析仪，LMS和MLSSA声频分析系统，ESPEC环境试验箱，SIGMA功率试验台和在线测试仪，SKYRAYX荧光光谱仪等，另外，杰夫电声与南京大学声学研究所联合研制的Sound QM＆LT（音频快速测量及寿命试验系统），已申请为国家专利，并在同行业中得到广泛使用。</p>
+	  </div>
+	</div>
+
+	<!-- <div class="row">
+	  <div class="col-md-12">
+	  	<h1 class="text-center">可靠性检测与有害物质检测（RoHS, REACH）</h1>
+	  </div>
+	</div>
+
+	<div class="row">
+	  <div class="col-md-3">
+	  	<%#= image_tag('c8.png', width: '260') %>
+	  	<h4>老化设备</h4>
+	  </div>
+	  <div class="col-md-3">
+	  	<%#= image_tag('c7.png', width: '260') %>
+	  	<h4>高低温热冲击</h4>
+	  </div>
+	  <div class="col-md-3">
+	  	<%#= image_tag('c6.png', width: '260') %>
+	  	<h4>恒温恒湿设备</h4>
+	  </div>
+	  <div class="col-md-3">
+	  	<%#= image_tag('c5.png', width: '260') %>
+			<h4>滚动测试机</h4>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="col-md-3">
+	  	<%#= image_tag('c4.png', width: '260') %>
+	  	<h4>盐雾测试机</h4>
+	  </div>
+		<div class="col-md-3">
+	  	<%#= image_tag('c3.png', width: '260') %>
+	  	<h4>XRF 测试设备</h4>
+	  </div>
+	  <div class="col-md-3">
+	  	<%#= image_tag('c2.png', width: '260') %>
+	  	<h4>GC-MS (REACH)</h4>
+	  </div>
+	  <div class="col-md-3">
+	  	<%#= image_tag('c1.png', width: '260') %>
+	  	<h4>均质材质分析室</h4>
+	  </div>
+	</div>
+
+	<div class="row">
+	  <div class="col-md-12">
+	  	<h1 class="text-center">IQC & OQC 检验资源</h1>
+	  </div>
+	</div>
+
+	<div class="row">
+	  <div class="col-md-2">
+	  	<%#= image_tag('b1.png', width: '170') %>
+	  	<h5>纸锥F0 测试机</h5>
+	  </div>
+	  <div class="col-md-2">
+	  	<%#= image_tag('b6.png', width: '170') %>
+	  	<h5>拉力测试机</h5>
+	  </div>
+	  <div class="col-md-2">
+	  	<%#= image_tag('b5.png', width: '170') %>
+	  	<h5>硬度计</h5>
+	  </div>
+	  <div class="col-md-2">
+	  	<%#= image_tag('b5.png', width: '170') %>
+			<h5>投影仪</h5>
+	  </div>
+	  <div class="col-md-2">
+	  	<%#= image_tag('b8.png', width: '170') %>
+	  	<h5>Damper边位测试机</h5>
+	  </div>
+		<div class="col-md-2">
+	  	<%#= image_tag('b7.png', width: '170') %>
+	  	<h5>磁性测试机</h5>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="col-md-2">
+	  	<%#= image_tag('b3.png', width: '170') %>
+	  	<h5>燃烧试验设备</h5>
+	  </div>
+	  <div class="col-md-2">
+	  	<%#= image_tag('b2.png', width: '170') %>
+	  	<h5>包装压力测试机</h5>
+	  </div>
+  	<div class="col-md-2">
+	  	<%#= image_tag('b9.png', width: '170') %>
+	  	<h5>扬声器工作试验</h5>
+	  </div>
+		<div class="col-md-2">
+	  	<%#= image_tag('b10.png', width: '170') %>
+	  	<h5>极性测试机</h5>
+	  </div>
+	  <div class="col-md-2">
+	  	<%#= image_tag('b12.png', width: '170') %>
+	  	<h5>F0 测试机</h5>
+	  </div>
+	  <div class="col-md-2">
+	  	<%#= image_tag('b11.png', width: '170') %>
+	  	<h5>耐压/绝缘测试机</h5>
+	  </div>
+	</div> -->
+
+	<div class="row">
+	  <div class="col-md-12">
+	  	<h1 class="text-center">自动化试制、生产资源</h1>
+	  </div>
+	</div>
+
+	<div class="row">
+	  <div class="col-md-3">
+	  	<%= image_tag('a1.png', width: '260') %>
+	  </div>
+		<div class="col-md-3">
+	  	<%= image_tag('a2.png', width: '260') %>
+	  </div>
+	  <div class="col-md-3">
+	  	<%= image_tag('a3.png', width: '260') %>
+	  </div>
+	  <div class="col-md-3">
+	  	<%= image_tag('a4.png', width: '260') %>
+	  </div>
+	</div>
+
+	<div class="row">
+	  <div class="col-md-3">
+	  	<%= image_tag('a5.png', width: '260') %>
+	  </div>
+	  <div class="col-md-3">
+	  	<%= image_tag('a7.png', width: '260') %>
+	  </div>
+	</div>
+
+</div>
