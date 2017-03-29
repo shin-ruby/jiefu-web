@@ -733,6 +733,16 @@ body, h1, h2, h3, h4, h5, h6, p {
   }
 }
 
+.laboratory {
+  h4 {
+    font-size: 15px;
+  }
+  h4, p, small {
+    color: #333333;
+  }
+
+}
+
 .gray { 
   -webkit-filter: grayscale(90%);
   -moz-filter: grayscale(90%);
