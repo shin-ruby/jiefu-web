@@ -506,21 +506,21 @@ body, h1, h2, h3, h4, h5, h6, p {
 .introduction-blockquote {
   h4 {
     margin-top: 0px;
-    margin-bottom: 100px;
+    margin-bottom: 4px;
   }
 }
 
 .operation-blockquote {
   h4 {
     margin-top: 0px;
-    margin-bottom: 60px;
+    margin-bottom: 4px;
   }
 }
 
 .ceo-blockquote {
   h4 {
     margin-top: 0px;
-    margin-bottom: 210px;
+    margin-bottom: 4px;
   }
 }
 
@@ -729,7 +729,7 @@ body, h1, h2, h3, h4, h5, h6, p {
   background-size:cover;
   height: 300px;
   h2 {
-    margin-top: 120px;
+    margin-top: 60px;
     color: #EEEEEE;
   }
   p {
@@ -831,6 +831,44 @@ body, h1, h2, h3, h4, h5, h6, p {
           width: 360px;
         }
       }
+    }
+  }
+
+  /* laboratory */
+
+  .laboratory-jumbotron {
+    h2 {
+      margin-top: 120px;
+    }
+  }
+
+  /* about */
+
+  .introduction-blockquote {
+    h4 {
+      margin-top: 0px;
+      margin-bottom: 100px;
+    }
+  }
+
+  .operation-blockquote {
+    h4 {
+      margin-top: 0px;
+      margin-bottom: 60px;
+    }
+  }
+
+  .ceo-blockquote {
+    h4 {
+      margin-top: 0px;
+      margin-bottom: 210px;
+    }
+  }
+
+  .certification-blockquote {
+    h4 {
+      margin-top: 0px;
+      margin-bottom: 4px;
     }
   }
 
