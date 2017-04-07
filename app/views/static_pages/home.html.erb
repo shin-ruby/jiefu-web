@@ -11,8 +11,8 @@
   <div class="container">
     <div class="content">
       <div class="row">
-        <div class="col-md-6"><h3>新品扬声器</h3></div>
-        <div class="col-md-6">
+        <div class="col-xs-6"><h3>新品扬声器</h3></div>
+        <div class="col-xs-6">
           <div class="dropdown choose">
             <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
               最新产品
@@ -38,10 +38,10 @@
     <div class="row">
       <div class="col-md-6">
         <div class="row home-product">
-          <div class="col-xs-8 col-sm-6">
+          <div class="col-md-6">
             <%= image_tag(prodcut_find(@home.mainproduct1).photo1.url, width: '200', class: "product-img") if @home.mainproduct1? %>
           </div>
-          <div class="col-xs-4 col-sm-6">
+          <div class="col-md-6">
             <h4><%= @home.mainproduct1 if @home.mainproduct1? %></h4>
             <p><%= truncate(prodcut_find(@home.mainproduct1).feature, escape: false, length: 70) if @home.mainproduct1? %></p>
             <%= link_to '查看详细', product_path(prodcut_find(@home.mainproduct1)), class: "btn btn-primary", role: "button" if @home.mainproduct1? %>
@@ -51,10 +51,10 @@
 
       <div class="col-md-6">
         <div class="row home-product">
-          <div class="col-xs-8 col-sm-6">
+          <div class="col-md-6">
             <%= image_tag(prodcut_find(@home.mainproduct2).photo1.url, width: '200', class: "product-img") if @home.mainproduct2? %>
           </div>
-          <div class="col-xs-4 col-sm-6">
+          <div class="col-md-6">
             <h4><%= @home.mainproduct2 if @home.mainproduct2? %></h4>
             <p><%= truncate(prodcut_find(@home.mainproduct2).feature, escape: false, length: 70) if @home.mainproduct2? %></p>
             <%= link_to '查看详细', product_path(prodcut_find(@home.mainproduct2)), class: "btn btn-primary", role: "button" if @home.mainproduct2? %>
@@ -66,10 +66,10 @@
     <div class="row">
       <div class="col-md-6">
         <div class="row home-product">
-          <div class="col-xs-8 col-sm-6">
+          <div class="col-md-6">
             <%= image_tag(prodcut_find(@home.mainproduct3).photo1.url, width: '200', class: "product-img") if @home.mainproduct3? %>
           </div>
-          <div class="col-xs-4 col-sm-6">
+          <div class="col-md-6">
             <h4><%= @home.mainproduct3 if @home.mainproduct3? %></h4>
             <p><%= truncate(prodcut_find(@home.mainproduct3).feature, escape: false, length: 70) if @home.mainproduct3? %></p>
             <%= link_to '查看详细', product_path(prodcut_find(@home.mainproduct3)), class: "btn btn-primary", role: "button" if @home.mainproduct3? %>
@@ -79,10 +79,10 @@
 
       <div class="col-md-6">
         <div class="row home-product">
-          <div class="col-xs-8 col-sm-6">
+          <div class="col-md-6">
             <%= image_tag(prodcut_find(@home.mainproduct4).photo1.url, width: '200', class: "product-img") if @home.mainproduct4? %>
           </div>
-          <div class="col-xs-4 col-sm-6">
+          <div class="col-md-6">
             <h4><%= @home.mainproduct4 if @home.mainproduct4? %></h4>
             <p><%= truncate(prodcut_find(@home.mainproduct4).feature, escape: false, length: 70) if @home.mainproduct4? %></p>
             <%= link_to '查看详细', product_path(prodcut_find(@home.mainproduct4)), class: "btn btn-primary", role: "button" if @home.mainproduct4? %>
@@ -101,13 +101,13 @@
           <!-- Wrapper for slides -->
           <div class="carousel-inner" role="listbox">
             <div class="item active">
-              <%= image_tag("home-d.png", width: '500') %>
+              <%= image_tag("home-d.png") %>
             </div>
             <div class="item">
-              <%= image_tag("home-aa.png", width: '500') %>
+              <%= image_tag("home-aa.png") %>
             </div>
             <div class="item">
-              <%= image_tag("home-u.png", width: '500') %>
+              <%= image_tag("home-u.png") %>
             </div>
           </div>
 
@@ -135,7 +135,7 @@
     <div class="row columns">
       <div class="col-md-3">
         <div class="home-box">
-          <%= image_tag("home-box-b.png", width: '268') %>
+          <%= image_tag("home-box-b.png") %>
           <h5>公司介绍</h5>
           <h3>杰夫电声专业扬声器制造</h3>
           <p><%= link_to "了解更多详情", about_introduction_path %></p>
@@ -143,7 +143,7 @@
       </div>
       <div class="col-md-3">
         <div class="home-box">
-          <%= image_tag("home-box-c.png", width: '268') %>
+          <%= image_tag("home-box-c.png") %>
           <h5>公司动态</h5>
           <h3>杰夫电声 <br> 杰夫窗口</h3>
           <p><%= link_to "了解更多详情", infos_path %></p>
@@ -151,7 +151,7 @@
       </div>
       <div class="col-md-3">
         <div class="home-box">
-          <%= image_tag("home-box-a.png", width: '268') %>
+          <%= image_tag("home-box-a.png") %>
           <h5>荣誉证书</h5>
           <h3>通过国家权威认证机构审查</h3>
           <p><%= link_to "了解更多详情", about_honors_path %></p>
@@ -159,7 +159,7 @@
       </div>
       <div class="col-md-3">
         <div class="home-box">
-          <%= image_tag("home-box-d.png", width: '268') %>
+          <%= image_tag("home-box-d.png") %>
           <h5>杰夫招聘</h5>
           <h3>你的明天，杰夫的未来。</h3>
           <p><%= link_to "了解更多详情", careers_path %></p>

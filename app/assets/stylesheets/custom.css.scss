@@ -111,9 +111,6 @@ body, h1, h2, h3, h4, h5, h6, p {
 	margin-bottom: 12px;
 }
 
-.navbar-left {
-	margin-left: 60px;
-}
 
 .navbar-right {
   .inner-addon { 
@@ -145,14 +142,12 @@ body, h1, h2, h3, h4, h5, h6, p {
 }
 
 .footer-list {
-  height: 220px;
   background-color: #222222;
   color: #AAAAAA;
 }
 
 .footer-list-one {
   margin-top: 36px;
-  height: 170px;
   strong{
     color: #EEEEEE;
   }
@@ -219,15 +214,14 @@ body, h1, h2, h3, h4, h5, h6, p {
       margin-top: 16px;
     }
     button {
-      padding-left: 80px;
-      padding-right: 80px;
+      padding-left: 20px;
+      padding-right: 20px;
     }
   }
 }
 
 .home-bg {
-  // background: image-url('bg.jpg') repeat;
-  height: 1560px;
+  height: 4240px;
   .col-md-6 {
     padding-left: 0px;
     padding-right: 0px;
@@ -292,10 +286,11 @@ body, h1, h2, h3, h4, h5, h6, p {
 
 .home-box {
   height: 330px;
-  width: 268px;
   background-color: #006FA9;
+  margin-bottom: 15px;
   img {
     margin-bottom: 10px;
+    width: 100%;
   }
   h5, h3, p {
     padding-left: 18px;
@@ -311,9 +306,11 @@ body, h1, h2, h3, h4, h5, h6, p {
 .home-product { 
   margin-top: 40px;
   margin-left: 15px;
-  padding-top: 54px;
-  padding-bottom: 54px;
-  width: 548px;
+  margin-right: 15px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-right: 10px;
+  padding-left: 10px;
   background-color: #FFFFFF;
   border-style: solid; border-width: 4px; border-color: #F2F2F2;
   .row {
@@ -329,9 +326,8 @@ body, h1, h2, h3, h4, h5, h6, p {
 .home-content {
   margin-top: 40px;
   background-color: #006FA9;
-  height: 400px;
+  height: 900px;
   .carousel {
-    width: 500px;
     margin-top: 54px;
     margin-left: 15px;
   }
@@ -750,4 +746,51 @@ body, h1, h2, h3, h4, h5, h6, p {
   -o-filter: grayscale(90%);
   filter: grayscale(90%);
   filter: gray;
+}
+
+/*** ***/
+
+@media (min-width: 768px) {
+
+  .navbar-left {
+    margin-left: 60px;
+  }
+
+  .footer-list {
+    height: 220px;
+  }
+
+  .footer-list-one {
+    height: 170px;
+  }
+
+  /* home page */
+
+  .choose-product .content button {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .home-bg {
+    height: 1560px;
+  }
+
+  .home-product { 
+    width: 548px;
+  }
+
+  .home-content {
+    height: 400px;
+  }
+
+  .home-box {
+    width: 268px;
+  }
+
+  .home-content {
+    .carousel {
+      width: 500px;
+    }
+  }
+
 }
