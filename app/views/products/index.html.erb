@@ -12,7 +12,7 @@
 <div class="container product-list">
 
 	<div class="btn-group advanced-search">
-		<%= link_to search_path, class: "btn btn-default" do %>
+		<%= link_to search_path, class: "btn btn-primary" do %>
 	    <i class="glyphicon glyphicon-search"></i> 高级搜索
 		<% end %>
 	</div>
@@ -21,7 +21,7 @@
 		<div class="row">
 			<% products.each do |product| %>
 				<div class="col-md-6">
-					<%= image_tag(product.photo1.url, width: '460', class: "product-img") if product.photo1? %>
+					<%= image_tag(product.photo1.url, class: "product-img") if product.photo1? %>
 			  	<h4><%= product.name %></h4>
 					<ul class="list-unstyled">
 					  <li>外观尺寸（长*宽*高）mm : <%= product.size_length %>*<%= product.size_width %>*<%= product.size_height %></li>
