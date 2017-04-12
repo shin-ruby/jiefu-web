@@ -49,7 +49,7 @@
       </tr>
       <tr>
         <td colspan="2">外形结构图-1</td>
-        <td><%= image_tag(@product.photo1.url, width: '260', class: "product-img") if @product.photo1? %><%= f.file_field :photo1 %></td>
+        <td><%= image_tag(@product.photo1_url, width: '260', class: "product-img") if @product.photo1? %><%= f.file_field :photo1 %></td>
       </tr>
       <tr>
         <td colspan="2">外形结构图-2</td>

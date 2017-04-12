@@ -10,10 +10,10 @@
 		  <div class="col-md-6 product_detail_img">
 			  <div class="tab-content">
 			    <div role="tabpanel" class="tab-pane active" id="photo-a">
-			    	<%= image_tag(@product.photo1.url, class: "product-img") if @product.photo1? %>
+			    	<%= image_tag(@product.photo1_url, class: "product-img") if @product.photo1? %>
 			    </div>
 			    <div role="tabpanel" class="tab-pane" id="photo-b">
-			    	<%= image_tag(@product.photo2.url, class: "product-img") if @product.photo2? %>
+			    	<%= image_tag(@product.photo2_url, class: "product-img") if @product.photo2? %>
 			    </div>
 			  </div>
 			  <ul class="nav nav-pills product_detail_img_list" role="tablist">
