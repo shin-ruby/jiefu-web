@@ -13,6 +13,8 @@ Rails.application.routes.draw do
   get 'product_detail' => 'static_pages#product_detail'
   get 'laboratory' => 'static_pages#laboratory'
   get 'support' => 'static_pages#support'
+  get 'privacy' => 'static_pages#privacy'
+  get 'terms_of_use' => 'static_pages#terms_of_use'
 
   get 'static_search' => 'static_pages#search'
 

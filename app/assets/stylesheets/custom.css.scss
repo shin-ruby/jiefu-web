@@ -786,6 +786,12 @@ body, h1, h2, h3, h4, h5, h6, p {
   filter: gray;
 }
 
+.privacy {
+  h1 {
+    margin-top: 100px;
+  }
+}
+
 /*** ***/
 
 @media (min-width: 768px) {
