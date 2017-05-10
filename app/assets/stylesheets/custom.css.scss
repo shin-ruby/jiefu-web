@@ -754,11 +754,25 @@ body, h1, h2, h3, h4, h5, h6, p {
 }
 
 .laboratory {
+  div {
+
+  }
   h4 {
     font-size: 15px;
   }
   h4, p, small {
     color: #333333;
+  }
+
+  .pic {
+    overflow: hidden;
+  }
+  .pic img{
+    -webkit-transform: scale(1); 
+    -webkit-transition: 1s;
+  }
+  .pic img:hover{
+    -webkit-transform: scale(1.2);
   }
 
 }
