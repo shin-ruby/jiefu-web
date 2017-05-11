@@ -48,27 +48,27 @@
         <td><%= f.text_area :feature, placeholder: "...", class: 'form-control' %></td>
       </tr>
       <tr>
-        <td colspan="2">外形结构图-1</td>
+        <td colspan="2">扬声器图-1</td>
         <td><%= image_tag(@product.photo1_url, width: '260', class: "product-img") if @product.photo1? %><%= f.file_field :photo1 %></td>
       </tr>
       <tr>
-        <td colspan="2">外形结构图-2</td>
+        <td colspan="2">扬声器图-2</td>
         <td><%= image_tag(@product.photo2.url, width: '260', class: "product-img") if @product.photo2? %><%= f.file_field :photo2 %></td>
       </tr>
       <tr>
-        <td colspan="2">曲线图-1</td>
+        <td colspan="2">外形结构图-1</td>
         <td><%= image_tag(@product.configuration1.url, width: '260', class: "product-img") if @product.configuration1? %><%= f.file_field :configuration1 %></td>
       </tr>
       <tr>
-        <td colspan="2">曲线图-2</td>
+        <td colspan="2">外形结构图-2</td>
         <td><%= image_tag(@product.configuration2.url, width: '260', class: "product-img") if @product.configuration2? %><%= f.file_field :configuration2 %></td>
       </tr>
       <tr>
-        <td colspan="2">扬声器图-1</td>
+        <td colspan="2">曲线图-1</td>
         <td><%= image_tag(@product.curve1.url, width: '260', class: "product-img") if @product.curve1? %><%= f.file_field :curve1 %></td>
       </tr>
       <tr>
-        <td colspan="2">扬声器图-2</td>
+        <td colspan="2">曲线图-2</td>
         <td><%= image_tag(@product.curve2.url, width: '260', class: "product-img") if @product.curve2? %><%= f.file_field :curve2 %></td>
       </tr>
     </tbody>
