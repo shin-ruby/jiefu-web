@@ -10,14 +10,14 @@
 					<h2><%= @career.position %></h2>
 					<p>工作地点:  <%= @career.place %></p>
 					<p><small>招聘人数:  <%= @career.people %>名</small></p>
-					<button type="button" class="btn btn-primary">立即申请</button>
+					<a class="btn btn-primary" href="mailto:hr@jiefu.com.cn" role="button">立即申请</a>
 					<h3>任职要求</h3>
 					<ul>
 					  <%= simple_format(@career.content) %>
 					</ul>
 					<h3>简历投递邮箱</h3>
 					<ul>
-					  <li>hr@jiefu.cn</li>
+					  <li>hr@jiefu.com.cn</li>
 					</ul>
 				</div>
 			</div>
