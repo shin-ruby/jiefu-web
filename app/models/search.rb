@@ -11,7 +11,12 @@ class Search < ApplicationRecord
     products = products.where("name like ?", "%#{name}%") if name.present?
 
     products = products.where(category: category) if category.present?
-    products = products.where(product_type: product_type) if product_type.present?
+
+    if product_type.present? && product_type == 3
+      products = products.all
+    else
+      products = products.where(product_type: product_type) 
+    end
     
     products = products.where("fo >= ?", min_fo) if min_fo.present?
     products = products.where("fo <= ?", max_fo) if max_fo.present?
