@@ -758,7 +758,10 @@ body, h1, h2, h3, h4, h5, h6, p {
 
   }
   h4 {
-    font-size: 15px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 300;
+    line-height: 1.4;
   }
   h4, p, small {
     color: #333333;
@@ -775,6 +778,12 @@ body, h1, h2, h3, h4, h5, h6, p {
     -webkit-transform: scale(1.2);
   }
 
+  p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.4;
+  }
 }
 
 .gray { 
