@@ -19,6 +19,8 @@ gem 'mini_magick', '~> 4.6', '>= 4.6.1'
 gem 'simditor'
 gem 'bcrypt', '~> 3.1', '>= 3.1.11'
 gem 'carrierwave'
+gem 'will_paginate', '~> 3.1', '>= 3.1.5'
+gem 'bootstrap-will_paginate', '~> 1.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
