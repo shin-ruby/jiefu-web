@@ -1,6 +1,7 @@
 class SearchesController < ApplicationController
   def show
     @search = Search.create!(search_params)
+    @message = Message.new
   end
 
   private
