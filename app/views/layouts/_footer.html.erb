@@ -6,39 +6,39 @@
     <div class="row">
       <div class="col-md-2 footer-list-one">
         <ul class="list-unstyled">
-          <li><strong>产品</strong></li>
-          <li><%= link_to "扬声器", products_path %></li>
+          <li><strong><%= t("menu.products") %></strong></li>
+          <li><%= link_to t("footer.speaker"), products_path %></li>
         </ul>
       </div>
       <div class="col-md-2 footer-list-one">
         <ul class="list-unstyled">
-          <li><strong>杰夫实验室</strong></li>
-          <li><%= link_to "实验中心", laboratory_path %></li>
+          <li><strong><%= t("menu.laboratory") %></strong></li>
+          <li><%= link_to t("footer.laboratory"), laboratory_path %></li>
         </ul>
       </div>
       <div class="col-md-2 footer-list-one">
         <ul class="list-unstyled">
-          <li><strong>技术支持</strong></li>
-          <li><%= link_to "技术支持", support_path %></li>
+          <li><strong><%= t("menu.support") %></strong></li>
+          <li><%= link_to t("footer.support"), support_path %></li>
         </ul>
       </div>
       <div class="col-md-2 footer-list-one">
         <ul class="list-unstyled">
-          <li><strong>新闻中心</strong></li>
-          <li><%= link_to "新闻中心", infos_path %></li>
+          <li><strong><%= t("menu.news") %></strong></li>
+          <li><%= link_to t("footer.news"), infos_path %></li>
         </ul>
       </div>
       <div class="col-md-2 footer-list-one">
         <ul class="list-unstyled">
-          <li><strong>关于我们</strong></li>
-          <li><%= link_to "了解杰夫", about_path %></li>
+          <li><strong><%= t("menu.about") %></strong></li>
+          <li><%= link_to t("footer.about"), about_path %></li>
         </ul>
       </div>
       <div class="col-md-2 footer-list-one">
         <ul class="list-unstyled">
           <li><strong></strong></li>
-          <li><%= link_to "隐私声明", privacy_path %></li>
-          <li><%= link_to "使用条款", terms_of_use_path %></li>
+          <li><%= link_to t("footer.privacy"), privacy_path %></li>
+          <li><%= link_to t("footer.use"), terms_of_use_path %></li>
         </ul>
       </div>
     </div>
@@ -47,6 +47,6 @@
     <div class="jiefu-id text-center">
       <script id="jsgovicon" src="http://odr.jsdsgsxt.gov.cn:8081/mbm/app/main/electronic/js/govicon.js?siteId=f29c1aa0286c424eb2c17cdc33b572ab&width=20&height=27&type=1" type="text/javascript" charset="utf-8"></script>
     </div>
-    <p class="text-center">2017 无锡杰夫电声股份有限公司</p>
+    <p class="text-center">2017 <%= t("title") %></p>
   </div>
 </footer>

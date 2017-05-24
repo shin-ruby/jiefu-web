@@ -20,4 +20,21 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  title: "Wuxi Jiefu Electroacoustic Co.,Ltd."
+  menu:
+    srm: "Supplier SRM System Login"
+    language: "语言切换"
+    products: "Products"
+    laboratory: "Laboratory"
+    support: "Support"
+    news: "News"
+    about: "About"
+    placeholder: "Enter the product model"
+  footer:
+    speaker: "Speaker"
+    laboratory: "Jiefu Laboratory"
+    support: "Support"
+    news: "News"
+    about: "About Jiefu"
+    privacy: "Privacy"
+    use: "Terms of use"

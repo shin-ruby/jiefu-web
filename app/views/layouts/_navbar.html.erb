@@ -2,7 +2,14 @@
 	<div class="navbar-top">
 		<div class="container">
 			<div class="language">
-				<p class="text-right"><%= link_to "供应商SRM系统登录", "http://218.90.188.142:82/Screen/UFLAT/userlogin.aspx", class: "srm" %> | <small>CHANGE LANGUAGE:</small> <%= image_tag("USA.png", height: '12', alt: "Logo image") %></p>
+				<p class="text-right"><%= link_to t("menu.srm"), "http://218.90.188.142:82/Screen/UFLAT/userlogin.aspx", class: "srm" %> | <small>
+						<%= t("menu.language") %>:
+						<% if params[:locale] == "en" %>
+							<%= link_to image_tag("China.png", height: '12', alt: "Logo image"), locale: "zh-CN" %>
+						<% else %>
+							<%= link_to image_tag("USA.png", height: '12', alt: "Logo image"), locale: "en" %>
+						<% end %>
+					</small></p>
 			</div>
 		</div>
 	</div>
@@ -19,18 +26,18 @@
 		<div id="navbar" class="navbar-collapse collapse">
 		  <ul class="nav navbar-nav navbar-left">
 		    <li class="dropdown">
-          <%= link_to "产品", products_path %>
+          <%= link_to t("menu.products"), products_path %>
         </li>
-		    <li><%= link_to "实验中心", laboratory_path %></li>
-		    <li><%= link_to "技术支持", support_path %></li>
-		    <li><%= link_to "新闻中心", infos_path %></li>
-		    <li><%= link_to "关于我们", about_path %></li>
+		    <li><%= link_to t("menu.laboratory"), laboratory_path %></li>
+		    <li><%= link_to t("menu.support"), support_path %></li>
+		    <li><%= link_to t("menu.news"), infos_path %></li>
+		    <li><%= link_to t("menu.about"), about_path %></li>
 		  </ul>
 		  <ul class="nav navbar-nav navbar-right">
         <%= form_tag '/search', method: :get, class: 'navbar-form navbar-left' do %>
 	        <div class="inner-addon left-addon">
 					    <i class="glyphicon glyphicon-search"></i>
-					    	<%= text_field_tag 'search[name]', params[:search]&.fetch(:name) , class: 'form-control', placeholder: '输入产品型号' %>
+					    	<%= text_field_tag 'search[name]', params[:search]&.fetch(:name) , class: 'form-control', placeholder: t("menu.placeholder") %>
 					</div>
         <% end %>
 
