@@ -38,3 +38,20 @@ en:
     about: "About Jiefu"
     privacy: "Privacy"
     use: "Terms of use"
+
+  static_pages:
+    home:
+      new_speaker: "New Speaker"
+      latest_products: "Latest Products"
+      view_details: "View Details"
+      slogan: "Reliable Professional Efficient"
+      company_profile: "Company Profile"
+      company_profile_title: "Professional Speaker Manufacturing"
+      news: "News"
+      news_title1: "Jiefu Speaker"
+      news_title2: "Jiefu Info"
+      honors: "Honors"
+      honors_title: "Through authoritative certification"
+      job: "Job Opportunities"
+      job_title: "Your Tomorrow, Jiefu’s Future"
+      more: "Learn more"

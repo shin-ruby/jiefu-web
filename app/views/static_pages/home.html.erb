@@ -11,11 +11,11 @@
   <div class="container">
     <div class="content">
       <div class="row">
-        <div class="col-xs-6"><h3>新品扬声器</h3></div>
+        <div class="col-xs-6"><h3><%= t(".new_speaker") %></h3></div>
         <div class="col-xs-6">
           <div class="dropdown choose">
             <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-              最新产品
+              <%= t(".latest_products") %>
               <span class="caret"></span>
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
@@ -44,7 +44,7 @@
           <div class="col-md-6">
             <h4><%= @home.mainproduct1 if @home.mainproduct1? %></h4>
             <p><%= truncate(prodcut_find(@home.mainproduct1).feature, escape: false, length: 70) if @home.mainproduct1? %></p>
-            <%= link_to '查看详细', product_path(prodcut_find(@home.mainproduct1)), class: "btn btn-primary", role: "button" if @home.mainproduct1? %>
+            <%= link_to t(".view_details"), product_path(prodcut_find(@home.mainproduct1)), class: "btn btn-primary", role: "button" if @home.mainproduct1? %>
           </div>
         </div>
       </div>
@@ -57,7 +57,7 @@
           <div class="col-md-6">
             <h4><%= @home.mainproduct2 if @home.mainproduct2? %></h4>
             <p><%= truncate(prodcut_find(@home.mainproduct2).feature, escape: false, length: 70) if @home.mainproduct2? %></p>
-            <%= link_to '查看详细', product_path(prodcut_find(@home.mainproduct2)), class: "btn btn-primary", role: "button" if @home.mainproduct2? %>
+            <%= link_to t(".view_details"), product_path(prodcut_find(@home.mainproduct2)), class: "btn btn-primary", role: "button" if @home.mainproduct2? %>
           </div>
         </div>
       </div>
@@ -72,7 +72,7 @@
           <div class="col-md-6">
             <h4><%= @home.mainproduct3 if @home.mainproduct3? %></h4>
             <p><%= truncate(prodcut_find(@home.mainproduct3).feature, escape: false, length: 70) if @home.mainproduct3? %></p>
-            <%= link_to '查看详细', product_path(prodcut_find(@home.mainproduct3)), class: "btn btn-primary", role: "button" if @home.mainproduct3? %>
+            <%= link_to t(".view_details"), product_path(prodcut_find(@home.mainproduct3)), class: "btn btn-primary", role: "button" if @home.mainproduct3? %>
           </div>
         </div>
       </div>
@@ -85,7 +85,7 @@
           <div class="col-md-6">
             <h4><%= @home.mainproduct4 if @home.mainproduct4? %></h4>
             <p><%= truncate(prodcut_find(@home.mainproduct4).feature, escape: false, length: 70) if @home.mainproduct4? %></p>
-            <%= link_to '查看详细', product_path(prodcut_find(@home.mainproduct4)), class: "btn btn-primary", role: "button" if @home.mainproduct4? %>
+            <%= link_to t(".view_details"), product_path(prodcut_find(@home.mainproduct4)), class: "btn btn-primary", role: "button" if @home.mainproduct4? %>
           </div>
         </div>
       </div>
@@ -124,7 +124,7 @@
 
       </div>
       <div class="col-md-6">
-        <h1>可靠 专业 高效</h1>
+        <h1><%= t(".slogan") %></h1>
         <%= simple_format(@home.advantage) %>
       </div>
     </div>
@@ -136,33 +136,33 @@
       <div class="col-md-3">
         <div class="home-box pic">
           <%= image_tag("home-box-b.png") %>
-          <h5>公司介绍</h5>
-          <h3>杰夫电声专业扬声器制造</h3>
-          <p><%= link_to "了解更多详情", about_introduction_path %></p>
+          <h5><%= t(".company_profile") %></h5>
+          <h3><%= t(".company_profile_title") %></h3>
+          <p><%= link_to t(".more"), about_introduction_path %></p>
         </div>
       </div>
       <div class="col-md-3">
         <div class="home-box">
           <%= image_tag("home-box-c.png") %>
-          <h5>公司动态</h5>
-          <h3>杰夫电声 <br> 杰夫窗口</h3>
-          <p><%= link_to "了解更多详情", infos_path %></p>
+          <h5><%= t(".news") %></h5>
+          <h3><%= t(".news_title1") %> <br> <%= t(".news_title2") %></h3>
+          <p><%= link_to t(".more"), infos_path %></p>
         </div>
       </div>
       <div class="col-md-3">
         <div class="home-box">
           <%= image_tag("home-box-a.png") %>
-          <h5>公司荣誉</h5>
-          <h3>通过国家权威认证机构审查</h3>
-          <p><%= link_to "了解更多详情", about_honors_path %></p>
+          <h5><%= t(".honors") %></h5>
+          <h3><%= t(".honors_title") %></h3>
+          <p><%= link_to t(".more"), about_honors_path %></p>
         </div>
       </div>
       <div class="col-md-3">
         <div class="home-box">
           <%= image_tag("home-box-d.png") %>
-          <h5>公司招聘</h5>
-          <h3>你的明天，杰夫的未来。</h3>
-          <p><%= link_to "了解更多详情", careers_path %></p>
+          <h5><%= t(".job") %></h5>
+          <h3><%= t(".job_title") %></h3>
+          <p><%= link_to t(".more"), careers_path %></p>
         </div>
       </div>
     </div>

@@ -17,3 +17,20 @@
     about: "了解杰夫"
     privacy: "隐私声明"
     use: "使用条款"
+
+  static_pages:
+    home:
+      new_speaker: "新品扬声器"
+      latest_products: "最新产品"
+      view_details: "查看详细"
+      slogan: "可靠 专业 高效"
+      company_profile: "公司简介"
+      company_profile_title: "杰夫电声专业扬声器制造"
+      news: "公司动态"
+      news_title1: "杰夫电声"
+      news_title2: "杰夫窗口"
+      honors: "公司荣誉"
+      honors_title: "通过国家权威认证机构审查"
+      job: "公司招聘"
+      job_title: "你的明天，杰夫的未来。"
+      more: "了解更多详情"
