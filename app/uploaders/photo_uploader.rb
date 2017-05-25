@@ -21,6 +21,8 @@ class PhotoUploader < BaseUploader
 	  end
 	end
 
+	process resize_to_fit: [600, 600]
+
 # first_image = MiniMagick::Image.new("photo.png")
 # second_image = MiniMagick::Image.new("jiefuailogo.png")
 

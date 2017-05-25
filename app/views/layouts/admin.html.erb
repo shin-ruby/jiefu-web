@@ -31,6 +31,13 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
+            <li>
+              <% if params[:locale] == "en" %>
+                <%= link_to image_tag("China.png", height: '12', alt: "Logo image"), locale: "zh-CN" %>
+              <% else %>
+                <%= link_to image_tag("USA.png", height: '12', alt: "Logo image"), locale: "en" %>
+              <% end %>
+            </li>
             <li><%= link_to "返回官网", root_path %></a></li>
           </ul>
         </div>

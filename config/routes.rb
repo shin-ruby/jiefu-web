@@ -23,26 +23,25 @@ Rails.application.routes.draw do
 
     # get 'careers' => 'static_pages#careers'
     get 'careers_detail' => 'static_pages#careers_detail'
-  end
 
-
-  namespace :admin do
-    root 'home#show', as: 'root'
-    resources :home, only: [:show, :edit, :update]
-    resources :products
-    resources :infos do
-      collection do
-        post :upload
+    namespace :admin do
+      root 'home#show', as: 'root'
+      resources :home, only: [:show, :edit, :update]
+      resources :products
+      resources :infos do
+        collection do
+          post :upload
+        end
       end
-    end
-    resources :about, only: [:show, :edit, :update]
-    resources :careers
-    resources :users, except: [:show, :edit, :update]
-    resources :messages, except: [:new, :create]
+      resources :about, only: [:show, :edit, :update]
+      resources :careers
+      resources :users, except: [:show, :edit, :update]
+      resources :messages, except: [:new, :create]
 
-    get '/login', to: 'sessions#new'
-    post '/login', to:'sessions#create'
-    delete '/logout', to: 'sessions#destroy'
+      get '/login', to: 'sessions#new'
+      post '/login', to:'sessions#create'
+      delete '/logout', to: 'sessions#destroy'
+    end
   end
 
 end
