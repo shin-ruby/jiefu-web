@@ -1,7 +1,7 @@
 <div class="contact-jumbotron">
   <div class="container">
     <div class="content">
-      <h2>技术支持</h2>
+      <h2><%= t(".title") %></h2>
     </div>
   </div>
 </div>
@@ -9,30 +9,30 @@
 <div class="container">
 	<div class="row contact">
 	  <div class="col-md-8 contact-left">
-	  	<p>请填写下面的表格或电子邮件与我们的客户服务团队取得联系 <a href="mailto:#">info@jiefu.com.cn</a></p>
+	  	<p><%= t(".content1") %> <a href="mailto:#">info@jiefu.com.cn</a></p>
 	  		<% flash.each do |message_type, message| %>
 				  <div class="alert alert-<%= message_type %>"><%= message %></div>
 				<% end %>
 				<%= render 'static_pages/message_form' %>
-			<p>我们将在2个工作日之内给您答案，为确保您能收到我们的回复，请务必正确及有效的填写上述内容。</p>
+			<p><%= t(".content2") %></p>
 		</div>
 	  <div class="col-md-4">
-	  	<h4>联系我们</h4>
+	  	<h4><%= t(".contact") %></h4>
 	  	<address>
-			  <strong>杰夫中国</strong><br>
-			  中国江苏省 无锡市锡山区锡北镇八士锡港路228号 <br>
-			  邮编：214192 <br>
-			  <abbr title="Phone">电话:</abbr> +86 510 83788398,82237687 <br>
-			  <abbr title="Fax">传真:</abbr> +86 510 83782499 <br>
-			  联系人：钱经理，陈经理
+			  <strong><%= t(".china") %></strong><br>
+			  <%= t(".china_address") %> <br>
+			  <%= t(".china_post") %>：214192 <br>
+			  <abbr title="Phone"><%= t(".tel") %>:</abbr> +86 510 83788398,82237687 <br>
+			  <abbr title="Fax"><%= t(".fax") %>:</abbr> +86 510 83782499 <br>
+			  <%= t(".who") %>：<%= t(".people") %>：
 			</address>
 
 			<address>
-			  <strong>杰夫海外</strong><br>
-			  韩国京畿道水原市勸善區孝園路256番33, 漢拏Vivaldi Park 1403號 <br>
-			  <abbr title="Phone">电话:</abbr> +86 510 83788398,82237687 <br>
-			  <abbr title="Fax">传真:</abbr> +86 510 83782499 <br>
-			  联系人：Sophie, Rachel​
+			  <strong><%= t(".abroad") %></strong><br>
+			  <%= t(".abroad_address") %> <br>
+			  <abbr title="Phone"><%= t(".tel") %>:</abbr> +86 510 83788398,82237687 <br>
+			  <abbr title="Fax"><%= t(".fax") %>:</abbr> +86 510 83782499 <br>
+			  <%= t(".who") %>：Sophie, Rachel​
 			</address>
 	  </div>
 	</div>

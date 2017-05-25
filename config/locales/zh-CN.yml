@@ -34,3 +34,98 @@
       job: "公司招聘"
       job_title: "你的明天，杰夫的未来。"
       more: "了解更多详情"
+    support:
+      title: "技术支持"
+      content1: "请填写下面的表格或电子邮件与我们的客户服务团队取得联系"
+      content2: "我们将在2个工作日之内给您答案，为确保您能收到我们的回复，请务必正确及有效的填写上述内容。"
+      contact: "联系我们"
+      china: "杰夫中国"
+      china_address: "中国江苏省 无锡市锡山区锡北镇八士锡港路228号 "
+      china_post: "邮编"
+      tel: "电话"
+      fax: "传真"
+      who: "联系人"
+      people: "钱经理，陈经理"
+      abroad: "杰夫海外"
+      abroad_address: "韩国京畿道水原市勸善區孝園路256番33, 漢拏Vivaldi Park 1403號 "
+    about:
+      title: "杰夫电声，无处不在"
+      profile: "公司简介"
+      history: "公司历程"
+      president: "总裁寄语"
+      certification: "资质认证"
+      talent: "人才战略"
+      talent_content: "人才竞争力是现代企业竞争的核心，所以杰夫历来视人才为最宝贵的财富，极其重视人才的引进和培养。在杰夫，人才选拔不仅在于是否具备基本的知识、技能和素养，更注重的是能否融入团队，贯彻学习、思考、实践、总结、创新的杰夫精神。"
+      honors: "了解杰夫荣誉"
+      job: "杰夫招聘信息"
+      more: "了解杰夫更多"
+      details: "了解详细信息"
+    about_introduction:
+      title: "公司介绍"
+      title_content: "中国最大的平板电视用扬声器研制企业之一，主营各类扬声器单元及系统的研发、制造和销售，并享有进出口自营权。"
+      about: "关于我们"
+      profile: "公司介绍"
+
+  activerecord:
+    models:
+      message: "消息"
+    attributes:
+      message:
+        name: "姓名"
+        mobile: "电话号码"
+        email: "邮箱"
+        company: "公司"
+        content: "内容"
+
+
+  products:
+    size: "外观尺寸（长*宽*高）"
+    impedance: "阻抗"
+    rated_power: "额定功率"
+    sensitivity: "灵敏度"
+    frequency: "频响范围"
+
+    index:
+      title: "扬声器"
+      content: "中国最大的平板电视用扬声器研制企业之一，主营各类扬声器单元及系统的研发、 制造和销售，并享有进出口自营权。"
+      search: "高级搜索"
+      view_details: "查看详细"
+    show:
+      return: "返回上页"
+      parameter: "参数"
+      feature: "特点"
+      construction: "外形结构图"
+      graph: "曲线图"
+      support: "技术咨询"
+
+  infos:
+    title: "新闻"
+    index:
+      latest_news: "最新动态"
+
+  careers:
+    index:
+      title: "公司招聘"
+      title1: "你的明天，"
+      title2: "杰夫的未来。"
+      content: "员工是我们最宝贵的资产，我们以富有竞争力的管理方式和绩效考核对员工进行奖励，并给予员工明确的晋升计划。"
+      position: "职位"
+      area: "区域"
+      number: "人数"
+    show:
+      back: "返回职位列表"
+      place: "工作地点"
+      people: "招聘人数"
+      apply: "立即申请"
+      requirements: "任职要求"
+      email: "简历投递邮箱"
+
+
+  helpers:
+    submit:
+      create: "提交信息"
+      update: 
+      submit: 
+      model_name:
+        create: 
+        update: 

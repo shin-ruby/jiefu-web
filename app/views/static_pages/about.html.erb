@@ -1,7 +1,7 @@
 <div class="about-jumbotron">
   <div class="container">
     <div class="content">
-      <h2>杰夫电声，无处不在</h2>
+      <h2><%= t(".title") %></h2>
     </div>
   </div>
 </div>
@@ -11,28 +11,28 @@
 	  <div class="row about-contact">
 	  	<div class="col-md-4">
 	  		<blockquote class="blockquote-reverse introduction-blockquote">
-				  <h4 class="about-head">杰夫简介</h4>
+				  <h4 class="about-head"><%= t(".profile") %></h4>
 				</blockquote>
 	  	</div>
 		  <div class="col-md-8">
 		  	<p>
 		  		<%= @about.summary %>
 		  	</p>
-		  	<%= link_to "了解杰夫更多", about_introduction_path, class: "btn btn-primary", role: "button" %>
+		  	<%= link_to t(".more"), about_introduction_path, class: "btn btn-primary", role: "button" %>
 		  </div>
 		</div>
 
 		<div class="row about-contact">
 	  	<div class="col-md-4">
 	  		<blockquote class="blockquote-reverse operation-blockquote">
-				  <h4 class="about-head">公司历程</h4>
+				  <h4 class="about-head"><%= t(".history") %></h4>
 				</blockquote>
 	  	</div>
 		  <div class="col-md-8">
 		  	<p>
 		  		<%= @about.course %>
 		  	</p>
-		  	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">了解详细信息</button>
+		  	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal"><%= t(".details") %></button>
 		  </div>
 		  <!-- Modal -->
 				<div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -47,7 +47,7 @@
 		<div class="row about-contact">
 	  	<div class="col-md-4">
 	  		<blockquote class="blockquote-reverse ceo-blockquote">
-				  <h4 class="about-head">总裁寄语</h4>
+				  <h4 class="about-head"><%= t(".president") %></h4>
 				</blockquote>
 	  	</div>
 		  <div class="col-md-8">
@@ -59,25 +59,25 @@
 		<div class="row about-contact">
 	  	<div class="col-md-4">
 	  		<blockquote class="blockquote-reverse certification-blockquote">
-				  <h4 class="about-head">资质认证</h4>
+				  <h4 class="about-head"><%= t(".certification") %></h4>
 				</blockquote>
 	  	</div>
 		  <div class="col-md-8">
-		  	<p><%= link_to "了解杰夫荣誉", about_honors_path %></p>
+		  	<p><%= link_to t(".honors"), about_honors_path %></p>
 		  </div>
 		</div>
 
 		<div class="row about-contact">
 	  	<div class="col-md-4">
 	  		<blockquote class="blockquote-reverse certification-blockquote">
-				  <h4 class="about-head">人才战略</h4>
+				  <h4 class="about-head"><%= t(".talent") %></h4>
 				</blockquote>
 	  	</div>
 		  <div class="col-md-8">
 		  	<p>
-		  		人才竞争力是现代企业竞争的核心，所以杰夫历来视人才为最宝贵的财富，极其重视人才的引进和培养。在杰夫，人才选拔不仅在于是否具备基本的知识、技能和素养，更注重的是能否融入团队，贯彻学习、思考、实践、总结、创新的杰夫精神。
+		  		<%= t(".talent_content") %>
 		  	</p>
-		  	<%= link_to "杰夫招聘信息", careers_path, class: "btn btn-primary", type: "button" %>
+		  	<%= link_to t(".job"), careers_path, class: "btn btn-primary", type: "button" %>
 		  </div>
 		</div>
 

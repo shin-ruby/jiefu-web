@@ -1,24 +1,3 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 en:
   title: "Wuxi Jiefu Electroacoustic Co.,Ltd."
   menu:
@@ -35,9 +14,9 @@ en:
     laboratory: "Jiefu Laboratory"
     support: "Support"
     news: "News"
-    about: "About Jiefu"
+    about: "About Us"
     privacy: "Privacy"
-    use: "Terms of use"
+    use: "Terms Of Use"
 
   static_pages:
     home:
@@ -55,3 +34,98 @@ en:
       job: "Job Opportunities"
       job_title: "Your Tomorrow, Jiefu’s Future"
       more: "Learn more"
+    support:
+      title: "Technical Support"
+      content1: "Please fill in the form or email below to contact our customer service team"
+      content2: "We will reply you within 2 working days. In order to ensure that you receive our reply, please fill in the above information correctly and effectively."
+      contact: "Contact us"
+      china: "JieFu China"
+      china_address: "No.228 Xigang Road,Bashi Xibei Town, Wuxi City, China"
+      china_post: "Post code"
+      tel: "TEL"
+      fax: "FAX"
+      who: "CONTACTS"
+      people: "Sophie, Louise"
+      abroad: "Jiefu Abroad"
+      abroad_address: "1403 (Halla Vivaldi Park), 33, Hyowon-ro 256beon-gil,Gwonseon-gu, Suwon-si, Gyeonggi-do, 16571, Rep.of KOREA"
+    about:
+      title: "Jiefu Speaker，Global Sound"
+      profile: "Company profile"
+      history: "Company history"
+      president: "President message"
+      certification: "Qualification certification"
+      talent: "Talent strategy"
+      talent_content: "Waiting..."
+      honors: "Jiefu Honors"
+      job: "Job opportunities"
+      more: "More"
+      details: "View Details"
+    about_introduction:
+      title: "Company Profile"
+      title_content: "One of the biggest flat panel TV speaker maker in China, mainly focus on research, develop, manufacture and sales of speaker unit and speaker system. "
+      about: "About us"
+      profile: "Company profile"
+
+  activerecord:
+    models:
+      message: "Message"
+    attributes:
+      message:
+        name: "Name"
+        mobile: "Mobile"
+        email: "Email"
+        company: "Company"
+        content: "Content"
+
+
+  products:
+    size: "Dimensions (L * W * H)"
+    impedance: "Impedance"
+    rated_power: "Rated Power"
+    sensitivity: "Sensitivity"
+    frequency: "Frequency"
+
+    index:
+      title: "Speaker"
+      content: "One of the biggest flat panel TV speaker maker in China, mainly focus on research, develop, manufacture and sales of speaker unit and speaker system. "
+      search: "Advanced Search"
+      view_details: "View Details"
+    show:
+      return: "Return Above"
+      parameter: "Parameter"
+      feature: "Feature"
+      construction: "Structure"
+      graph: "Graph"
+      support: "Support"
+
+  infos:
+    title: "News"
+    index:
+      title: "News"
+      latest_news: "Latest News"
+
+  careers:
+    index:
+      title: "Job Opportunities"
+      title1: "Your Tomorrow, "
+      title2: " Jiefu’s Future"
+      content: "Employees are our most valuable asset, we take the competitive management and performance evaluation to reward employees and give employees a clear promotion plan."
+      position: "Position"
+      area: "Area"
+      number: "Number"
+    show:
+      back: "Back to list"
+      place: "Work Place"
+      people: "People"
+      apply: "Apply"
+      requirements: "Job Requirements"
+      email: "Resume Delivery Email"
+
+  helpers:
+    submit:
+      create: "Submit"
+      update: 
+      submit: 
+      model_name:
+        create: 
+        update: 

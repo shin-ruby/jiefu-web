@@ -4,18 +4,18 @@
 	<div class="row contact">
 		  <div class="row about-contact">
 		  	<div class="col-md-4 back-careers">
-					<h5><%= link_to "返回职位列表", careers_path, class: "carrers-link" %></h5>
+					<h5><%= link_to t(".back"), careers_path, class: "carrers-link" %></h5>
 		  	</div>
 		  	<div class="col-md-8 careers-detail">
 					<h2><%= @career.position %></h2>
-					<p>工作地点:  <%= @career.place %></p>
-					<p><small>招聘人数:  <%= @career.people %>名</small></p>
-					<a class="btn btn-primary" href="mailto:hr@jiefu.com.cn" role="button">立即申请</a>
-					<h3>任职要求</h3>
+					<p><%= t(".place") %>:  <%= @career.place %></p>
+					<p><small><%= t(".people") %>:  <%= @career.people %>名</small></p>
+					<a class="btn btn-primary" href="mailto:hr@jiefu.com.cn" role="button"><%= t(".apply") %></a>
+					<h3><%= t(".requirements") %></h3>
 					<ul>
 					  <%= simple_format(@career.content) %>
 					</ul>
-					<h3>简历投递邮箱</h3>
+					<h3><%= t(".email") %></h3>
 					<ul>
 					  <li>hr@jiefu.com.cn</li>
 					</ul>

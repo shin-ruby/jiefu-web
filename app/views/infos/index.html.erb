@@ -1,9 +1,9 @@
-<% provide(:title, "新闻中心") %>
+<% provide(:title, t(".title")) %>
 
 <div class="news-jumbotron">
   <div class="container">
     <div class="content">
-      <h2>新闻</h2>
+      <h2><%= t(".title") %></h2>
     </div>
   </div>
 </div>
@@ -12,7 +12,7 @@
 	<div class="row news">
 	  <div class="col-md-8 col-md-offset-2">
 	  	<div class="page-header">
-			  <h2>最新动态</h2>
+			  <h2><%= t(".latest_news") %></h2>
 			</div>
 	  	<ul class="list-unstyled news-list">
 	  		<% @infos.each do |info| %>

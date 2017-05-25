@@ -1,7 +1,7 @@
 <% provide(:title, @product.name) %>
 <div class="container news_list">
 	<ol class="breadcrumb news_breadcrumb">
-	  <li><%= link_to "返回上页", :back %></li>
+	  <li><%= link_to t(".return"), products_path %></li>
 	</ol>
 
 	<div class="container product_detail">
@@ -26,22 +26,22 @@
 				<div class="product_detail_content">
 				  <!-- Nav tabs -->
 				  <ul class="nav nav-pills" role="tablist">
-				  	<li role="presentation" class="active"><a href="#parameter" aria-controls="parameter" role="tab" data-toggle="tab">参数</a></li>
-				    <li role="presentation"><a href="#feature" aria-controls="feature" role="tab" data-toggle="tab">特点</a></li>
-				    <li role="presentation"><a href="#construction" aria-controls="construction" role="tab" data-toggle="tab">外形结构图</a></li>
-				    <li role="presentation"><a href="#graph" aria-controls="graph" role="tab" data-toggle="tab">曲线图</a></li>
+				  	<li role="presentation" class="active"><a href="#parameter" aria-controls="parameter" role="tab" data-toggle="tab"><%= t(".parameter") %></a></li>
+				    <li role="presentation"><a href="#feature" aria-controls="feature" role="tab" data-toggle="tab"><%= t(".feature") %></a></li>
+				    <li role="presentation"><a href="#construction" aria-controls="construction" role="tab" data-toggle="tab"><%= t(".construction") %></a></li>
+				    <li role="presentation"><a href="#graph" aria-controls="graph" role="tab" data-toggle="tab"><%= t(".graph") %></a></li>
 				  </ul>
 
 				  <!-- Tab panes -->
 				  <div class="tab-content">
 				  	<div role="tabpanel" class="tab-pane active" id="parameter">
 				    	<ul class="list-unstyled">
-							  <li>外观尺寸（长*宽*高）mm : <%= @product.size_length %>*<%= @product.size_width %>*<%= @product.size_height %></li>
-							  <li>阻抗（Ω）: <%= @product.impedance %></li>
+							  <li><%= t("products.size") %>mm : <%= @product.size_length %>*<%= @product.size_width %>*<%= @product.size_height %></li>
+							  <li><%= t("products.impedance") %>（Ω）: <%= @product.impedance %></li>
 							  <li>FO（Hz）: <%= @product.fo %></li>
-							  <li>额定功率（W）: <%= @product.rated_power %></li>
-							  <li>灵敏度（dB）: <%= @product.sensitivity %></li>
-							  <li>频响范围 : <%= @product.frequency %></li>
+							  <li><%= t("products.rated_power") %>: <%= @product.rated_power %></li>
+							  <li><%= t("products.sensitivity") %>（dB）: <%= @product.sensitivity %></li>
+							  <li><%= t("products.frequency") %> : <%= @product.frequency %></li>
 							</ul>
 				    </div>
 				    <div role="tabpanel" class="tab-pane" id="feature">
@@ -58,7 +58,7 @@
 				  </div>
 				</div>
 				
-				<%= link_to '技术咨询', support_path, html_options = { class: "btn btn-primary", role: "button"} %>
+				<%= link_to t(".support"), support_path, html_options = { class: "btn btn-primary", role: "button"} %>
 		  </div>
 		</div>
 	</div>

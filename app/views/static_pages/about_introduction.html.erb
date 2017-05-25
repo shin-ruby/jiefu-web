@@ -1,9 +1,8 @@
 <div class="introduction-jumbotron">
   <div class="container">
     <div class="content">
-      <h2>公司介绍</h2>
-      <p>中国最大的平板电视用扬声器研制企业之一，主营各类扬声器单元及系统的研发、<br>
-制造和销售，并享有进出口自营权。</p>
+      <h2><%= t(".title") %></h2>
+      <p><%= t(".title_content") %></p>
     </div>
   </div>
 </div>
@@ -11,8 +10,8 @@
 <div class="container introduction">
     <ol class="breadcrumb introduction_breadcrumb">
       <li><%= link_to (fa_icon "home"), root_path %></a></li>
-      <li><%= link_to "关于我们", about_path %></li>
-      <li class="active">公司介绍</li>
+      <li><%= link_to t(".about"), about_path %></li>
+      <li class="active"><%= t(".profile") %></li>
     </ol>
 	<div class="row contact">
 	  <div class="col-md-12">

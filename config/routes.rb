@@ -15,11 +15,7 @@ Rails.application.routes.draw do
     get 'support' => 'static_pages#support'
     get 'privacy' => 'static_pages#privacy'
     get 'terms_of_use' => 'static_pages#terms_of_use'
-
     get 'static_search' => 'static_pages#search'
-
-    # get 'news' => 'static_pages#news'
-    # get 'news_content' => 'static_pages#news_content'
 
     get 'about' => 'static_pages#about'
     get 'about_introduction' => 'static_pages#about_introduction'

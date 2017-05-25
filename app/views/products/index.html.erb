@@ -3,8 +3,8 @@
 <div class="product-banner">
 	<div class="container">
     <div class="content">
-      <h2>扬声器</h2>
-      <p>高效节能的JIEFU扬声器可减少功耗，减轻重量并提供同样出色的动态表现与声学性能</p>
+      <h2><%= t(".title") %></h2>
+      <p><%= t(".content") %></p>
     </div>
   </div>
 </div>
@@ -13,7 +13,7 @@
 
 	<div class="btn-group advanced-search">
 		<%= link_to search_path, class: "btn btn-primary" do %>
-	    <i class="glyphicon glyphicon-search"></i> 高级搜索
+	    <i class="glyphicon glyphicon-search"></i> <%= t(".search") %>
 		<% end %>
 	</div>
 
@@ -24,14 +24,14 @@
 					<%= image_tag(product.photo1.url, class: "product-img") if product.photo1? %>
 			  	<h4><%= product.name %></h4>
 					<ul class="list-unstyled">
-					  <li>外观尺寸（长*宽*高）mm : <%= product.size_length %>*<%= product.size_width %>*<%= product.size_height %></li>
-					  <li>阻抗（Ω）: <%= product.impedance %></li>
+					  <li><%= t("products.size") %>mm : <%= product.size_length %>*<%= product.size_width %>*<%= product.size_height %></li>
+					  <li><%= t("products.impedance") %>（Ω）: <%= product.impedance %></li>
 					  <li>FO（Hz）: <%= product.fo %></li>
-					  <li>额定功率（W）: <%= product.rated_power %></li>
-					  <li>灵敏度（dB）: <%= product.sensitivity %></li>
-					  <li>频响范围 : <%= product.frequency %></li>
+					  <li><%= t("products.rated_power") %>（W）: <%= product.rated_power %></li>
+					  <li><%= t("products.sensitivity") %>（dB）: <%= product.sensitivity %></li>
+					  <li><%= t("products.frequency") %> : <%= product.frequency %></li>
 					</ul>
-					<p><%= link_to '了解详细', product_path(product) %></p>
+					<p><%= link_to t(".view_details"), product_path(product) %></p>
 			  </div>
 			<% end %>
 		</div>

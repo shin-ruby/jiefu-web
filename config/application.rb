@@ -21,7 +21,7 @@ module JiefuWeb
     config.i18n.available_locales = ['zh-CN', 'en']
 
     # # Do not swallow errors in after_commit/after_rollback callbacks.
-    # config.i18n.fallbacks = true
+    config.i18n.fallbacks = true
 
   end
 end
