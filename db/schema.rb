@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170323022641) do
+ActiveRecord::Schema.define(version: 20170526072907) do
 
   create_table "abouts", force: :cascade do |t|
     t.text     "summary"
@@ -28,6 +28,18 @@ ActiveRecord::Schema.define(version: 20170323022641) do
     t.text     "content"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "home_translations", force: :cascade do |t|
+    t.integer  "home_id",    null: false
+    t.string   "locale",     null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string   "copywrite1"
+    t.string   "copywrite2"
+    t.text     "advantage"
+    t.index ["home_id"], name: "index_home_translations_on_home_id"
+    t.index ["locale"], name: "index_home_translations_on_locale"
   end
 
   create_table "homes", force: :cascade do |t|
