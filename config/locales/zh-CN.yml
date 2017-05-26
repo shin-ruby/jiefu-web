@@ -101,6 +101,7 @@
   infos:
     title: "新闻"
     index:
+      title: "新闻"
       latest_news: "最新动态"
 
   careers:
