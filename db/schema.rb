@@ -10,7 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170526072907) do
+ActiveRecord::Schema.define(version: 20170527070035) do
+
+  create_table "about_translations", force: :cascade do |t|
+    t.integer  "about_id",   null: false
+    t.string   "locale",     null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.text     "summary"
+    t.text     "introduce"
+    t.text     "course"
+    t.text     "ceo"
+    t.index ["about_id"], name: "index_about_translations_on_about_id"
+    t.index ["locale"], name: "index_about_translations_on_locale"
+  end
 
   create_table "abouts", force: :cascade do |t|
     t.text     "summary"
@@ -60,6 +73,17 @@ ActiveRecord::Schema.define(version: 20170526072907) do
     t.datetime "updated_at",   null: false
   end
 
+  create_table "info_translations", force: :cascade do |t|
+    t.integer  "info_id",    null: false
+    t.string   "locale",     null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string   "title"
+    t.text     "content"
+    t.index ["info_id"], name: "index_info_translations_on_info_id"
+    t.index ["locale"], name: "index_info_translations_on_locale"
+  end
+
   create_table "infos", force: :cascade do |t|
     t.integer  "category"
     t.string   "title"
@@ -85,6 +109,16 @@ ActiveRecord::Schema.define(version: 20170526072907) do
     t.datetime "updated_at", null: false
     t.integer  "info_id"
     t.index ["info_id"], name: "index_pictures_on_info_id"
+  end
+
+  create_table "product_translations", force: :cascade do |t|
+    t.integer  "product_id", null: false
+    t.string   "locale",     null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.text     "feature"
+    t.index ["locale"], name: "index_product_translations_on_locale"
+    t.index ["product_id"], name: "index_product_translations_on_product_id"
   end
 
   create_table "products", force: :cascade do |t|

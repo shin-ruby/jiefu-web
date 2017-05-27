@@ -60,6 +60,9 @@
       job: "杰夫招聘信息"
       more: "了解杰夫更多"
       details: "了解详细信息"
+    milestones:
+      title: "公司历程"
+
     about_introduction:
       title: "公司介绍"
       title_content: "中国最大的平板电视用扬声器研制企业之一，主营各类扬声器单元及系统的研发、制造和销售，并享有进出口自营权。"
@@ -113,6 +116,9 @@
 
   infos:
     title: "新闻"
+    news: "公司新闻"
+    announcement: "杰夫公告"
+    information: "行业资讯"
     index:
       title: "新闻"
       latest_news: "最新动态"

@@ -3,6 +3,8 @@ class Product < ApplicationRecord
 	validates :photo1, presence: true
 	validates :photo2, presence: true
 
+	translates :feature
+
 	mount_uploader :photo1, PhotoUploader
 	mount_uploader :photo2, PhotoUploader
 	mount_uploader :configuration1, PhotoUploader

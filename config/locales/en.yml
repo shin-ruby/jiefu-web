@@ -52,7 +52,7 @@ en:
       title: "Jiefu Speaker，Global Sound"
       profile: "Company profile"
       history: "Company history"
-      president: "President message"
+      president: "Message from CEO"
       certification: "Qualification certification"
       talent: "Talent strategy"
       talent_content: "Waiting..."
@@ -60,6 +60,9 @@ en:
       job: "Job opportunities"
       more: "More"
       details: "View Details"
+    milestones:
+      title: "Company History"
+
     about_introduction:
       title: "Company Profile"
       title_content: "One of the biggest flat panel TV speaker maker in China, mainly focus on research, develop, manufacture and sales of speaker unit and speaker system. "
@@ -112,6 +115,9 @@ en:
 
   infos:
     title: "News"
+    news: "News"
+    announcement: "Announcement"
+    information: "Information"
     index:
       title: "News"
       latest_news: "Latest News"

@@ -5,4 +5,6 @@ class Info < ApplicationRecord
 
 	validates :title, presence: true
 
+	translates :title, :content
+
 end

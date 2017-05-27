@@ -27,11 +27,11 @@ module ApplicationHelper
 
   def info_category(category)
   	if category == 1
-  		'公司新闻'
+  		I18n.t("infos.news")
   	elsif category == 2
-  		'杰夫公告'
+  		I18n.t("infos.announcement")
   	else
-  		'行业资讯'
+  		I18n.t("infos.information")
   	end
   end
 
