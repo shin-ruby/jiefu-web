@@ -65,6 +65,19 @@
       title_content: "中国最大的平板电视用扬声器研制企业之一，主营各类扬声器单元及系统的研发、制造和销售，并享有进出口自营权。"
       about: "关于我们"
       profile: "公司介绍"
+    about_honors:
+      title: "杰夫荣誉"
+      content: "作为中国最大的平板电视用扬声器研制企业之一，杰夫电声深受客户信任。 同时，杰夫电声还受到了专业认证机构、行业协会和媒体的广泛赞誉。"
+      qualifications: "资质认证"
+      patent: "发明专利"
+      utility: "实用新型专利"
+    honors_quality:
+      qualifications: "资质认证"
+    honors_invent:
+      patent: "发明专利"
+    honors_practical:
+      utility: "实用新型专利"
+
 
   activerecord:
     models:

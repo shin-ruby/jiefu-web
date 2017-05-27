@@ -65,6 +65,18 @@ en:
       title_content: "One of the biggest flat panel TV speaker maker in China, mainly focus on research, develop, manufacture and sales of speaker unit and speaker system. "
       about: "About us"
       profile: "Company profile"
+    about_honors:
+      title: "Jiefu Honors"
+      content: "Waitting..."
+      qualifications: "Qualifications"
+      patent: "Patent"
+      utility: "Utility model patents"
+    honors_quality:
+      qualifications: "Qualifications"
+    honors_invent:
+      patent: "Patent"
+    honors_practical:
+      utility: "Utility model patents"
 
   activerecord:
     models:
