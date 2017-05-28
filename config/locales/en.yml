@@ -113,6 +113,39 @@ en:
       graph: "Graph"
       support: "Support"
 
+  searches:
+    show:
+      title: "Speaker"
+      content: "One of the biggest flat panel TV speaker maker in China, mainly focus on research, develop, manufacture and sales of speaker unit and speaker system. "
+      title2: "Speaker Type"
+      all_speakers: "All"
+      size: "Dimensions (L * W * H)"
+      monomer: "Monomer"
+      box: "Box"
+      search_submit: "Search"
+      search_results: "Search Results"
+      results: "If the search cannot find the corresponding product, please contact us directly:"
+      support: "Support"
+      impedance: "Impedance"
+      rated_power: "Rated Power"
+      sensitivity: "Sensitivity"
+      frequency: "Frequency"
+      view_details: "View Details"
+
+  activerecord:
+    models:
+      search: "Search"
+    attributes:
+      search:
+        name: "Product Number"
+        min_size_length: "L"
+        min_size_width: "W"
+        min_size_height: "H"
+        min_fo: "FO(Hz)"
+        min_rated_power: "Rated Power (W)"
+        min_sensitivity: "Sensitivity (dB)"
+
+
   infos:
     title: "News"
     news: "News"
@@ -143,7 +176,7 @@ en:
     submit:
       create: "Submit"
       update: 
-      submit: 
+      submit:
       model_name:
         create: 
         update: 

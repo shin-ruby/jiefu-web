@@ -114,6 +114,38 @@
       graph: "曲线图"
       support: "技术咨询"
 
+  searches:
+    show:
+      title: "扬声器"
+      content: "中国最大的平板电视用扬声器研制企业之一，主营各类扬声器单元及系统的研发、 制造和销售，并享有进出口自营权。"
+      title2: "扬声器类型"
+      all_speakers: "所有扬声器"
+      size: "外观尺寸（长*宽*高）"
+      monomer: "单体扬声器"
+      box: "箱体扬声器"
+      search_submit: "搜索"
+      search_results: "搜索结果"
+      results: "如果搜索找不到相应的产品请直接联系我们："
+      support: "技术支持"
+      impedance: "阻抗"
+      rated_power: "额定功率"
+      sensitivity: "灵敏度"
+      frequency: "频响范围"
+      view_details: "查看详细"
+
+  activerecord:
+    models:
+      search: "搜索"
+    attributes:
+      search:
+        name: "产品型号"
+        min_size_length: "长:"
+        min_size_width: "宽:"
+        min_size_height: "高:"
+        min_fo: "FO(Hz)"
+        min_rated_power: "额定功率（W）"
+        min_sensitivity: "灵敏度（dB）"
+
   infos:
     title: "新闻"
     news: "公司新闻"
@@ -145,7 +177,7 @@
     submit:
       create: "提交信息"
       update: 
-      submit: 
+      submit:
       model_name:
         create: 
         update: 
