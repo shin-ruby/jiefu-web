@@ -1,0 +1,134 @@
+<% flash.each do |message_type, message| %>
+  <div class="alert alert-<%= message_type %>"><%= message %></div>
+<% end %>
+
+<h3>实验中心    <small><%= link_to "修改", edit_admin_laboratory_path(@laboratory) %></small></h3>
+<hr>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-default">
+      <div class="panel-heading">实验室中心Banner介绍</div>
+      <div class="panel-body">
+        <%= @laboratory.laboratory_title_content %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-default">
+      <div class="panel-heading"><%= @laboratory.rd_title? ? @laboratory.rd_title : "研发实验室介绍" %></div>
+      <div class="panel-body">
+        <%= @laboratory.rd_content %>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-md-4">
+    <div class="panel panel-default">
+      <div class="panel-heading"><%= @laboratory.hsf_title? ? @laboratory.hsf_title : "HSF 实验室" %></div>
+      <div class="panel-body">
+        <%= @laboratory.hsf_content %>
+        <hr>
+        <%= simple_format @laboratory.hsf_list %>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="panel panel-default">
+      <div class="panel-heading"><%= @laboratory.multimedia_title? ? @laboratory.multimedia_title : "多媒体视听室" %></div>
+      <div class="panel-body">
+        <%= @laboratory.multimedia_content %>
+        <hr>
+        <%= simple_format @laboratory.multimedia_list %>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="panel panel-default">
+      <div class="panel-heading"><%= @laboratory.power_title? ? @laboratory.power_title : "功率寿命实验室" %></div>
+      <div class="panel-body">
+        <%= @laboratory.power_content %>
+        <hr>
+        <%= simple_format @laboratory.power_list %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-4">
+    <div class="panel panel-default">
+      <div class="panel-heading"><%= @laboratory.mechanical_title? ? @laboratory.mechanical_title : "环境机械实验室" %></div>
+      <div class="panel-body">
+        <%= @laboratory.mechanical_content %>
+        <hr>
+        <%= simple_format @laboratory.mechanical_list %>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="panel panel-default">
+      <div class="panel-heading"><%= @laboratory.chemistry_title? ? @laboratory.chemistry_title : "化学测试前处理室" %></div>
+      <div class="panel-body">
+        <%= @laboratory.chemistry_content %>
+        <hr>
+        <%= simple_format @laboratory.chemistry_list %>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="panel panel-default">
+      <div class="panel-heading"><%= @laboratory.audio_title? ? @laboratory.audio_title : "声频检测实验室" %></div>
+      <div class="panel-body">
+        <%= @laboratory.audio_content %>
+        <hr>
+        <%= simple_format @laboratory.audio_list %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-4">
+    <div class="panel panel-default">
+      <div class="panel-heading"><%= @laboratory.anechoic_title? ? @laboratory.anechoic_title : "消声室" %></div>
+      <div class="panel-body">
+        <%= @laboratory.anechoic_content %>
+        <hr>
+        <%= simple_format @laboratory.anechoic_list %>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="panel panel-default">
+      <div class="panel-heading"><%= @laboratory.subjectivity_title? ? @laboratory.subjectivity_title : "主观试听室" %></div>
+      <div class="panel-body">
+        <%= @laboratory.subjectivity_content %>
+        <hr>
+        <%= simple_format @laboratory.subjectivity_list %>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="panel panel-default">
+      <div class="panel-heading"><%= @laboratory.salt_title? ? @laboratory.salt_title : "盐雾实验室" %></div>
+      <div class="panel-body">
+        <%= @laboratory.salt_content %>
+        <hr>
+        <%= simple_format @laboratory.salt_list %>
+      </div>
+    </div>
+  </div>
+</div>

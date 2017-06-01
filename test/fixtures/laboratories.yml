@@ -1,0 +1,65 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  laboratory_title_content: MyText
+  rd_title: MyString
+  rd_content: MyText
+  hsf_title: MyString
+  hsf_content: MyText
+  hsf_list: MyText
+  multimedia_title: MyString
+  multimedia_content: MyText
+  multimedia_list: MyText
+  power_title: MyString
+  power_content: MyText
+  power_list: MyText
+  mechanical_title: MyString
+  mechanical_content: MyText
+  mechanical_list: MyText
+  chemistry_title: MyString
+  chemisty_content: MyText
+  chemistry_list: MyText
+  audio_title: MyString
+  audio_content: MyText
+  audio_list: MyText
+  anechoic_title: MyString
+  anechoic_content: MyText
+  anechoic_list: MyText
+  subjectivity_title: MyString
+  subjectivity_content: MyText
+  subjectivity_list: MyText
+  salt_title: MyString
+  salt_content: MyText
+  salt_list: MyText
+
+two:
+  laboratory_title_content: MyText
+  rd_title: MyString
+  rd_content: MyText
+  hsf_title: MyString
+  hsf_content: MyText
+  hsf_list: MyText
+  multimedia_title: MyString
+  multimedia_content: MyText
+  multimedia_list: MyText
+  power_title: MyString
+  power_content: MyText
+  power_list: MyText
+  mechanical_title: MyString
+  mechanical_content: MyText
+  mechanical_list: MyText
+  chemistry_title: MyString
+  chemisty_content: MyText
+  chemistry_list: MyText
+  audio_title: MyString
+  audio_content: MyText
+  audio_list: MyText
+  anechoic_title: MyString
+  anechoic_content: MyText
+  anechoic_list: MyText
+  subjectivity_title: MyString
+  subjectivity_content: MyText
+  subjectivity_list: MyText
+  salt_title: MyString
+  salt_content: MyText
+  salt_list: MyText

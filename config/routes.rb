@@ -34,6 +34,7 @@ Rails.application.routes.draw do
         end
       end
       resources :about, only: [:show, :edit, :update]
+      resources :laboratories, only: [:show, :edit, :update]
       resources :careers
       resources :users, except: [:show, :edit, :update]
       resources :messages, except: [:new, :create]
