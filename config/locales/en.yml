@@ -81,6 +81,11 @@ en:
     honors_practical:
       utility: "Utility model patents"
 
+    laboratory:
+      title: "Jiefu Laboratory"
+      title_content: "Jiefu Acoustic testing Laboratory is one of the professional acoustic testing oriented laboratory for speaker unit and speaker system in China. To assure the scientific rigor of the testing, Jiefu initially introduced various of the most advanced testing facilities and equipments, Jiefu laboratory’s test results can offer the most accurate and efficient references to the clients when they need to make decision on their new projects adoption."
+      more: "Learn more"
+
   activerecord:
     models:
       message: "Message"

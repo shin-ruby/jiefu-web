@@ -1,8 +1,8 @@
 <div class="laboratory-jumbotron">
   <div class="container">
     <div class="content">
-      <h2>杰夫实验室</h2>
-      <p>杰夫电声测试实验室是国内最早定位于扬声器单元及系统领域的专业电声测试实验室之一。测试实验室力求测试的科学性与严谨性，率先引入国际最先进和最专业的测试方法和测试设备。工程师们本着公平，客观，准确的工作态度，判定着杰夫每一个产品的合格与否，因此，实验室的测试结果，以其权威性和说服力，代表了该类产品的总体技术水平，并为客户的产品选型提供最为准确有效的参考。</p>
+      <h2><%= t(".title") %></h2>
+      <p><%= t(".title_content") %></p>
     </div>
   </div>
 </div>
@@ -11,6 +11,7 @@
 	<div class="row">
 	  <div class="col-md-12">
 	  	<h3 class="text-center">研发实验室及主要测试资源</h3>
+	  	<p>电声产品的评测对测试环境、测试方法、和测试设备有着非常严格的要求。杰夫电声测试实验室与中国南京大学声学研究所通力合作，已获得国际著名电声产品测试设备厂商的鼎力支持，如丹麦B&K公司，美国LINEARX公司和DRA LABS实验室，日本ESPEC公司和韩国SIGMA公司等，他们的测试设备广泛应用于国际著名的电声测试机构和扬声器厂商。 杰夫电声测试实验室在国内众多电声试验室中，率先使用测试设备包括520立方米的消音室，B&K2012音频分析仪，LMS和MLSSA声频分析系统，ESPEC环境试验箱，SIGMA功率试验台和在线测试仪，SKYRAYX荧光光谱仪等，另外，杰夫电声与南京大学声学研究所联合研制的Sound QM＆LT（音频快速测量及寿命试验系统），已申请为国家专利，并在同行业中得到广泛使用。</p>
 	  </div>
 	</div>
 
@@ -24,7 +25,7 @@
 				  	<h4>HSF 实验室</h4>
 				  	<p>该实验室主要测试分析元器件、成品中有害物质含量是否符合客户要求，对元器件、成品进行有害物质管控。</p>
 				  	<!--  -->
-				  	<button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target=".bs-example-modal-lg">了解详细</button>
+				  	<button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target=".bs-example-modal-lg"><%= t(".more") %></button>
 						<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
 						  <div class="modal-dialog modal-lg" role="document">
 						    <div class="modal-content">
@@ -58,7 +59,7 @@
 				  	<h4>环境机械实验室</h4>
 				  	<p>该实验室主要是模拟产品在极端高温、极端低温、高温高湿及极端高温低温交替变化对产品的影响。机械试验则通过模拟产品在运输、搬动过程中受到影响后对产品的影响。</p>
 						<!--  -->
-				  	<button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target=".bs-example-modal-lg-2">了解详细</button>
+				  	<button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target=".bs-example-modal-lg-2"><%= t(".more") %></button>
 						<div class="modal fade bs-example-modal-lg-2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
 						  <div class="modal-dialog modal-lg" role="document">
 						    <div class="modal-content">
@@ -94,7 +95,7 @@
 						<h4>化学测试前处理室</h4>
 				  	<p>样品前处理是指样品的制备和对样品采用合成分解和溶解及对待样品进行提取、净化、浓缩的过程，使被测样品转变成可测定的形式定量、定性的分析检测。</p>
 				  	<!--  -->
-				  	<button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target=".bs-example-modal-lg-3">了解详细</button>
+				  	<button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target=".bs-example-modal-lg-3"><%= t(".more") %></button>
 						<div class="modal fade bs-example-modal-lg-3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
 						  <div class="modal-dialog modal-lg" role="document">
 						    <div class="modal-content">
@@ -130,7 +131,7 @@
 				  	<h4>主观试听室</h4>
 				  	<p>该实验室采用IEC60268-13《扬声器听音试验》相关标准，对扬声器及系统产品进行听音试验。本公司依托该试验室参与起草了新的国家标准GB／T12060.13，用于替代GB／T12058。</p>
 				  	<!--  -->
-				  	<button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target=".bs-example-modal-lg-4">了解详细</button>
+				  	<button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target=".bs-example-modal-lg-4"><%= t(".more") %></button>
 						<div class="modal fade bs-example-modal-lg-4" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
 						  <div class="modal-dialog modal-lg" role="document">
 						    <div class="modal-content">
@@ -192,7 +193,7 @@
 		环绕系统进行部署，优化声场、频域、瞬态响应等声学特性，以便听音员对多扬声器单元及系统进行试听、比对与评价。
 					</p>
 					<!--  -->
-				  	<button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target=".bs-example-modal-lg-5">了解详细</button>
+				  	<button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target=".bs-example-modal-lg-5"><%= t(".more") %></button>
 						<div class="modal fade bs-example-modal-lg-5" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
 						  <div class="modal-dialog modal-lg" role="document">
 						    <div class="modal-content">
@@ -232,7 +233,7 @@
 			  	<p>该实验室可同时对多路电声器件进行功率寿命试验，以检验产品的失效规律、失效率、平均寿命等可靠性特征量。</p>
 
 			  	<!--  -->
-				  	<button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target=".bs-example-modal-lg-6">了解详细</button>
+				  	<button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target=".bs-example-modal-lg-6"><%= t(".more") %></button>
 						<div class="modal fade bs-example-modal-lg-6" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
 						  <div class="modal-dialog modal-lg" role="document">
 						    <div class="modal-content">
@@ -279,7 +280,7 @@
 					</p>
 
 					<!--  -->
-				  	<button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target=".bs-example-modal-lg-7">了解详细</button>
+				  	<button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target=".bs-example-modal-lg-7"><%= t(".more") %></button>
 						<div class="modal fade bs-example-modal-lg-7" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
 						  <div class="modal-dialog modal-lg" role="document">
 						    <div class="modal-content">
@@ -332,7 +333,7 @@
 			  	<p>消声室的主要功能是为声学测试提供一个自由场空间或半自由场空间。自由场是指声波在无限大空间里传播时,不存在任何反射体和反射面。</p>
 
 			  	<!--  -->
-				  	<button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target=".bs-example-modal-lg-8">了解详细</button>
+				  	<button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target=".bs-example-modal-lg-8"><%= t(".more") %></button>
 						<div class="modal fade bs-example-modal-lg-8" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
 						  <div class="modal-dialog modal-lg" role="document">
 						    <div class="modal-content">
@@ -373,7 +374,7 @@
 			  		该实验室主要通过盐雾试验箱释放被压缩的空气产生的气流,达到连续喷雾的目的,用于检测金属部件电镀层表面的质量及均匀性。
 					</p>
 					<!--  -->
-				  	<button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target=".bs-example-modal-lg-9">了解详细</button>
+				  	<button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target=".bs-example-modal-lg-9"><%= t(".more") %></button>
 						<div class="modal fade bs-example-modal-lg-9" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
 						  <div class="modal-dialog modal-lg" role="document">
 						    <div class="modal-content">
