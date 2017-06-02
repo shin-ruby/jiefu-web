@@ -19,7 +19,7 @@
 	<div class="row">
 	  <div class="col-md-12">
 	    <div class="panel panel-default">
-	      <div class="panel-heading"><%= @laboratory.rd_title? ? @laboratory.rd_title : "研发实验室介绍" %></div>
+	      <div class="panel-heading"><%= f.text_field :rd_title, class: 'form-control' %></div>
 	      <div class="panel-body">
 	        <%= f.text_area :rd_content, rows: "5", class: 'form-control' %>
 	      </div>
@@ -30,7 +30,7 @@
 	<div class="row">
 	  <div class="col-md-4">
 	    <div class="panel panel-default">
-	      <div class="panel-heading"><%= @laboratory.hsf_title? ? @laboratory.hsf_title : "HSF 实验室" %></div>
+	      <div class="panel-heading"><%= f.text_field :hsf_title, class: 'form-control' %></div>
 	      <div class="panel-body">
 	        <%= f.text_area :hsf_content, rows: "3", class: 'form-control' %>
 	        <hr>
@@ -41,7 +41,7 @@
 
 	  <div class="col-md-4">
 	    <div class="panel panel-default">
-	      <div class="panel-heading"><%= @laboratory.multimedia_title? ? @laboratory.multimedia_title : "多媒体视听室" %></div>
+	      <div class="panel-heading"><%= f.text_field :multimedia_title, class: 'form-control' %></div>
 	      <div class="panel-body">
 	      	<%= f.text_area :multimedia_content, rows: "3", class: 'form-control' %>
 	        <hr>
@@ -52,7 +52,7 @@
 
 	  <div class="col-md-4">
 	    <div class="panel panel-default">
-	      <div class="panel-heading"><%= @laboratory.power_title? ? @laboratory.power_title : "功率寿命实验室" %></div>
+	      <div class="panel-heading"><%= f.text_field :power_title, class: 'form-control' %></div>
 	      <div class="panel-body">
 	        <%= f.text_area :power_content, rows: "3", class: 'form-control' %>
 	        <hr>
@@ -65,7 +65,7 @@
 	<div class="row">
 	  <div class="col-md-4">
 	    <div class="panel panel-default">
-	      <div class="panel-heading"><%= @laboratory.mechanical_title? ? @laboratory.mechanical_title : "环境机械实验室" %></div>
+	      <div class="panel-heading"><%= f.text_field :mechanical_title, class: 'form-control' %></div>
 	      <div class="panel-body">
 	        <%= f.text_area :mechanical_content, rows: "3", class: 'form-control' %>
 	        <hr>
@@ -76,7 +76,7 @@
 
 	  <div class="col-md-4">
 	    <div class="panel panel-default">
-	      <div class="panel-heading"><%= @laboratory.chemistry_title? ? @laboratory.chemistry_title : "化学测试前处理室" %></div>
+	      <div class="panel-heading"><%= f.text_field :chemistry_title, class: 'form-control' %></div>
 	      <div class="panel-body">
 	      	<%= f.text_area :chemistry_content, rows: "3", class: 'form-control' %>
 	        <hr>
@@ -87,7 +87,7 @@
 
 	  <div class="col-md-4">
 	    <div class="panel panel-default">
-	      <div class="panel-heading"><%= @laboratory.audio_title? ? @laboratory.audio_title : "声频检测实验室" %></div>
+	      <div class="panel-heading"><%= f.text_field :audio_content, class: 'form-control' %></div>
 	      <div class="panel-body">
 	      	<%= f.text_area :audio_content, rows: "3", class: 'form-control' %>
 	        <hr>
@@ -100,7 +100,7 @@
 	<div class="row">
   <div class="col-md-4">
     <div class="panel panel-default">
-      <div class="panel-heading"><%= @laboratory.anechoic_title? ? @laboratory.anechoic_title : "消声室" %></div>
+      <div class="panel-heading"><%= f.text_field :anechoic_title, class: 'form-control' %></div>
       <div class="panel-body">
         <%= f.text_area :anechoic_content, rows: "3", class: 'form-control' %>
         <hr>
@@ -111,7 +111,7 @@
 
   <div class="col-md-4">
 	    <div class="panel panel-default">
-	      <div class="panel-heading"><%= @laboratory.subjectivity_title? ? @laboratory.subjectivity_title : "主观试听室" %></div>
+	      <div class="panel-heading"><%= f.text_field :subjectivity_title, class: 'form-control' %></div>
 	      <div class="panel-body">
 	      	<%= f.text_area :subjectivity_content, rows: "3", class: 'form-control' %>
 	        <hr>
@@ -122,7 +122,7 @@
 
 	  <div class="col-md-4">
 	    <div class="panel panel-default">
-	      <div class="panel-heading"><%= @laboratory.salt_title? ? @laboratory.salt_title : "盐雾实验室" %></div>
+	      <div class="panel-heading"><%= f.text_field :salt_title, class: 'form-control' %></div>
 	      <div class="panel-body">
 	        <%= f.text_area :salt_content, rows: "3", class: 'form-control' %>
 	        <hr>

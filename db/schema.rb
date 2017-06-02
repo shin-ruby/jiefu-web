@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170601040610) do
+ActiveRecord::Schema.define(version: 20170602022323) do
 
   create_table "about_translations", force: :cascade do |t|
     t.integer  "about_id",   null: false
@@ -126,6 +126,45 @@ ActiveRecord::Schema.define(version: 20170601040610) do
     t.text     "salt_list"
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
+  end
+
+  create_table "laboratory_translations", force: :cascade do |t|
+    t.integer  "laboratory_id",            null: false
+    t.string   "locale",                   null: false
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+    t.text     "laboratory_title_content"
+    t.string   "rd_title"
+    t.text     "rd_content"
+    t.string   "hsf_title"
+    t.text     "hsf_content"
+    t.text     "hsf_list"
+    t.string   "multimedia_title"
+    t.text     "multimedia_content"
+    t.text     "multimedia_list"
+    t.string   "power_title"
+    t.text     "power_content"
+    t.text     "power_list"
+    t.string   "mechanical_title"
+    t.text     "mechanical_content"
+    t.text     "mechanical_list"
+    t.string   "chemistry_title"
+    t.text     "chemistry_content"
+    t.text     "chemistry_list"
+    t.string   "audio_title"
+    t.text     "audio_content"
+    t.text     "audio_list"
+    t.string   "anechoic_title"
+    t.text     "anechoic_content"
+    t.text     "anechoic_list"
+    t.string   "subjectivity_title"
+    t.text     "subjectivity_content"
+    t.text     "subjectivity_list"
+    t.string   "salt_title"
+    t.text     "salt_content"
+    t.text     "salt_list"
+    t.index ["laboratory_id"], name: "index_laboratory_translations_on_laboratory_id"
+    t.index ["locale"], name: "index_laboratory_translations_on_locale"
   end
 
   create_table "messages", force: :cascade do |t|
