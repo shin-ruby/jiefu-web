@@ -13,14 +13,24 @@ module Admin
     def update
     	@home = Home.first
       respond_to do |format|
-        if @home.update(params[:home].permit!)
+        if Product.find_by(name: params[:home][:mainproduct1]) &&
+           Product.find_by(name: params[:home][:mainproduct2]) &&
+           Product.find_by(name: params[:home][:mainproduct3]) &&
+           Product.find_by(name: params[:home][:mainproduct4]) &&
+           Product.find_by(name: params[:home][:newproduct1]) &&
+           Product.find_by(name: params[:home][:newproduct2]) &&
+           Product.find_by(name: params[:home][:newproduct3]) &&
+           Product.find_by(name: params[:home][:newproduct4]) 
+          @home.update(params[:home].permit!)
           flash[:success] = "更新成功!"
           format.html { redirect_to admin_home_url }
         else
-          format.html { render edit_admin_home_path(@home) }
-        end
+          flash[:danger] = "更新失败!"
+          format.html { redirect_to admin_home_url }
+        end   
       end
     end
 
 	end
 end
+
