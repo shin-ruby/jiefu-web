@@ -48,6 +48,15 @@
       people: "钱经理，陈经理"
       abroad: "杰夫海外"
       abroad_address: "韩国京畿道水原市勸善區孝園路256番33, 漢拏Vivaldi Park 1403號 "
+      
+    message_form:
+      name: "姓名"
+      mobile: "电话号码"
+      email: "邮箱"
+      company: "公司"
+      content: "内容"
+
+
     about:
       title: "杰夫电声，无处不在"
       profile: "公司简介"

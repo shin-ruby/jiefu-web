@@ -48,6 +48,14 @@ en:
       people: "Sophie, Louise"
       abroad: "Jiefu Abroad"
       abroad_address: "1403 (Halla Vivaldi Park), 33, Hyowon-ro 256beon-gil,Gwonseon-gu, Suwon-si, Gyeonggi-do, 16571, Rep.of KOREA"
+    
+    message_form:
+      name: "Name"
+      mobile: "Mobile"
+      email: "Email"
+      company: "Company"
+      content: "Content"
+
     about:
       title: "Jiefu Speaker，Global Sound"
       profile: "Company profile"
