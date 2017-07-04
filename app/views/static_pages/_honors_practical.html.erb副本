@@ -6,217 +6,168 @@
 <div class="row">
   <div class="col-md-4">
     <%= image_tag('practical/practical-1.jpg', width: '280', height: '400') %>
-    <h4>ZL200520077796.7</h4>
+    <h4>同时适用多轴与分体系统的扬声器</h4>
   </div>
   <div class="col-md-4">
     <%= image_tag('practical/practical-2.jpg', width: '280', height: '400') %>
-    <h4>ZL200520134089.7</h4>
+    <h4>跑道形全频段扬声器单元</h4>
   </div>
   <div class="col-md-4">
     <%= image_tag('practical/practical-3.jpg', width: '280', height: '400') %>
-    <h4>ZL200720043406.3</h4>
+    <h4>设置有散热孔的扬声器盆架</h4>
   </div>
 </div>
 <div class="row">
   <div class="col-md-4">
     <%= image_tag('practical/practical-4.jpg', width: '280', height: '400') %>
-    <h4>ZL200820117250.3</h4>
+    <h4>薄型扬声器的多凸台定位支片结构</h4>
   </div>
   <div class="col-md-4">
     <%= image_tag('practical/practical-5.jpg', width: '280', height: '400') %>
-    <h4>ZL200820040286.6</h4>
+    <h4>不用导磁轭的薄型扬声器</h4>
   </div>
   <div class="col-md-4">
     <%= image_tag('practical/practical-6.jpg', width: '280', height: '400') %>
-    <h4>ZL200820040285.1</h4>
+    <h4>反向磁路结构的薄型扬声器</h4>
   </div>
 </div>
 <div class="row">
   <div class="col-md-4">
     <%= image_tag('practical/practical-7.jpg', width: '280', height: '400') %>
-    <h4>ZL200820185070.9</h4>
+    <h4>双磁路结构的薄型扬声器</h4>
   </div>
   <div class="col-md-4">
     <%= image_tag('practical/practical-8.jpg', width: '280', height: '400') %>
-    <h4>ZL200920040366.6</h4>
+    <h4>带凸台的磁路结构</h4>
   </div>
   <div class="col-md-4">
     <%= image_tag('practical/practical-9.jpg', width: '280', height: '400') %>
-    <h4>ZL200920047542.9</h4>
+    <h4>带有波浪形振动板的薄型扬声器</h4>
   </div>
 </div>
 <div class="row">
   <div class="col-md-4">
     <%= image_tag('practical/practical-10.jpg', width: '280', height: '400') %>
-    <h4>ZL200920236269.4</h4>
+    <h4>不用定位支片的薄型扬声器</h4>
   </div>
   <div class="col-md-4">
     <%= image_tag('practical/practical-11.jpg', width: '280', height: '400') %>
-    <h4>ZL200920233074.4</h4>
+    <h4>扬声器定位支片</h4>
   </div>
   <div class="col-md-4">
     <%= image_tag('practical/practical-12.jpg', width: '280', height: '400') %>
-    <h4>ZL200920236268.X</h4>
+    <h4>薄型扬声器音盆</h4>
   </div>
 </div>
 <div class="row">
   <div class="col-md-4">
     <%= image_tag('practical/practical-13.jpg', width: '280', height: '400') %>
-    <h4>ZL200920236293.8</h4>
+    <h4>有散热块的扬声器磁路</h4>
   </div>
   <div class="col-md-4">
     <%= image_tag('practical/practical-14.jpg', width: '280', height: '400') %>
-    <h4>ZL200920352051.5</h4>
+    <h4>薄型电动式扬声器</h4>
   </div>
   <div class="col-md-4">
     <%= image_tag('practical/practical-15.jpg', width: '280', height: '400') %>
-    <h4>ZL201020246674.7</h4>
+    <h4>薄型扬声器磁路</h4>
   </div>
 </div>
 <div class="row">
   <div class="col-md-4">
     <%= image_tag('practical/practical-16.jpg', width: '280', height: '400') %>
-    <h4>ZL201020511504.7</h4>
+    <h4>双音盆薄型扬声器</h4>
   </div>
   <div class="col-md-4">
     <%= image_tag('practical/practical-17.jpg', width: '280', height: '400') %>
-    <h4>ZL201020550881.1</h4>
+    <h4>具有波浪形定位支片的薄型扬声器</h4>
   </div>
   <div class="col-md-4">
     <%= image_tag('practical/practical-18.jpg', width: '280', height: '400') %>
-    <h4>ZL201020550937.3</h4>
+    <h4>具有锥形定位支片的薄型扬声器</h4>
   </div>
 </div>
 <div class="row">
   <div class="col-md-4">
     <%= image_tag('practical/practical-19.jpg', width: '280', height: '400') %>
-    <h4>ZL201020550928.4</h4>
+    <h4>可拆卸式薄型扬声器磁路结构</h4>
   </div>
   <div class="col-md-4">
     <%= image_tag('practical/practical-20.jpg', width: '280', height: '400') %>
-    <h4>ZL201120202912.9</h4>
+    <h4>具有台阶结构的双音盆薄型扬声器</h4>
   </div>
   <div class="col-md-4">
     <%= image_tag('practical/practical-21.jpg', width: '280', height: '400') %>
-    <h4>ZL201120247704.9</h4>
+    <h4>扬声器音圈工装</h4>
   </div>
 </div>
 <div class="row">
   <div class="col-md-4">
     <%= image_tag('practical/practical-22.jpg', width: '280', height: '400') %>
-    <h4>ZL201120309464.2</h4>
+    <h4>多点激励扬声器阵列</h4>
   </div>
   <div class="col-md-4">
     <%= image_tag('practical/practical-23.jpg', width: '280', height: '400') %>
-    <h4>ZL201220009025.4</h4>
+    <h4>扬声器音盆折环与盆架的结构</h4>
   </div>
   <div class="col-md-4">
     <%= image_tag('practical/practical-24.jpg', width: '280', height: '400') %>
-    <h4>ZL201220008913.4</h4>
+    <h4>跑道形双音盆扬声器</h4>
   </div>
 </div>
 <div class="row">
   <div class="col-md-4">
     <%= image_tag('practical/practical-25.jpg', width: '280', height: '400') %>
-    <h4>ZL201220167294.3</h4>
+    <h4>定位支片反置的薄型扬声器</h4>
   </div>
   <div class="col-md-4">
     <%= image_tag('practical/practical-26.jpg', width: '280', height: '400') %>
-    <h4>ZL201220215841.0</h4>
+    <h4>大功率超薄扬声器</h4>
   </div>
   <div class="col-md-4">
     <%= image_tag('practical/practical-27.jpg', width: '280', height: '400') %>
-    <h4>ZL201220520015.7</h4>
+    <h4>胶黏剂混合搅拌装置</h4>
   </div>
 </div>
 <div class="row">
   <div class="col-md-4">
     <%= image_tag('practical/practical-28.jpg', width: '280', height: '400') %>
-    <h4>ZL201220746119.X</h4>
+    <h4>扬声器防尘帽取料装置</h4>
   </div>
   <div class="col-md-4">
     <%= image_tag('practical/practical-29.jpg', width: '280', height: '400') %>
-    <h4>ZL201220746274.1</h4>
+    <h4>扬声器防尘帽取胶装置</h4>
   </div>
   <div class="col-md-4">
     <%= image_tag('practical/practical-30.jpg', width: '280', height: '400') %>
-    <h4>ZL201220746811.2</h4>
+    <h4>扬声器防尘帽旋转工作台</h4>
   </div>
 </div>
 <div class="row">
   <div class="col-md-4">
     <%= image_tag('practical/practical-31.jpg', width: '280', height: '400') %>
-    <h4>ZL201220396458.X</h4>
+    <h4>扬声器的功率测试系统</h4>
   </div>
   <div class="col-md-4">
     <%= image_tag('practical/practical-32.jpg', width: '280', height: '400') %>
-    <h4>ZL201220636294.3</h4>
+    <h4>多点激励源扬声器音箱</h4>
   </div>
   <div class="col-md-4">
     <%= image_tag('practical/practical-33.jpg', width: '280', height: '400') %>
-    <h4>ZL201220646537.1</h4>
+    <h4>薄型双音盆倒相式扬声器音箱</h4>
   </div>
 </div>
 <div class="row">
   <div class="col-md-4">
     <%= image_tag('practical/practical-34.jpg', width: '280', height: '400') %>
-    <h4>ZL201330324016.9</h4>
+    <h4>一种多点激励源扬声器夹具</h4>
   </div>
   <div class="col-md-4">
     <%= image_tag('practical/practical-35.jpg', width: '280', height: '400') %>
-    <h4>ZL201320323613.X</h4>
+    <h4>低失真度的薄型扬声器</h4>
   </div>
   <div class="col-md-4">
     <%= image_tag('practical/practical-36.jpg', width: '280', height: '400') %>
-    <h4>ZL201320323677.X</h4>
+    <h4>多点激励源扬声器夹具</h4>
   </div>
-</div>
-<div class="row">
-  <div class="col-md-4">
-    <%= image_tag('practical/ZL201420270155-2.jpg', width: '280', height: '400') %>
-    <h4>ZL201420270155.2</h4>
-  </div>
-  <div class="col-md-4">
-    <%= image_tag('practical/ZL201420417426-2.jpg', width: '280', height: '400') %>
-    <h4>ZL201420417426.2</h4>
-  </div>
-  <div class="col-md-4">
-    <%= image_tag('practical/ZL201420417638-0.jpg', width: '280', height: '400') %>
-    <h4>ZL201420417638.0</h4>
-  </div>
-</div>
-<div class="row">
-  <div class="col-md-4">
-    <%= image_tag('practical/ZL201420417688-9.jpg', width: '280', height: '400') %>
-    <h4>ZL201420417688.9</h4>
-  </div>
-  <div class="col-md-4">
-    <%= image_tag('practical/ZL201520620733-5.jpg', width: '280', height: '400') %>
-    <h4>ZL201520620733.5</h4>
-  </div>
-  <div class="col-md-4">
-    <%= image_tag('practical/ZL201520623751-9.jpg', width: '280', height: '400') %>
-    <h4>ZL201520623751.9</h4>
-  </div>
-</div>
-<div class="row">
-  <div class="col-md-4">
-    <%= image_tag('practical/ZL201520803802-6.jpg', width: '280', height: '400') %>
-    <h4>ZL201520803802.6</h4>
-  </div>
-  <div class="col-md-4">
-    <%= image_tag('practical/ZL201620163178-2.jpg', width: '280', height: '400') %>
-    <h4>ZL201620163178.2</h4>
-  </div>
-  <div class="col-md-4">
-    <%= image_tag('practical/ZL201620598234-5.jpg', width: '280', height: '400') %>
-    <h4>ZL201620598234.5</h4>
-  </div>
-</div>
-<div class="row">
-  <div class="col-md-4">
-    <%= image_tag('practical/ZL201620599685-0.jpg', width: '280', height: '400') %>
-    <h4>ZL201620599685.0</h4>
-  </div>
-
 </div>
