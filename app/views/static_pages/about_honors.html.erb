@@ -10,15 +10,15 @@
 <div class="container introduction honors">
 
   <ul class="nav nav-tabs">
-    <li role="presentation" class="active"><a href="#quality" aria-controls="quality" role="tab" data-toggle="tab"><%= t(".qualifications") %></a></li>
-    <li role="presentation"><a href="#invent" aria-controls="invent" role="tab" data-toggle="tab"><%= t(".patent") %></a></li>
+    <li role="presentation" class="active"><a href="#invent" aria-controls="invent" role="tab" data-toggle="tab"><%= t(".patent") %></a></li>
     <li role="presentation"><a href="#practical" aria-controls="practical" role="tab" data-toggle="tab"><%= t(".utility") %></a></li>
+    <li role="presentation"><a href="#quality" aria-controls="quality" role="tab" data-toggle="tab"><%= t(".qualifications") %></a></li>
   </ul>
 
   <div class="tab-content">
-    <div role="tabpanel" class="tab-pane active" id="quality"><%= render 'static_pages/honors_quality' %></div>
-    <div role="tabpanel" class="tab-pane" id="invent"><%= render 'static_pages/honors_invent' %></div>
+    <div role="tabpanel" class="tab-pane active" id="invent"><%= render 'static_pages/honors_invent' %></div>
     <div role="tabpanel" class="tab-pane" id="practical"><%= render 'static_pages/honors_practical' %></div>
+    <div role="tabpanel" class="tab-pane" id="quality"><%= render 'static_pages/honors_quality' %></div>
   </div>
 	
 </div>
