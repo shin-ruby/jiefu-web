@@ -25,13 +25,13 @@
     </div>
 		<div id="navbar" class="navbar-collapse collapse">
 		  <ul class="nav navbar-nav navbar-left">
-		    <li class="dropdown">
+		    <li class="<%= "#{is_active_controller('products')} || #{is_active_controller('searches')}" %>">
           <%= link_to t("menu.products"), products_path %>
         </li>
-		    <li><%= link_to t("menu.laboratory"), laboratory_path %></li>
-		    <li><%= link_to t("menu.support"), support_path %></li>
-		    <li><%= link_to t("menu.news"), infos_path %></li>
-		    <li><%= link_to t("menu.about"), about_path %></li>
+		    <li class="<%= "#{is_active_action('laboratory')}" %>"><%= link_to t("menu.laboratory"), laboratory_path %></li>
+		    <li class="<%= "#{is_active_action('support')}" %>"><%= link_to t("menu.support"), support_path %></li>
+		    <li class="<%= "#{is_active_controller('infos')}" %>"><%= link_to t("menu.news"), infos_path %></li>
+		    <li class="<%= "#{is_active_action('about')} || #{is_active_action('about_introduction')} || #{is_active_action('about_honors')} || #{is_active_controller('careers')} " %>"><%= link_to t("menu.about"), about_path %></li>
 		  </ul>
 		  <ul class="nav navbar-nav navbar-right">
         <%= form_tag '/search', method: :get, class: 'navbar-form navbar-left' do %>
