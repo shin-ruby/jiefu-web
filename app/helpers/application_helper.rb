@@ -20,8 +20,10 @@ module ApplicationHelper
   def full_product_type(product_type)
     if product_type == 1
       '单体扬声器'
-    else
+    elsif product_type == 2
       '箱体扬声器'
+    else product_type == 3
+      '汽车扬声器'
     end
   end
 

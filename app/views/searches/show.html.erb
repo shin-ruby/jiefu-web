@@ -29,13 +29,16 @@
 			  <div class="form-group">
 			  	<p><strong><%= t(".title2") %></strong></p>
 			  	<label class="radio-inline">
-        		<%= f.radio_button(:product_type, 3) %><%= f.label :product_type, t(".all_speakers") %>
+        		<%= f.radio_button(:product_type, 4) %><%= f.label :product_type, t(".all_speakers") %>
 					</label>
 			    <label class="radio-inline">
         		<%= f.radio_button(:product_type, 1) %><%= f.label :product_type, t(".monomer") %>
 					</label>
 					<label class="radio-inline">
 						<%= f.radio_button(:product_type, 2) %><%= f.label :product_type, t(".box") %>
+					</label>
+					<label class="radio-inline">
+						<%= f.radio_button(:product_type, 3) %><%= f.label :product_type, t(".car") %>
 					</label>
 			  </div>
 

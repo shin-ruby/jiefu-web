@@ -12,7 +12,7 @@ class Search < ApplicationRecord
 
     products = products.where(category: category) if category.present?
 
-    if product_type.present? && product_type == 3
+    if product_type.present? && product_type == 4
       products = products.all
     else
       products = products.where(product_type: product_type) 

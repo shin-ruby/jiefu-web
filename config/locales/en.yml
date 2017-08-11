@@ -168,6 +168,7 @@ en:
       size: "Dimensions (L * W * H)"
       monomer: "Monomer"
       box: "Box"
+      car: "Car"
       search_submit: "Search"
       search_results: "Search Results"
       results: "If the search cannot find the corresponding product, please contact us directly:"
