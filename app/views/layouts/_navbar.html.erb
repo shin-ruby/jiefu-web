@@ -4,10 +4,10 @@
 			<div class="language">
 				<p class="text-right"><%= link_to t("menu.srm"), "http://218.90.188.142:82/Screen/UFLAT/userlogin.aspx", class: "srm" %> | <small>
 						<%= t("menu.language") %>:
-						<% if params[:locale] == "en" %>
-							<%= link_to image_tag("China.png", height: '12', alt: "Logo image"), locale: "zh-CN" %>
-						<% else %>
+						<% if params[:locale] == "zh-CN" %>
 							<%= link_to image_tag("USA.png", height: '12', alt: "Logo image"), locale: "en" %>
+						<% else %>
+							<%= link_to image_tag("China.png", height: '12', alt: "Logo image"), locale: "zh-CN" %>
 						<% end %>
 					</small></p>
 			</div>
