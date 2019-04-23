@@ -30,7 +30,7 @@ class StaticPagesController < ApplicationController
   def about_honors
   end
 
-  def careers 
+  def careers
   end
 
   def careers_detail
