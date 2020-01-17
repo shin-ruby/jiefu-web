@@ -15,7 +15,7 @@ gem 'coffee-rails', '~> 4.2'
 # gem 'therubyracer', platforms: :ruby
 gem 'bootstrap-sass'
 gem 'font-awesome-rails'
-gem 'mini_magick', '~> 4.6', '>= 4.6.1'
+gem 'mini_magick', '~> 4.9'
 gem 'simditor'
 gem 'bcrypt', '~> 3.1', '>= 3.1.11'
 gem 'carrierwave'
