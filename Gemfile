@@ -35,7 +35,7 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-gem 'sqlite3'
+gem 'sqlite3', '~> 1.3.13'
 
 gem 'globalize', '~> 5.1.0.beta1'
 
