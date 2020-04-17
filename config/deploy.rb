@@ -1,5 +1,5 @@
 # config valid only for current version of Capistrano
-lock '~> 3.12.0'
+lock '~> 3.13.0'
 
 set :application, 'jiefu-web'
 set :repo_url, 'https://github.com/shin-ruby/jiefu-web'
